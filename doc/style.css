@@ -155,8 +155,48 @@ input[type="text"] {
   margin-top: 100px;
   margin-bottom: 150px;
 }
-
-
+#popular-anim{
+  color: #00325b;
+}
+#demo-anim8{
+  background-color: #CFE8FF;
+  width: 100%;
+  place-content: center;
+  padding: 20px;
+  border-spacing: 50px;
+  display: grid;
+  grid-template-areas: 
+  'a'
+  'b'
+  'c'
+  'd'
+  ;
+  gap: 30px;
+}
+.demo-1row, .demo-2row, .demo-3row, .demo-4row{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.demo-1row div, .demo-3row div{
+  background-color: white;
+  padding: 4em 8em 4em 8em;
+}
+.demo-2row div, .demo-4row div{
+  padding: 0em 8em 4em 8em;
+}
+.demo-1row{
+  grid-area: a;
+}
+.demo-2row{
+  grid-area: b;
+}
+.demo-3row{
+  grid-area: c;
+}
+.demo-4row{
+  grid-area: d;
+}
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
