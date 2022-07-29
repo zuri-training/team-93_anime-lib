@@ -197,6 +197,28 @@ input[type="text"] {
 .demo-4row{
   grid-area: d;
 }
+#visit-button div{
+  padding: 0.5em;
+  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#visit-button button{
+    text-align: center;
+    padding: 20px;
+    background: #00325b;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#visit-button a{
+  text-decoration: none;
+  color: white;
+}
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
