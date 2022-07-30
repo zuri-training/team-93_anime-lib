@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -155,14 +156,21 @@ input[type="text"] {
   margin-top: 100px;
   margin-bottom: 150px;
 }
+
+#anima8{
+  margin-bottom: 25px;
+}
+
 #popular-anim{
   color: #00325b;
+  margin-bottom: 25px;
 }
 #demo-anim8{
   background-color: #CFE8FF;
   width: 100%;
   place-content: center;
   padding: 20px;
+  margin-bottom: 25px;
   border-spacing: 50px;
   display: grid;
   grid-template-areas: 
@@ -219,12 +227,13 @@ input[type="text"] {
   text-decoration: none;
   color: white;
 }
-* {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Rubik', sans-serif;
-    padding: 0;
-    margin: 0;
+
+#anim8-best h3{
+  color: #00325b;
+  margin-bottom: 25px;
+}
+.feature{
+  margin-bottom: 40px;
 }
 footer{
     background-color: #00325B;
