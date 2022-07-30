@@ -63,12 +63,6 @@ header {
     padding-bottom: 5px;
 }
 
-.nav-btn{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 0.5px solid black;
-    margin-right: 5px;   
-}
 
 
 #form{
@@ -78,7 +72,7 @@ header {
 
 #container{
     text-align: center;
-    width: 45%;
+    width: 30%;
     height: 50px;
     border-radius: 5px;
     display: flex;
@@ -87,27 +81,6 @@ header {
     padding: 10px 20px;
 }
 
-.nav-link:hover {
-  color: blue;
-}
-
-.nav-btn {
-  padding: 15px 30px;
-  border-radius: 10px;
-  border: 1px solid #00325b;
-  margin-right: 5px;
-}
-
-#sign-up{
-  color: #fff;
-  background-color: #00325b;
-}
-
-#sign-in{
-  background-color: #fff;
-  color: #00325b;
-
-}
 
 #form {
   display: flex;
@@ -432,11 +405,7 @@ address a:hover {
   gap: 20px;
   margin-top: 10px;
 }
-.social img {
-  background-color: white;
-  margin-top: 20px;
-  height: 30%;
-}
+
 .footer-paragraph {
   text-align: center;
   padding-bottom: 20px;
