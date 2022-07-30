@@ -65,11 +65,6 @@ header {
   padding-bottom: 5px;
 }
 
-.nav-link:hover{
-    border-bottom: 3px solid #00325B;
-    padding-bottom: 5px;
-}
-
 .nav-btn{
     padding: 10px 20px;
     border-radius: 5px;
@@ -343,11 +338,10 @@ address a{
   align-items: center;
   padding: 100px 20px;
   margin-top: 100px;
- 
-  
 }
 #subscribe div{
   width: 50%;
+  margin-bottom: 180px;
 }
 #subscribe form {
   display: flex;
@@ -357,7 +351,7 @@ address a{
 #subscribe form input{
     width: 95%;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     align-self: center;
     display: inline-block;
@@ -367,7 +361,7 @@ address a{
 #subscribe form input[type="submit"]{
   background-color: #00325B;
   color: #fff;
-  font-weight: 400;
+  font-weight: bolder;
 }
 
 footer {
