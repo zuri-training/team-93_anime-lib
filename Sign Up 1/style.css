@@ -7,24 +7,38 @@
 }
 
 body{
-  background: #83DEF1;
+  background: white ;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.wrapper{
-  margin-top: 50px;
+.container{
+  background: #83DEF1;
+  width: 1100px;
+  border: 50px solid #006A94;
+  margin: 10px;
+  margin-left: 110px;
+  min-width: 800px;
+  min-height: 500px;
+  height: 100%;
 }
+
+.wrapper{
+  margin-top: 10px;
+  
+}
+
 
 .wrapper h1{
   font-family:sans-serif;
-  font-size: 52px;
-  margin-bottom: 60px;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .wrapper h2{
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 20px;
     margin-bottom: 60px;
     text-align: center;
   }
@@ -68,7 +82,7 @@ body{
 }
 
 .account .team p{
-  color: #ccc;
+  color: black;
   margin: 12px 0;
   font-size: 12px;
   text-transform: uppercase;
@@ -76,11 +90,11 @@ body{
 
 .account .individual .individual_img{
     position: absolute;
-    top: -50px;
+    margin-top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: #006A94;
   }
@@ -88,11 +102,11 @@ body{
 
 .account .team .team_img{
   position: absolute;
-  top: -50px;
+  margin-top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background: #006A94;
 }
@@ -103,6 +117,6 @@ body{
   padding: 5px;
 }
 
-.account .indiviual button{
-    margin-top: 20px;
+.account .indiv-btn{
+    margin-top: 45px;
 }
