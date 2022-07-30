@@ -7,32 +7,18 @@
     margin: 0;
 }
 
-header{
-    display: flex;
-    width: 100%;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-body{
-  margin: 50px;
-  margin-top: 30px;
-}
+
+
 
 header {
   display: flex;
   width: 100%;
   height: 20%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
 
 
@@ -59,16 +45,6 @@ header {
   text-decoration: none;
 }
 
-#here{
-  color: #00325b;
-  border-bottom: 3px solid #00325b;
-  padding-bottom: 5px;
-}
-
-.nav-link:hover{
-    border-bottom: 3px solid #00325B;
-    padding-bottom: 5px;
-}
 
 .nav-btn{
     padding: 10px 20px;
@@ -91,6 +67,7 @@ header {
 #form{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #container{
@@ -102,6 +79,7 @@ header {
     align-items: center;
     border: 1px solid #00325B;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .nav-link:hover {
@@ -129,6 +107,7 @@ header {
 #form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #container {
@@ -140,6 +119,7 @@ header {
   align-items: center;
   border: 1px solid black;
   padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 input[type="text"] {
@@ -147,30 +127,66 @@ input[type="text"] {
   outline: none;
   padding: 10px;
   border: none;
-
+  flex-wrap: wrap;
 }
 
 #welcome-section{
   display: flex;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin: 100px 50px 150px 50px;
+  flex-wrap: wrap;
 }
 
+#welcome-section img{
+  width: 60%;
+}
+
+#welcome-section div{
+  width: 40%;
+  line-height: 1.5;
+}
+
+#welcome-section div h1{
+  margin-bottom: 30px;
+  font-weight: bolder;
+  color: #00325b;
+}
+
+#welcome-section div p{
+  margin-bottom: 50px;
+}
+
+.welcome-button {
+  text-align: center;
+  padding: 20px 60px;
+  background: #00325b;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/*This contains the Popular Animations*/
 #anima8{
-  margin-bottom: 25px;
+  margin: 100px 50px 0px 50px;
 }
 
 #popular-anim{
-  color: #00325b;
-  margin-bottom: 25px;
+  margin: 100px 50px 0px 50px;
+  line-height: 1.5;
 }
+#popular-anim h3{
+  color: #00325B;
+  margin-bottom: 5px;
+}
+
 #demo-anim8{
   background-color: #CFE8FF;
-  width: 100%;
   place-content: center;
   padding: 20px;
-  margin-bottom: 25px;
+  margin: 0px 50px 25px 50px;
   border-spacing: 50px;
   display: grid;
   grid-template-areas: 
@@ -180,11 +196,13 @@ input[type="text"] {
   'd'
   ;
   gap: 30px;
+  
 }
 .demo-1row, .demo-2row, .demo-3row, .demo-4row{
   display: flex;
   gap: 20px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .demo-1row div, .demo-3row div{
   background-color: white;
@@ -227,6 +245,9 @@ input[type="text"] {
   text-decoration: none;
   color: white;
 }
+#anim8-best{
+  margin: 100px 50px 150px 50px;
+}
 
 #anim8-best h3{
   color: #00325b;
@@ -267,27 +288,29 @@ address a{
     text-decoration: underline;
 }
 
-#welcome-section img{
-  width: 30%;
-  margin-left: 350px;
+#animations{
+  display: flex;
+  align-items: center;
+  margin: 100px 50px 150px 50px;
+  flex-wrap: wrap;
 }
 
-#welcome-section div{
-  width: 35%;
+#animations img{
+  width: 60%;
+}
+
+#animations div{
+  width: 40%;
   line-height: 1.5;
 }
 
-#welcome-section div h1{
-  margin-bottom: 30px;
+#animations div h3{
+  margin-bottom: 20px;
   font-weight: bolder;
   color: #00325b;
 }
 
-#welcome-section div p{
-  margin-bottom: 50px;
-}
-
-.welcome-button {
+#animations button{
   text-align: center;
   padding: 20px 60px;
   background: #00325b;
@@ -297,12 +320,52 @@ address a{
   font-weight: bolder;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+#animations div p{
+  margin-bottom: 50px;
+}
+
+#subscribe{
+  background-color: #CFE8FF;
+  display: flex;
+  align-items: center;
+  padding: 100px 20px;
+  margin-top: 100px;
+ flex-wrap: wrap;
 
 }
+#subscribe div{
+  width: 50%;
+  margin-bottom: 180px;
+}
+
+#subscribe form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+#subscribe form input{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    align-self: center;
+    display: inline-block;
+    border: 1px solid #00325B;
+}
+
+#subscribe form input[type="submit"]{
+  background-color: #00325B;
+  color: #fff;
+  font-weight: bolder;
+}
+
 footer {
   background-color: #00325b;
   color: white;
-  margin: -50px;
   margin-top: 0;
 }
 
@@ -314,7 +377,6 @@ footer {
 }
 
 .social img{
-    font-size: 5100px;
     background-color: white;
     margin-top: 20px;
 }
@@ -348,7 +410,12 @@ footer strong{
   justify-content: space-evenly;
   width: 100%;
   padding: 40px;
+  box-sizing: border-box;
 }
+address{
+  font-style: normal;
+}
+
 address a {
   text-decoration: none;
   display: block;
