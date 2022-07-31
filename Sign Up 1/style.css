@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
-
-*{
+@import url("https://fonts.googleapis.com/css?family=Allura|Josefin+Sans");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background: white ;
-  font-family: 'Josefin Sans', sans-serif;
+body {
+  background: white;
+  font-family: "Josefin Sans", sans-serif;
+  background: #83def1;
 }
 
-.container{
-  background: #83DEF1;
+.container {
   width: 1100px;
-  border: 50px solid #006A94;
   margin: 10px;
   margin-left: 110px;
   min-width: 800px;
@@ -24,34 +22,32 @@ body{
 
 .wrapper{
   margin-top: 10px;
-  
 }
 
-
-.wrapper h1{
-  font-family:sans-serif;
+.wrapper h1 {
+  font-family: sans-serif;
   font-size: 30px;
   margin-top: 40px;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.wrapper h2{
-    font-family: sans-serif;
-    font-size: 20px;
-    margin-bottom: 60px;
-    text-align: center;
-  }
+.wrapper h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
 
-.account{
+.account {
   display: flex;
   justify-content: center;
   width: auto;
   text-align: center;
   flex-wrap: wrap;
 }
-  
-.account .individual{
+
+.account .individual {
   background: #fff;
   height: 300px;
   margin: 5px;
@@ -59,29 +55,29 @@ body{
   width: 400px;
   padding: 20px;
   line-height: 20px;
-  color: #8e8b8b;  
+  color: #8e8b8b;
   position: relative;
 }
 
-.account .team{
-    background: #fff;
-    margin: 5px;
-    margin-bottom: 50px;
-    width: 400px;
-    padding: 20px;
-    line-height: 20px;
-    color: #8e8b8b;  
-    position: relative;
-  }
+.account .team {
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 400px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;
+  position: relative;
+}
 
-.account h3{
+.account h3 {
   color: black;
   font-size: 26px;
   margin-top: 50px;
   padding-top: 20%;
 }
 
-.account .team p{
+.account .team p {
   color: black;
   margin: 12px 0;
   font-size: 12px;
@@ -100,7 +96,8 @@ body{
   }
   
 
-.account .team .team_img{
+
+.account .individual .individual_img {
   position: absolute;
   margin-top: 10px;
   left: 50%;
@@ -109,9 +106,21 @@ body{
   height: 80px;
   border-radius: 50%;
   background: white;
+  background: #006a94;
 }
 
-.account .team .team_img img{
+.account .team .team_img {
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #006a94;
+}
+
+.account .team .team_img img {
   width: 100px;
   height: 100px;
   padding: 5px;
@@ -137,4 +146,17 @@ body{
 
 .team-btn:hover{
   background-color: #83DEF1;
+}
+.account .indiv-btn {
+  margin-top: 45px;
+}
+
+button {
+  text-align: center;
+  padding: 20px 60px;
+  background: #00325b;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bolder;
 }
