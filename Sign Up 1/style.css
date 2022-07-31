@@ -96,7 +96,7 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #006A94;
+    background: white;
   }
   
 
@@ -108,7 +108,7 @@ body{
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #006A94;
+  background: white;
 }
 
 .account .team .team_img img{
@@ -119,4 +119,22 @@ body{
 
 .account .indiv-btn{
     margin-top: 45px;
+    border: 2px solid #006A94;
+    padding: 5px 5px;
+    font-weight: bold;
+    
+}
+
+.team-btn{
+  border: 2px solid #006A94;
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+.account .indiv-btn:hover{
+  background-color: #83DEF1;
+}
+
+.team-btn:hover{
+  background-color: #83DEF1;
 }
