@@ -83,7 +83,8 @@ header {
 }
 
 .nav-link:hover {
-  color: blue;
+  border-bottom: 3px solid #00325B;
+  padding-bottom: 5px;
 }
 
 .nav-btn {
@@ -252,6 +253,9 @@ input[type="text"] {
 #anim8-best h3{
   color: #00325b;
   margin-bottom: 25px;
+}
+.animated-bounce{
+  border-radius: 50%;
 }
 .feature{
   margin-bottom: 40px;

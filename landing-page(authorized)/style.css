@@ -17,8 +17,12 @@ header {
   margin: 10px 0;
   box-sizing: border-box;
 }
-
-
+header img{
+  margin-left: -100px;
+}
+header #profile{
+  margin-right: -100px;
+}
 #navbar ul li{
     display: inline-block;
     list-style: none;
@@ -28,7 +32,6 @@ header {
 /* to put them at the center */
 #navbar ul {
   display: block;
-  margin-left: 150px;
 }
 
 #navbar ul li {
@@ -336,7 +339,6 @@ footer {
 }
 
 .social img{
-    font-size: 5100px;
     background-color: white;
     margin-top: 20px;
 }
