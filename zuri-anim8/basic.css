@@ -1,0 +1,211 @@
+._moveUp {
+    /* for use in the keyframes */
+    -webkit-animation-name: moveUp;
+    animation-name: moveUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    /* so it returns back to the original state, set to normal so that it goes just once  */
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    /* you can set this to ease, ease-in, ease-out, ease-in-out, or a custom cubic-bezier */
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes moveUp {
+    /* to go up we ue negative values  */
+    to {
+      transform: translateY(-50px);
+    }
+  }
+  @keyframes moveUp {
+    /* to go up we ue negative values  */
+    to {
+      transform: translateY(-50px);
+    }
+  }
+  
+  ._moveDown {
+    -webkit-animation-name: moveDown;
+    animation-name: moveDown;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    /* so it returns back to the original state, set to normal so that it goes just once  */
+    /* and reverts in an instant but with alternate it kind of rewinds it  */
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes moveDown {
+    /* to go down we use positive values */
+    to {
+      transform: translateY(50px);
+    }
+  }
+  @keyframes moveDown {
+    /* to go down we use positive values */
+    to {
+      transform: translateY(50px);
+    }
+  }
+  
+  ._moveRight {
+    -webkit-animation-name: moveRight;
+    animation-name: moveRight;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes moveRight {
+    /* to go right use positive values */
+    to {
+      transform: translateX(50px);
+    }
+  }
+  @keyframes moveRight {
+    /* to go right use positive values */
+    to {
+      transform: translateX(50px);
+    }
+  }
+  
+  ._moveLeft {
+    -webkit-animation-name: moveLeft;
+    animation-name: moveLeft;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes moveLeft {
+    /* to go left use negative values */
+    to {
+      transform: translateX(-50px);
+    }
+  }
+  @keyframes moveLeft {
+    /* to go left use negative values */
+    to {
+      transform: translateX(-50px);
+    }
+  }
+  
+  ._bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  @-webkit-keyframes bounce {
+    /* it moves up then down */
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(50px);
+    }
+  }
+  @keyframes bounce {
+    /* it moves up then down */
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(50px);
+    }
+  }
+  
+  ._blink {
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  @-webkit-keyframes blink {
+    /* make it go inviscible and then viscible*/
+    /* you can't animate css display property */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    /* make it go inviscible and then viscible*/
+    /* you can't animate css display property */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  ._fade {
+    /* basically make it blink slower */
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    /* uncomment whats below so it stays inviscible i.e remains where it stops */
+    /* animation-fill-mode: forwards; */
+  }
+  @-webkit-keyframes fade {
+    /* make it go inviscible and then viscible*/
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade {
+    /* make it go inviscible and then viscible*/
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

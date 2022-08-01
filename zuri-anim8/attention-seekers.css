@@ -1,0 +1,261 @@
+._popOut {
+    -webkit-animation-name: popOut;
+    animation-name: popOut;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    /* change this to 1 if you want to do it once */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    /* uncomment this if you want to make it stay big */
+    /* animation-fill-mode: forwards; */
+  }
+  @-webkit-keyframes popOut {
+    to {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes popOut {
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  ._changeBgColor {
+    -webkit-animation-name: changeBgColor;
+    animation-name: changeBgColor;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes changeBgColor {
+    /* feel free to change this color to what you like  */
+    to {
+      background-color: red;
+    }
+  }
+  @keyframes changeBgColor {
+    /* feel free to change this color to what you like  */
+    to {
+      background-color: red;
+    }
+  }
+  ._tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  @-webkit-keyframes tada {
+    10% {
+      transform: scaleX(0.7);
+    }
+    30% {
+      transform: rotateX(10deg);
+    }
+    40% {
+      transform: rotateZ(-10deg);
+    }
+    60% {
+      transform: rotateZ(10deg);
+    }
+    80% {
+      transform: rotateZ(-10deg);
+    }
+    90% {
+      transform: rotateZ(10deg);
+    }
+    100% {
+      transform: rotateZ(-10deg);
+    }
+  }
+  @keyframes tada {
+    10% {
+      transform: scaleX(0.7);
+    }
+    30% {
+      transform: rotateX(10deg);
+    }
+    40% {
+      transform: rotateZ(-10deg);
+    }
+    60% {
+      transform: rotateZ(10deg);
+    }
+    80% {
+      transform: rotateZ(-10deg);
+    }
+    90% {
+      transform: rotateZ(10deg);
+    }
+    100% {
+      transform: rotateZ(-10deg);
+    }
+  }
+  ._shakeSide {
+    -webkit-animation-name: shakeSide;
+    animation-name: shakeSide;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  @-webkit-keyframes shakeSide {
+    from {
+      transform: translateX(10px);
+    }
+    10% {
+      transform: translateX(-10px);
+    }
+    20% {
+      transform: translateX(10px);
+    }
+    30% {
+      transform: translateX(-10px);
+    }
+    40% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    60% {
+      transform: translateX(10px);
+    }
+    70% {
+      transform: translateX(-10px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    90% {
+      transform: translateX(-10px);
+    }
+    to {
+      transform: translateX(10px);
+    }
+  }
+  @keyframes shakeSide {
+    from {
+      transform: translateX(10px);
+    }
+    10% {
+      transform: translateX(-10px);
+    }
+    20% {
+      transform: translateX(10px);
+    }
+    30% {
+      transform: translateX(-10px);
+    }
+    40% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    60% {
+      transform: translateX(10px);
+    }
+    70% {
+      transform: translateX(-10px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    90% {
+      transform: translateX(-10px);
+    }
+    to {
+      transform: translateX(10px);
+    }
+  }
+  
+  ._shakeUpDown {
+    -webkit-animation-name: shakeUpDown;
+    animation-name: shakeUpDown;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  @-webkit-keyframes shakeUpDown {
+    from {
+      transform: translateY(10px);
+    }
+    10% {
+      transform: translateY(-10px);
+    }
+    20% {
+      transform: translateY(10px);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(10px);
+    }
+    70% {
+      transform: translateY(-10px);
+    }
+    80% {
+      transform: translateY(10px);
+    }
+    90% {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes shakeUpDown {
+    from {
+      transform: translateY(10px);
+    }
+    10% {
+      transform: translateY(-10px);
+    }
+    20% {
+      transform: translateY(10px);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(10px);
+    }
+    70% {
+      transform: translateY(-10px);
+    }
+    80% {
+      transform: translateY(10px);
+    }
+    90% {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
