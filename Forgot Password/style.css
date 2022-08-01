@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: #EFF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+p{
+    font-weight: 500;
+    width: 58%;
+}
+form input{
+    width: 89%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: center;
+    display: inline-block;
+    border: 1px solid #00325B;
+}
+
+input[type="button"]{
+    background-color: #00325B;
+    color: #fff;
+    font-weight: 500;
+}
+
