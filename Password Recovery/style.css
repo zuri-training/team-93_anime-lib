@@ -40,6 +40,7 @@ button{
   color: #fff;
   font-weight: bolder;
   font-size: 16px;
+  cursor: pointer;
 }
 .info{
     border: 1ps solid;
