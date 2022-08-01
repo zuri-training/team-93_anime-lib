@@ -11,21 +11,22 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #EFF7FF;
+  
+}
+main{
+    background: #EFF7FF;
+    padding: 70px;
 }
 
 .fa-xmark{
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    font-size: large;
+    font-size: large; 
+    float: right;
+    color: black;
 
     
 }
 
-.wrapper{
-  margin-top: 10px;
-}
+
 
 .wrapper h1 {
   font-family: sans-serif;
