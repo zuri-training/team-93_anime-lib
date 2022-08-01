@@ -15,12 +15,15 @@ body {
 }
 main{
     background: #EFF7FF;
-    padding: 70px;
+    padding: 8%;
+    position: relative;
 }
 
 .fa-xmark{
-    font-size: large; 
-    float: right;
+    font-size: xx-large; 
+    position: absolute;
+    top: 5%;
+    right: 5%;
     color: black;
 
     
