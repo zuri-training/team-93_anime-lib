@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wavyframe img {
+    position: relative;
+    background-color: #042947;
+    /* mix-blend-mode: normal;
+    opacity: 0.02;
+    transform: matrix(1, 0, 0.01, 1, 0, 0); */
+} 
+.logo {
+    position: absolute;
+    top: 34px;
+    left: 70px;
+}
