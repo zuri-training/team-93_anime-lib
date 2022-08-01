@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #EFF7FF;
+}
+
+
+.wrapper{
+  margin-top: 10px;
+}
+
+.wrapper h1 {
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #00325b;
+}
+
+.wrapper h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #00325b;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.account .individual {
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.account .team {
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+}
+
+.account h3 {
+  font-size: 26px;
+}
+
+.account .team p {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.account .indiv-btn{
+    border: 2px solid #006A94;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.team-btn{
+  border: 2px solid #006A94;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+ 
+button {
+  text-align: center;
+  padding: 10px;
+  background: #00325b;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+i{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.individual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
