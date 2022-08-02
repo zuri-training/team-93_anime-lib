@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ there is a rule somewhere that switches of indentation for nested lists
+  so i'm going to bring it back here 
+*/
+ul, ol {
+padding: 0px 25px;
+}
+
+body{
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    line-height: 2;
+}
+
+.left-div{
+    width: 30%;
+}
+.upper-left-div img{
+    width: 30px;
+}
+.upper-left-div, .lower-left-div{
+    border: 0.5px solid #76777A;
+    padding: 20px;
+}
+
+/* to reduce the thickness of the borderline at the bottom */
+.upper-left-div{
+    border-bottom: none;
+    padding-left: 50px;
+}
+
+.lower-left-div{
+    padding-bottom: 150px;
+    font-weight: bolder;
+}
+.lower-left-div ul{
+    list-style: none;
+}
+main{
+    width: 60%;
+    padding-left: 90px;
+    padding-right: 90px;
+    /* to make it be almost on the same start line as the logo */
+    padding-top: 5px;
+}
+
+.right-div{
+    width: 40%;
+    margin-left: 50px;
+}
+
+.page-content{
+    margin-top: 150px;
+}
+
+#content-small{
+    border-left: 2px solid #76777A;
+}
+
+#content-small-first-ul{
+    list-style: none;
+}
+a{
+    color: #76777A;
+    text-decoration: none;
+}
