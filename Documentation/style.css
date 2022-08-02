@@ -34,8 +34,15 @@ body{
     padding-left: 50px;
 }
 
+/*
+ my padding bottom is like this because 
+ if you notice across all doc pages the
+ left div total height is the same but then 
+ it looks shorter in longer pages and full page 
+ height in shorter pages.
+ */
 .lower-left-div{
-    padding-bottom: 150px;
+    padding-bottom: 300px;
     font-weight: bolder;
 }
 .lower-left-div ul{
