@@ -1,12 +1,12 @@
  //Text
- const moveUp = document.querySelector("._moveUp");
- const moveDown = document.querySelector("._moveDown");
- const moveRight = document.querySelector("._moveRight");
- const moveLeft = document.querySelector("._moveLeft");
- const bounce = document.querySelector("._bounce");
- const blink = document.querySelector("._blink");
- const popOut = document.querySelector("._popOut");
- const shakeSide = document.querySelector("._shakeSide");
+ const moveUp = document.querySelector(".moveUp");
+ const moveDown = document.querySelector(".moveDown");
+ const moveRight = document.querySelector(".moveRight");
+ const moveLeft = document.querySelector(".moveLeft");
+ const bounce = document.querySelector(".bounce");
+ const blink = document.querySelector(".blink");
+ const popOut = document.querySelector(".popOut");
+ const shakeSide = document.querySelector(".shakeSide");
 
 
 
@@ -23,13 +23,13 @@
 
  //Functions
  btnMoveUp.addEventListener("click", () =>{
-    moveUp.classList.toggle("_moveUp");
+    moveUp.classList.toggle("moveUp");
  });
 
  btnMoveDown.addEventListener("click", () =>{
-    moveDown.classList.toggle("_moveDown");
+    moveDown.classList.toggle("moveDown");
  });
 
  btnMoveRight.addEventListener("click", () =>{
-    moveRight.classList.toggle("_moveRight")
+    moveRight.classList.toggle("moveRight")
  })

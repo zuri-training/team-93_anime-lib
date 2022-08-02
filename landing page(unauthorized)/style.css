@@ -228,7 +228,8 @@ grid-area: d;
 color: #00325B;
 padding: 10px;
 text-align: center;
-margin-left: -20px;
+margin-left: -17px;
+cursor: pointer;
 }
 
 #visit-button div{
@@ -455,7 +456,7 @@ padding-bottom: 20px;
 
 /*Adding animations 
 ------------------------------*/
-._moveUp {
+.moveUp {
 /* for use in the keyframes */
 -webkit-animation-name: moveUp;
 animation-name: moveUp;
@@ -485,7 +486,7 @@ to {
 }
 }
 
-._moveDown {
+.moveDown {
 -webkit-animation-name: moveDown;
 animation-name: moveDown;
 -webkit-animation-iteration-count: 1;
@@ -514,7 +515,7 @@ to {
 }
 }
 
-._moveRight {
+.moveRight {
 -webkit-animation-name: moveRight;
 animation-name: moveRight;
 -webkit-animation-iteration-count: 1;
@@ -541,7 +542,7 @@ to {
 }
 }
 
-._moveLeft {
+.moveLeft {
 -webkit-animation-name: moveLeft;
 animation-name: moveLeft;
 -webkit-animation-iteration-count: 1;
@@ -568,7 +569,7 @@ to {
 }
 }
 
-._bounce {
+.bounce {
 -webkit-animation-name: bounce;
 animation-name: bounce;
 -webkit-animation-iteration-count: infinite;
@@ -599,7 +600,7 @@ to {
 }
 }
 
-._blink {
+.blink {
 -webkit-animation-name: blink;
 animation-name: blink;
 -webkit-animation-iteration-count: infinite;
@@ -632,7 +633,7 @@ to {
 }
 }
 
-._popOut {
+.popOut {
 -webkit-animation-name: popOut;
 animation-name: popOut;
 -webkit-animation-duration: 0.8s;
@@ -656,7 +657,7 @@ to {
 }
 }
 
-._shakeSide {
+.shakeSide {
 -webkit-animation-name: shakeSide;
 animation-name: shakeSide;
 -webkit-animation-iteration-count: infinite;
