@@ -7,7 +7,7 @@
  there is a rule somewhere that switches of indentation for nested lists
   so i'm going to bring it back here 
 */
-ul, ol {
+ul, ol, dl {
 padding: 0px 25px;
 }
 
@@ -72,7 +72,40 @@ main{
 #content-small-first-ul{
     list-style: none;
 }
+#content-small-first-ul ul{
+    list-style: disc;
+    /* so even the discs have the same color as links */
+    color: #76777A;
+}
 a{
     color: #76777A;
     text-decoration: none;
+}
+
+/* to style code snippets */
+.code-snippet{
+    background-color: #DFF0FF;
+    padding: 5px;
+}
+brown{
+    color: #BF9B1B;
+}
+green{
+    color: #59D320;
+}
+/* end */
+
+/* for tables in the utlities in tutorials */
+.utils{
+    width: 100%;
+    border-collapse: collapse;
+}
+.utils td{
+    color: #51ABFD;
+    border: 1px solid #76777A;
+}
+.utils th{
+    text-align: left;
+    border: 1px solid #76777A;
+    color: #76777A;
 }
