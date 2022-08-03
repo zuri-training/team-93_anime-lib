@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ there is a rule somewhere that switches of indentation for nested lists
+  so i'm going to bring it back here 
+*/
+ul, ol, dl {
+padding: 0px 25px;
+}
+
+body{
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    line-height: 2;
+}
+
+.left-div{
+    width: 30%;
+}
+.upper-left-div img{
+    width: 30px;
+}
+.upper-left-div, .lower-left-div{
+    border: 0.5px solid #76777A;
+    padding: 20px;
+}
+
+/* to reduce the thickness of the borderline at the bottom */
+.upper-left-div{
+    border-bottom: none;
+    padding-left: 50px;
+}
+
+/*
+ my padding bottom is like this because 
+ if you notice across all doc pages the
+ left div total height is the same but then 
+ it looks shorter in longer pages and full page 
+ height in shorter pages.
+ */
+.lower-left-div{
+    padding-bottom: 300px;
+    font-weight: bolder;
+}
+.lower-left-div ul{
+    list-style: none;
+}
+main{
+    width: 60%;
+    padding-left: 90px;
+    padding-right: 90px;
+    /* to make it be almost on the same start line as the logo */
+    padding-top: 5px;
+}
+
+.right-div{
+    width: 40%;
+    margin-left: 50px;
+}
+
+.page-content{
+    margin-top: 150px;
+}
+
+#content-small{
+    border-left: 2px solid #76777A;
+}
+
+#content-small-first-ul{
+    list-style: none;
+}
+#content-small-first-ul ul{
+    list-style: disc;
+    /* so even the discs have the same color as links */
+    color: #76777A;
+}
+a{
+    color: #76777A;
+    text-decoration: none;
+}
+
+/* to style code snippets */
+.code-snippet{
+    background-color: #DFF0FF;
+    padding: 5px;
+}
+brown{
+    color: #BF9B1B;
+}
+green{
+    color: #59D320;
+}
+/* end */
+
+/* for tables in the utlities in tutorials */
+.utils{
+    width: 100%;
+    border-collapse: collapse;
+}
+.utils td{
+    color: #51ABFD;
+    border: 1px solid #76777A;
+}
+.utils th{
+    text-align: left;
+    border: 1px solid #76777A;
+    color: #76777A;
+}
