@@ -15,6 +15,7 @@
  const btnMoveDown = document.querySelector(".btnMoveDown");
  const btnMoveRight = document.querySelector(".btnMoveRight");
  const btnMoveLeft = document.querySelector(".btnMoveLeft");
+ const btnBounce = document.querySelector("btnBounce");
  const btnBlink = document.querySelector(".btnBlink");
  const btnPopOut = document.querySelector(".btnPopOut");
  const btnShakeSide = document.querySelector(".btnShakeSide");
@@ -25,7 +26,6 @@
  btnMoveUp.addEventListener("click", () =>{
     moveUp.classList.toggle("moveUp");
  });
-
  btnMoveDown.addEventListener("click", () =>{
     moveDown.classList.toggle("moveDown");
  });
