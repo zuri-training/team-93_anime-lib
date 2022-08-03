@@ -31,8 +31,8 @@
           <li><a href="#">How to Guide's</a></li>
           <li><a href="#">Technical reference</a></li>
           <li><a href="/Documentation/how-it-all-works.html">How it all works</a></li>
-          <li>Important to note</li>
-          <li><a href="/Documentation/best-practices.html">Best practices</a></li>
+          <li><a href="/Documentation/important-to-note.html">Important to note</a></li>
+          <li>Best practices</li>
         </ul>
       </div>
     </div>
@@ -43,14 +43,20 @@
         because i'm lazy.
      -->
     <main style="width: 100%;padding-top: 50px;">
-        <h2 style="padding-bottom: 30px;">IMPORTANT TO NOTE</h2>
+        <h2 style="padding-bottom: 30px;">BEST PRACTICES</h2>
         <p>
-            You can’t use animations on inline elements,
-            it might work on some browsers but eventually it won’t and 
-            it breaks some CSS specifications,
-            but then there is a workaround just set the element you want to anim8’s 
-            <span style="color: #DCDF2F;">display</span>: <span style="color: #C38651;">inline-block</span>;  
-
+            Animations can greatly improve an interface's UX,
+            but it's important to follow some guidelines to not overdo 
+            it and deteriorate the user experience on your web-things.
+            Following the following rules should provide a good start.
+            <ul>
+                <li>You should avoid animating an element just for the sake of it.</li>
+                <li>Don't animate large elements</li>
+                <li>Animating the <html> or <body> tags is possible, but you should avoid it</li>
+                <li>You should avoid endless animations.
+                    It will just distract your users and
+                    might annoy a good slice of them</li>
+            </ul>
         </p>
     </main>
   </body>
