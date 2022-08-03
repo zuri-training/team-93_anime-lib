@@ -197,7 +197,7 @@ grid-template-areas:
 'd'
 ;
 gap: 30px;
-
+overflow: hidden;
 }
 .demo-1row, .demo-2row, .demo-3row, .demo-4row{
 display: flex;
@@ -339,40 +339,39 @@ margin-bottom: 50px;
 }
 
 #subscribe{
-background-color: #CFE8FF;
-display: flex;
-align-items: center;
-padding: 100px 20px;
-margin-top: 100px;
-flex-wrap: wrap;
-
+  background-color: #CFE8FF;
+  display: flex;
+  align-items: center;
+  padding: 100px 20px;
+  margin-top: 100px;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 #subscribe div{
-width: 50%;
-margin-bottom: 180px;
+  width: 50%;
 }
 
 #subscribe form {
-display: flex;
-flex-direction: column;
-width: 50%;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
 }
 
 #subscribe form input{
-  width: 95%;
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  align-self: center;
-  display: inline-block;
-  border: 1px solid #00325B;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    align-self: center;
+    display: inline-block;
+    border: 1px solid #00325B;
 }
 
 #subscribe form input[type="submit"]{
-background-color: #00325B;
-color: #fff;
-font-weight: bolder;
+  background-color: #00325B;
+  color: #fff;
+  font-weight: 400;
 }
 
 footer {
@@ -456,7 +455,7 @@ padding-bottom: 20px;
 
 /*Adding animations 
 ------------------------------*/
-.moveUp {
+.moveUp:active{
 /* for use in the keyframes */
 -webkit-animation-name: moveUp;
 animation-name: moveUp;
@@ -486,7 +485,7 @@ to {
 }
 }
 
-.moveDown {
+.moveDown:active {
 -webkit-animation-name: moveDown;
 animation-name: moveDown;
 -webkit-animation-iteration-count: 1;
@@ -515,7 +514,7 @@ to {
 }
 }
 
-.moveRight {
+.moveRight:active {
 -webkit-animation-name: moveRight;
 animation-name: moveRight;
 -webkit-animation-iteration-count: 1;
@@ -542,7 +541,7 @@ to {
 }
 }
 
-.moveLeft {
+.moveLeft:active {
 -webkit-animation-name: moveLeft;
 animation-name: moveLeft;
 -webkit-animation-iteration-count: 1;
@@ -569,7 +568,7 @@ to {
 }
 }
 
-.bounce {
+.bounce:active {
 -webkit-animation-name: bounce;
 animation-name: bounce;
 -webkit-animation-iteration-count: infinite;
@@ -600,7 +599,7 @@ to {
 }
 }
 
-.blink {
+.blink:active {
 -webkit-animation-name: blink;
 animation-name: blink;
 -webkit-animation-iteration-count: infinite;
@@ -633,7 +632,7 @@ to {
 }
 }
 
-.popOut {
+.popOut:active {
 -webkit-animation-name: popOut;
 animation-name: popOut;
 -webkit-animation-duration: 0.8s;
@@ -657,7 +656,7 @@ to {
 }
 }
 
-.shakeSide {
+.shakeSide:active {
 -webkit-animation-name: shakeSide;
 animation-name: shakeSide;
 -webkit-animation-iteration-count: infinite;
