@@ -5,53 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction</title>
-    <link rel="stylesheet" href="/Documentation/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png"/>
+    <link rel="stylesheet" href="/Documentation/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="left-div">
-      <div class="upper-left-div">
-        <!-- 
-            guys thus is why i  think we should have one landing page,
-            which page are we using as home 
-            backend guys please note 
-        -->
-        <a href="/landing-page(authorized)/index.html"
-          ><img src="/Image/Logo.svg" alt="home"
-        /></a>
+    <nav id="top-nav">
+      <!-- 
+          guys thus is why i  think we should have one landing page,
+          which page are we using as home 
+          backend guys please note 
+      -->
+      <a href="/landing-page(authorized)/index.html"
+        ><img src="/Image/Logo.svg" class="logo" alt="home"
+      /></a>
+      <div class="sections">
+        <a href="#">Animations</a>
+        <a href="/Documentation/introduction.html">Documentation</a>
+        <a href="#">Github</a>
       </div>
-      <div class="lower-left-div">
+      <div class="login-get-started">
+        <a href="#">Login</a>
+        <a href="/Sign Up  1/index.html"><button class="get-started-btn">Get started</button></a>
+      </div>
+    </nav>
+    <!-- 
+      django guys documentation-base.html ends here
+     -->
+    <div class="main-body">
+      <div class="left-div">
         <ul>
           <li><a href="/Documentation/introduction.html">Introduction</a></li>
           <li><a href="/Documentation/tutorials.html">Tutorials</a></li>
-          <li><a href="/Documentation/how-to-guides.html">How to Guide's</a></li>
-          <li><a href="/Documentation/technical-reference.html">Technical reference</a></li>
-          <li><a href="/Documentation/how-it-all-works.html">How it all works</a></li>
+          <li>
+            <a href="/Documentation/how-to-guides.html">How to Guide's</a>
+          </li>
+          <li>
+            <a href="/Documentation/technical-reference.html"
+              >Technical reference</a
+            >
+          </li>
+          <li>
+            <a href="/Documentation/how-it-all-works.html">How it all works</a>
+          </li>
           <li>Important to note</li>
-          <li><a href="/Documentation/best-practices.html">Best practices</a></li>
+          <li>
+            <a href="/Documentation/best-practices.html">Best practices</a>
+          </li>
         </ul>
       </div>
-    </div>
-    <!-- 
+      <!-- 
         sorry had to use inline style
         here to avoid creating a new
         page and also probably 
         because i'm lazy.
      -->
-    <main style="width: 100%;padding-top: 50px;">
-        <h2 style="padding-bottom: 30px;">IMPORTANT TO NOTE</h2>
+      <main style="width: 100%; padding-top: 50px">
+        <h2 style="padding-bottom: 30px">IMPORTANT TO NOTE</h2>
         <p>
-            You can’t use animations on inline elements,
-            it might work on some browsers but eventually it won’t and 
-            it breaks some CSS specifications,
-            but then there is a workaround just set the element you want to anim8’s 
-            <span style="color: #DCDF2F;">display</span>: <span style="color: #C38651;">inline-block</span>;  
+          You can’t use animations on inline elements, it might work on some
+          browsers but eventually it won’t and it breaks some CSS
+          specifications, but then there is a workaround just set the element
+          you want to anim8’s
+          <span style="color: #dcdf2f">display</span>:
+          <span style="color: #c38651">inline-block</span>;
+        </p><br><br><br><br>
+        <!-- 
+          django guys why does something smell like pagination here
+         -->
 
-        </p>
-    </main>
+        <!-- 
+          and the link is like this so you can click anywhere on the div something of a UX law thingy
+         -->
+        <a href="/Documentation/best-practices.html">
+          <div class="next-page">
+            <div class="title">
+              <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
+              <p style="font-size: 20px;color:#042947;font-weight: bolder;">Best practices</p>
+            </div>
+            <div class="arrow">
+              <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+              <img src="/Image/image-forward-icon.svg" alt="next" />
+            </div>
+          </div>
+        </a><br><br>
+      </main>
+    </div>
   </body>
 </html>

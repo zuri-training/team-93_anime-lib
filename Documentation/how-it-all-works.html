@@ -13,44 +13,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="left-div">
-      <div class="upper-left-div">
-        <!-- 
-            guys thus is why i  think we should have one landing page,
-            which page are we using as home 
-            backend guys please note 
-        -->
-        <a href="/landing-page(authorized)/index.html"
-          ><img src="/Image/Logo.svg" alt="home"
-        /></a>
+    <nav id="top-nav">
+      <!-- 
+          guys thus is why i  think we should have one landing page,
+          which page are we using as home 
+          backend guys please note 
+      -->
+      <a href="/landing-page(authorized)/index.html"
+        ><img src="/Image/Logo.svg" class="logo" alt="home"
+      /></a>
+      <div class="sections">
+        <a href="#">Animations</a>
+        <a href="/Documentation/introduction.html">Documentation</a>
+        <a href="#">Github</a>
       </div>
-      <div class="lower-left-div">
-        <ul>
-          <li><a href="/Documentation/introduction.html">Introduction</a></li>
-          <li><a href="/Documentation/tutorials.html">Tutorials</a></li>
-          <li><a href="/Documentation/how-to-guides.html">How to Guide's</a></li>
-          <li><a href="/Documentation/technical-reference.html">Technical reference</a></li>
-          <li>How it all works</a></li>
-          <li><a href="/Documentation/important-to-note.html">Important to note</a></li>
-          <li><a href="/Documentation/best-practices.html">Best practices</a></li>
-        </ul>
+      <div class="login-get-started">
+        <a href="#">Login</a>
+        <a href="/Sign Up  1/index.html"><button class="get-started-btn">Get started</button></a>
       </div>
-    </div>
-    <!-- 
-        sorry had to use inline style
-        here to avoid creating a new
-        page and also probably 
-        because i'm lazy.
+    </nav>
+     <!-- 
+      django guys documentation-base.html ends here
      -->
-    <main style="width: 100%;padding-top: 50px;">
-        <h2>How it all works</h2>
-        <p>
-            We simply use the classes and add animations to these classes 
-            in the css code which makes up the library 
-            (simple CSS animations which are a lot easier than javascript
-            animations so it's easier for you to edit).
-            You could download the library to see the codes.
-        </p>
-    </main>
+    <div class="main-body">
+      <div class="left-div">
+        <ul>
+            <li><a href="/Documentation/introduction.html">Introduction</a></li>
+            <li><a href="/Documentation/tutorials.html">Tutorials</a></li>
+            <li><a href="/Documentation/how-to-guides.html">How to Guide's</a></li>
+            <li><a href="/Documentation/technical-reference.html">Technical reference</a></li>
+            <li>How it all works</a></li>
+            <li><a href="/Documentation/important-to-note.html">Important to note</a></li>
+            <li><a href="/Documentation/best-practices.html">Best practices</a></li>
+          </ul>
+      </div>
+      <!-- 
+          sorry had to use inline style
+          here to avoid creating a new
+          page and also probably 
+          because i'm lazy.
+       -->
+      <main style="width: 100%;padding-top: 50px;">
+          <h2>How it all works</h2>
+          <p>
+              We simply use the classes and add animations to these classes 
+              in the css code which makes up the library 
+              (simple CSS animations which are a lot easier than javascript
+              animations so it's easier for you to edit).
+              You could download the library to see the codes.
+          </p><br><br><br><br>
+           <!-- 
+          django guys why does something smell like pagination here
+         -->
+
+        <!-- 
+          and the link is like this so you can click anywhere on the div something of a UX law thingy
+         -->
+        <a href="/Documentation/important-to-note.html">
+          <div class="next-page" style="gap: 620px;">
+            <div class="title">
+              <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
+              <p style="font-size: 20px;color:#042947;font-weight: bolder;">Important to note</p>
+            </div>
+            <div class="arrow">
+              <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+              <img src="/Image/image-forward-icon.svg" alt="next" />
+            </div>
+          </div>
+        </a><br><br>
+      </main>
+    </div>
   </body>
 </html>
