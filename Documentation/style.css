@@ -12,28 +12,48 @@ padding: 0px 25px;
 }
 
 body{
-    display: flex;
     font-family: 'Rubik', sans-serif;
     line-height: 2;
+    background-color: #fff;
 }
-
-.left-div{
-    width: 30%;
+.main-body{
+    display: flex;
 }
-.upper-left-div img{
-    width: 30px;
+#top-nav{
+    display: flex;
+    padding: 15px 50px;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
-.upper-left-div, .lower-left-div{
-    border: 0.5px solid #76777A;
-    padding: 20px;
+#top-nav div{
+    display: inline-block;
+    margin-top: 10px;
 }
-
-/* to reduce the thickness of the borderline at the bottom */
-.upper-left-div{
-    border-bottom: none;
-    padding-left: 50px;
+#top-nav div a{
+    color: #000;
+    font-weight: bolder;
 }
-
+.sections{
+    margin-left: 200px;
+}
+.sections a{
+    margin-right: 100px;
+}
+.login-get-started{
+    margin-left: 230px;
+}
+.login-get-started a{
+    margin-right: 5px;
+}
+.get-started-btn{
+    padding: 16px 24px;
+    background-color: #63AFFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 8px;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
 /*
  my padding bottom is like this because 
  if you notice across all doc pages the
@@ -41,13 +61,25 @@ body{
  it looks shorter in longer pages and full page 
  height in shorter pages.
  */
-.lower-left-div{
-    padding-bottom: 300px;
+
+.left-div{
+    width: 30%;
+    border: 0.5px solid #76777A;
+    padding: 20px;
+    height: 500px;
     font-weight: bolder;
+    border-top: none;
+    line-height: 3;
 }
-.lower-left-div ul{
+.logo{
+    width: 40px;
+}
+
+.left-div ul{
     list-style: none;
+    color: #004880;
 }
+
 main{
     width: 60%;
     padding-left: 90px;
@@ -81,6 +113,16 @@ a{
     color: #76777A;
     text-decoration: none;
 }
+.next-page{
+    display: flex;
+    background-color: #F5FAFF;
+    padding: 24px;
+    align-items: center;
+    /* to space out the arrow and the text -generally */
+    gap: 632px;
+    border-radius: 24px;
+    box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
 
 /* to style code snippets */
 .code-snippet{
@@ -95,7 +137,7 @@ green{
 }
 /* end */
 
-/* for tables in the utlities in tutorials */
+/* for tables */
 .utils{
     width: 100%;
     border-collapse: collapse;
