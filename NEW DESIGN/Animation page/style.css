@@ -27,6 +27,7 @@ header {
   top: 0;
   margin-bottom: 30px;
   width: 100%;
+  z-index: 1;
 }
 
 header img {
@@ -54,45 +55,52 @@ header img {
 /* Features
 ---------------------------------------------------- */
 #features{
-    display: flex;
-    overflow: hidden;
+  overflow: hidden; 
+}
 
-    
+figure{
+  position: relative;
+  width: 500%;
+  display: flex;
+  animation: 20s slider infinite;
 }
 #features img {
   background-image: url(../Image/Rectangle\ 80.svg);
-  width: 100%;
+  width: 20%;
   border-radius: 20px;
-
+  float: left;
 }
 
-/* Radio Buttons
----------------------------------------------------*/
-input[type="radio"]{
-    position: relative;
-    left: 50%;
-    top: 10px;
-    cursor: pointer;
-    color: #004880;
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
 }
-input[type="radio"]:not(:last-child){
-    margin-right: 10px;
-}
-input[type="radio"]:focus{
-    color: #004880;
-}
-.radio1:checked ~ .slide1{
-    margin-right: 0;
-}
-.radio2:checked ~ .slide1{
-    margin-right: 20%;
-}
-.radio3:checked ~ .slide1{
-    margin-right: 40%;
-}
-.radio4:checked ~ .slide1{
-    margin-right: 60%;
-}
+
 /* Search Form
 ---------------------------------------------------- */
 #search {
