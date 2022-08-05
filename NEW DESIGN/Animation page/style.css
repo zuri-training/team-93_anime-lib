@@ -1,326 +1,213 @@
 /* Global Selectors
 ---------------------------------------------------- */
-*{
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background: #E3E3E3;
+body {
+  background: #e3e3e3;
 }
 
-main{
-    margin: 0 30px;
+main {
+  margin: 0 30px;
 }
 /* Header
 ---------------------------------------------------- */
-header{
-    display: flex;
-align-items: center;
-justify-content: space-between;
-background: #FFFFFF;
-box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-padding: 15px;
-position: sticky;
-top: 0;
-margin-bottom: 30px;
-width: 100%;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
-header img{
-    margin-left: 1%;
+header img {
+  margin-left: 1%;
 }
 
-#navbar{
-    /* margin-right: 40%; */
-    width: 60%;
+#navbar {
+  /* margin-right: 40%; */
+  width: 60%;
 }
 
-.nav-link{
-    text-decoration: none;
-    color: black;
+.nav-link {
+  text-decoration: none;
+  color: black;
 }
 
-#navbar li{
-    display: inline-block;
-    margin: 0 30px;
+#navbar li {
+  display: inline-block;
+  margin: 0 30px;
 }
 
-#profile{
-    margin-right: 1%;
+#profile {
+  margin-right: 1%;
 }
 /* Features
----------------------------------------------------- */ 
-#features img{
-    margin: 0 auto;
-    background-image: url(../Image/Rectangle\ 80.svg);
-    width: 100%;
-    border-radius: 20px;
+---------------------------------------------------- */
+#features{
+    display: flex;
+    overflow: hidden;
+
+    
+}
+#features img {
+  background-image: url(../Image/Rectangle\ 80.svg);
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+/* Radio Buttons
+---------------------------------------------------*/
+input[type="radio"]{
+    position: relative;
+    left: 50%;
+    top: 10px;
+    cursor: pointer;
+    color: #004880;
+}
+input[type="radio"]:not(:last-child){
+    margin-right: 10px;
+}
+input[type="radio"]:focus{
+    color: #004880;
+}
+.radio1:checked ~ .slide1{
+    margin-right: 0;
+}
+.radio2:checked ~ .slide1{
+    margin-right: 20%;
+}
+.radio3:checked ~ .slide1{
+    margin-right: 40%;
+}
+.radio4:checked ~ .slide1{
+    margin-right: 60%;
 }
 /* Search Form
 ---------------------------------------------------- */
-#search{
-    margin: 60px 0;
-    border: 0;
-    width: 30%;
-    
+#search {
+  margin: 60px 0;
+  border: 0;
+  width: 30%;
 }
-.container{
-    display: block;
-    color: #A8ABB4;
-    
+.container {
+  display: block;
+  color: #a8abb4;
 }
-.form{
-    display: flex;
-    padding: 2px;
-    background-color: white;
-    border: 0;
-    border-radius: 20px;
+.form {
+  display: flex;
+  padding: 2px;
+  background-color: white;
+  border: 0;
+  border-radius: 20px;
 }
-input{
-    flex: 1;
-    padding: 2px 10px;
-    outline: 0;
-    border: 0;
+input {
+  flex: 1;
+  padding: 2px 10px;
+  outline: 0;
+  border: 0;
 }
 
 /* Animations
 ---------------------------------------------------- */
-.anim8{
-    display: flex;
-    margin-bottom: 150px;
+.anim8 {
+  display: flex;
+  margin-bottom: 150px;
 }
 
-.anim8 img{
-    width: 20%;
-    align-self: center;
-    justify-self: center;
-    margin-right: 10%;
+.anim8 img {
+  width: 20%;
+  align-self: center;
+  justify-self: center;
+  margin-right: 10%;
 }
 
-.text{
-    width: 70%;
-    margin-top: 5%;
+.text {
+  width: 70%;
+  margin-top: 5%;
 }
-.action{
-    display: inline-block;
-    width: 30%;
-    padding: 32px 48px;
-    margin-bottom: 20px;
-    margin-right: 5px;
-    border: 1px solid #0058B4;
-    color: #0058B4;
-    border-radius: 10px;
-    cursor: pointer;
+.action {
+  display: inline-block;
+  width: 30%;
+  padding: 32px 48px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  border: 1px solid #0058b4;
+  color: #0058b4;
+  border-radius: 10px;
+  cursor: pointer;
 }
 /* footer
 ---------------------------------------------------- */
-footer{
-    color: white;
-    background-color: #181C22;
+footer {
+  color: white;
+  background-color: #181c22;
 }
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: space-between;
-    height: 30vh;
-    width: 100%;
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+  height: 30vh;
+  width: 100%;
 }
-.websites{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    /* margin-left: 20px;
+.websites {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 20px;
     margin-top: 20px; */
 }
-.profile-link{
-    font-size: x-large;
-    color: white;
-    margin: 0 5px;
-    
+.profile-link {
+  font-size: x-large;
+  color: white;
+  margin: 0 5px;
 }
 
-.links{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5%;
+.links {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
 }
 
-.links a{
-    color: #A8ABB4;
-    text-decoration: none;
+.links a {
+  color: #a8abb4;
+  text-decoration: none;
 }
 
-address{
-    font-style: normal;
+address {
+  font-style: normal;
 }
 
-address h4{
-    font-weight: 400;
-    margin-bottom: 20px;
+address h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-p{
-    text-align: center;
-    font-weight: 200;
-    color: #A8ABB4;
+p {
+  text-align: center;
+  font-weight: 200;
+  color: #a8abb4;
 }
 
-strong{
-    font-weight: 400;
-    color: white;
+strong {
+  font-weight: 400;
+  color: white;
 }
 
-/* Animations Code
---------------------------------------------------*/
-._moveUp {
-    /* for use in the keyframes */
-    -webkit-animation-name: moveUp;
-    animation-name: moveUp;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    /* so it returns back to the original state, set to normal so that it goes just once  */
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    /* you can set this to ease, ease-in, ease-out, ease-in-out, or a custom cubic-bezier */
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes moveUp {
-    /* to go up we ue negative values  */
-    to {
-      transform: translateY(-50px);
-    }
-  }
-  @keyframes moveUp {
-    /* to go up we ue negative values  */
-    to {
-      transform: translateY(-50px);
-    }
-  }
-  
-  ._moveDown {
-    -webkit-animation-name: moveDown;
-    animation-name: moveDown;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    /* so it returns back to the original state, set to normal so that it goes just once  */
-    /* and reverts in an instant but with alternate it kind of rewinds it  */
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes moveDown {
-    /* to go down we use positive values */
-    to {
-      transform: translateY(50px);
-    }
-  }
-  @keyframes moveDown {
-    /* to go down we use positive values */
-    to {
-      transform: translateY(50px);
-    }
-  }
-  
-  ._moveRight {
-    -webkit-animation-name: moveRight;
-    animation-name: moveRight;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes moveRight {
-    /* to go right use positive values */
-    to {
-      transform: translateX(50px);
-    }
-  }
-  @keyframes moveRight {
-    /* to go right use positive values */
-    to {
-      transform: translateX(50px);
-    }
-  }
-  
-  ._moveLeft {
-    -webkit-animation-name: moveLeft;
-    animation-name: moveLeft;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes moveLeft {
-    /* to go left use negative values */
-    to {
-      transform: translateX(-50px);
-    }
-  }
-  @keyframes moveLeft {
-    /* to go left use negative values */
-    to {
-      transform: translateX(-50px);
-    }
-  }
-  
-  ._bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-  }
-  @-webkit-keyframes bounce {
-    /* it moves up then down */
-    from {
-      transform: translateY(-50px);
-    }
-    to {
-      transform: translateY(50px);
-    }
-  }
-  @keyframes bounce {
-    /* it moves up then down */
-    from {
-      transform: translateY(-50px);
-    }
-    to {
-      transform: translateY(50px);
-    }
-  }
-
+/*Animations
+------------------------------------------------------ */
