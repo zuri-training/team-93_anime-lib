@@ -46,10 +46,12 @@
       </div>
       <div class="login-get-started">
         <a href="#">Login</a>
-        <a href="/Sign Up  1/index.html"><button class="get-started-btn">Get started</button></a>
+        <a href="/Sign Up  1/index.html"
+          ><button class="get-started-btn">Get started</button></a
+        >
       </div>
     </nav>
-     <!-- 
+    <!-- 
       django guys documentation-base.html ends here
      -->
     <div class="main-body">
@@ -58,7 +60,11 @@
           <li><a href="/Documentation/introduction.html">Introduction</a></li>
           <li><a href="/Documentation/tutorials.html">Tutorials</a></li>
           <li>How to Guide's</li>
-          <li><a href="/Documentation/technical-reference.html">Technical reference</a></li>
+          <li>
+            <a href="/Documentation/technical-reference.html"
+              >Technical reference</a
+            >
+          </li>
           <li>
             <a href="/Documentation/how-it-all-works.html">How it all works</a>
           </li>
@@ -71,32 +77,37 @@
             <a href="/Documentation/best-practices.html">Best practices</a>
           </li>
         </ul>
-    </div>
-    <main>
-      <h1>How to Guide's</h1>
-      <h2 id="changing-defaults">CHANGING DEFAULTS</h2>
-      <p>You could simply go to the library and change stuff for example;</p>
-      <p>This is how it looks in the library…</p><br>
-      <div class="code-snippet">
-        ._repeat-2{ animation-iteration-count: 2; }
-      </div><br>
-      <p>
-        But then i could go and make it this and anywhere i put my _repeat-2 it
-        will repeat 3000 times (actually for this example one could have just
-        used _repeat-infinite in the class list don't you think)
-      </p><br>
-      <div class="code-snippet">
-        ._repeat-2{ animation-iteration-count: 3000; }
-      </div><br>
-      <p>
-        Apart from changing the utility functions you can play around with the
-        actual animations… BUT What if I make a mistake and break the library?
-        You can always come back and re-download. We encourage you to keep
-        breaking it, we even added notes, and learning, at least you could tell
-        us what you’ve done and help others grow - like the true developers we
-        know you are.
-      </p><br><br><br>
-      <!-- 
+      </div>
+      <main>
+        <h1>How to Guide's</h1>
+        <h2>CHANGING DEFAULTS</h2>
+        <p>You could simply go to the library and change stuff for example;</p>
+        <p>This is how it looks in the library…</p>
+        <br />
+        <div class="code-snippet">
+          ._repeat-2{ animation-iteration-count: 2; }
+        </div>
+        <br />
+        <p>
+          But then i could go and make it this and anywhere i put my _repeat-2
+          it will repeat 3000 times (actually for this example one could have
+          just used _repeat-infinite in the class list don't you think)
+        </p>
+        <br />
+        <div class="code-snippet">
+          ._repeat-2{ animation-iteration-count: 3000; }
+        </div>
+        <br />
+        <p>
+          Apart from changing the utility functions you can play around with the
+          actual animations… BUT What if I make a mistake and break the library?
+          You can always come back and re-download. We encourage you to keep
+          breaking it, we even added notes, and learning, at least you could
+          tell us what you’ve done and help others grow - like the true
+          developers we know you are.
+        </p>
+        <br /><br /><br />
+        <!-- 
           django guys why does something smell like pagination here
          -->
 
@@ -104,11 +115,15 @@
           the link is like this so you can click anywhere on the div something of a UX law thingy
           and if you notice this div has a different gap so as to leave space for content
          -->
-         <a href="/Documentation/technical-reference.html">
-          <div class="next-page" style="gap: 240px;">
+        <a href="/Documentation/technical-reference.html">
+          <div class="next-page" style="gap: 240px">
             <div class="title">
-              <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
-              <p style="font-size: 20px;color:#042947;font-weight: bolder;">Technical reference</p>
+              <p style="font-size: 16px; color: #73777f; margin-bottom: -10px">
+                Next
+              </p>
+              <p style="font-size: 20px; color: #042947; font-weight: bolder">
+                Technical reference
+              </p>
             </div>
             <div class="arrow">
               <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
@@ -116,24 +131,34 @@
             </div>
           </div>
         </a>
-        <br><br><br>
-    </main>
-    <div class="right-div">
-      <div class="page-content">
-        <h3>CONTENTS</h3>
-    <!-- the style was to make it look like its at 
+        <br /><br /><br />
+      </main>
+      <div class="right-div">
+        <div class="page-content">
+          <h3>CONTENTS</h3>
+          <!-- the style was to make it look like its at 
          the center while still almost the same height 
          as the other content-small divs in other pages
      -->
-        <div id="content-small" style="padding-bottom: 60px;padding-top: 60px;">
-          <small>
-            <ul id="content-small-first-ul">
-              <li><a href="#changing-defaults">Changing defaults</a></li>
-            </ul>
-          </small>
+          <div
+            id="content-small"
+            style="padding-bottom: 60px; padding-top: 60px"
+          >
+            <small>
+              <ul id="content-small-first-ul">
+                <!-- i used scroll to top in js cause my hands were tied i.e nothing above it same as
+                   the place next leads to  and i left the #.. there so that it looks normal
+                  even though some users may not notice -->
+                <li>
+                  <a href="#changing-defaults" onclick="window.scrollTo(top)"
+                    >Changing defaults</a
+                  >
+                </li>
+              </ul>
+            </small>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </body>
 </html>

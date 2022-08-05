@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <link rel="stylesheet" href="/Documentation/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="top-nav">
+      <!-- 
+          guys thus is why i  think we should have one landing page,
+          which page are we using as home 
+          backend guys please note 
+      -->
+      <a href="/landing-page(authorized)/index.html"
+        ><img src="/Image/Logo.svg" class="logo" alt="home"
+      /></a>
+      <div class="sections">
+        <a href="/animation (authorized)/index.html">Animations</a>
+        <a href="/Documentation/introduction.html">Documentation</a>
+        <a href="#">Github</a>
+      </div>
+      <div class="login-get-started">
+        <a href="#">Login</a>
+        <a href="/Sign Up  1/index.html"
+          ><button class="get-started-btn">Get started</button></a
+        >
+      </div>
+    </nav>
+    <!-- 
+      django guys documentation-base.html ends here
+     -->
+    <div class="main-body">
+      <div class="left-div">
+        <ul>
+          <li><a href="/Documentation/introduction.html">Introduction</a></li>
+          <li><a href="/Documentation/tutorials.html">Tutorials</a></li>
+          <li>
+            <a href="/Documentation/how-to-guides.html">How to Guide's</a>
+          </li>
+          <li>
+            <a href="/Documentation/technical-reference.html"
+              >Technical reference</a
+            >
+          </li>
+          <li>
+            <a href="/Documentation/how-it-all-works.html">How it all works</a>
+          </li>
+          <li>
+            <a href="/Documentation/important-to-note.html"
+              >Important to note</a
+            >
+          </li>
+          <li>
+            <a href="/Documentation/best-practices.html"> Best practices</a>
+          </li>
+          <li>Rate us</li>
+        </ul>
+      </div>
+      <!-- i was too tired so i used inline styling SORRY HIGHLY ESTEEMED DEVS -->
+      <main style="display: flex; width: 100%;padding-left: 0px;margin-top: 30px;">
+        <div class="reviews" style="width: 60%;margin-left: 100px;padding-right: 50px;">
+          <!-- sorry YEWANDE i broke your heart NO STAR RATINGS 🙂 -->
+        <h1>Reviews</h1>
+        <br />
+        <!-- {% for i in review %} -->
+        <hr />
+        <br />
+        <h2>
+          Tope
+          <!-- review.name (default anonymous ) -->
+        </h2>
+        <!-- if review.role  -->
+        <small>
+          Snr. Developer
+          <!-- review.role -->
+        </small>
+        <!-- endif -->
+        <p>
+          <!-- review.body -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          deleniti corporis amet in obcaecati quas vero reiciendis illum cumque
+          ad dolor officia nesciunt vitae, praesentium, dicta nam tempora
+          explicabo doloremque.
+        </p>
+        <br />
+        <!-- {% endfor %} -->
+        <p style="text-align: right; font-size: 20px; font-weight: bolder">
+          <span style="color: #0060a7; text-decoration-line: underline"
+            >Rate us</span
+          >👉🏿
+        </p>
+        </div>
+        <div class="make-review" style="width: 30%;padding: 20px; border-left: 1px solid #AFAFAF;">
+          <h2>Rate and Review</h2>
+          <div>
+            <!-- i still pitied yewande -->
+            Ratings coming soon...
+          </div>
+          <small>Review</small>
+          <form action="">
+            <!-- {% csrf token %} -->
+            <label for="name">name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="role">role:</label>
+            <input type="text" name="role" id="role">
+            <label for="comment">comment:</label><br>
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Publish">
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
