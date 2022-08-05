@@ -71,66 +71,108 @@
             <a href="/Documentation/how-it-all-works.html">How it all works</a>
           </li>
           <li>
-            <a href="/Documentation/important-to-note.html"
-              >Important to note</a
-            >
-          </li>
-          <li>
             <a href="/Documentation/best-practices.html"> Best practices</a>
           </li>
           <li>Rate us</li>
         </ul>
       </div>
       <!-- i was too tired so i used inline styling SORRY HIGHLY ESTEEMED DEVS -->
-      <main style="display: flex; width: 100%;padding-left: 0px;margin-top: 30px;">
-        <div class="reviews" style="width: 60%;margin-left: 100px;padding-right: 50px;">
+      <main style="display: flex; width: 100%; padding-left: 0px">
+        <style>
+          h2 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            color: #1b1b1d;
+          }
+        </style>
+        <div
+          class="reviews"
+          style="width: 75%; margin-left: 100px; padding-right: 50px"
+        >
           <!-- sorry YEWANDE i broke your heart NO STAR RATINGS 🙂 -->
-        <h1>Reviews</h1>
-        <br />
-        <!-- {% for i in review %} -->
-        <hr />
-        <br />
-        <h2>
-          Tope
-          <!-- review.name (default anonymous ) -->
-        </h2>
-        <!-- if review.role  -->
-        <small>
-          Snr. Developer
-          <!-- review.role -->
-        </small>
-        <!-- endif -->
-        <p>
-          <!-- review.body -->
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-          deleniti corporis amet in obcaecati quas vero reiciendis illum cumque
-          ad dolor officia nesciunt vitae, praesentium, dicta nam tempora
-          explicabo doloremque.
-        </p>
-        <br />
-        <!-- {% endfor %} -->
-        <p style="text-align: right; font-size: 20px; font-weight: bolder">
-          <span style="color: #0060a7; text-decoration-line: underline"
-            >Rate us</span
-          >👉🏿
-        </p>
+          <h1>Reviews</h1>
+          <br />
+          <!-- {% for i in review %} -->
+          <hr />
+          <br />
+          <h2>
+            Tope
+            <!-- review.name (default anonymous ) -->
+          </h2>
+          <!-- if review.role  -->
+          <small>
+            Snr. Developer
+            <!-- review.role -->
+          </small>
+          <!-- endif -->
+          <p>
+            <!-- review.body -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            deleniti corporis amet in obcaecati quas vero reiciendis illum
+            cumque ad dolor officia nesciunt vitae, praesentium, dicta nam
+            tempora explicabo doloremque.
+          </p>
+          <br />
+          <!-- {% endfor %} -->
+          <p style="text-align: right; font-size: 20px; font-weight: bolder">
+            <span style="color: #0060a7; text-decoration-line: underline"
+              >Rate us</span
+            >👉🏿
+          </p>
         </div>
-        <div class="make-review" style="width: 30%;padding: 20px; border-left: 1px solid #AFAFAF;">
+        <div
+          class="make-review"
+          style="
+            width: 25%;
+            padding: 20px;
+            border-left: 1px solid #afafaf;
+            padding-left: 40px;
+          "
+        >
           <h2>Rate and Review</h2>
           <div>
             <!-- i still pitied yewande -->
-            Ratings coming soon...
+            <small
+              style="
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.005em;
+                color: #76777a;
+              "
+              >Ratings coming soon...</small
+            >
           </div>
-          <small>Review</small>
-          <form action="">
+          <small
+            style="
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.005em;
+              color: #76777a;
+            "
+            >Review</small
+          >
+          <form action="" id="review-form">
             <!-- {% csrf token %} -->
             <label for="name">name:</label>
-            <input type="text" name="name" id="name" required>
-            <label for="role">role:</label>
-            <input type="text" name="role" id="role">
-            <label for="comment">comment:</label><br>
-            <textarea name="comment" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Publish">
+            <input type="text" name="name" id="name" required />
+            <hr />
+            <!-- i used the &nbsp; so they will start from the same vertical axis -->
+            <label for="role">role:&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="role" id="role" />
+            <hr />
+            <label for="comment">comment:</label><br />
+            <textarea
+              name="comment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Type here"
+              required
+            ></textarea>
+            <button type="submit" id="review-publish">Publish</button>
           </form>
         </div>
       </main>

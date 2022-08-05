@@ -43,8 +43,8 @@
           <li><a href="/Documentation/how-to-guides.html">How to Guide's</a></li>
           <li><a href="/Documentation/technical-reference.html">Technical reference</a></li>
           <li><a href="/Documentation/how-it-all-works.html">How it all works</a></li>
-          <li><a href="/Documentation/important-to-note.html">Important to note</a></li>
           <li>Best practices</li>
+          <li><a href="/Documentation/rate-us.html">Rate us</a></li>
         </ul>
     </div>
     <!-- 
@@ -69,6 +69,15 @@
                     might annoy a good slice of them</li>
             </ul>
         </p><br><br><br>
+        <h2 >... Important to  note </h2>
+        <p>
+          You can’t use animations on inline elements, it might work on some
+          browsers but eventually it won’t and it breaks some CSS
+          specifications, but then there is a workaround just set the element
+          you want to anim8’s
+          <span style="color: #dcdf2f">display</span>:
+          <span style="color: #c38651">inline-block</span>;
+        </p><br><br><br><br>
          <!-- 
           django guys why does something smell like pagination here
          -->
@@ -77,7 +86,7 @@
           and the link is like this so you can click anywhere on the div something of a UX law thingy
          -->
          <a href="/Documentation/rate-us.html">
-          <div class="next-page">
+          <div class="next-page " style="gap: 800px;">
             <div class="title">
               <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
               <p style="font-size: 20px;color:#042947;font-weight: bolder;">Rate us</p>
