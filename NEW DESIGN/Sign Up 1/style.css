@@ -20,6 +20,7 @@ main {
 /* Image
 -----------------------*/
 #img {
+  border-radius: 20px;
   flex: 20%;
   background-image: url(/Image/Blured\ background.svg);
   margin-right: 40px;
