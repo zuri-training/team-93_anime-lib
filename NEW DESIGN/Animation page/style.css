@@ -26,6 +26,7 @@ padding: 15px;
 position: sticky;
 top: 0;
 margin-bottom: 30px;
+width: 100%;
 }
 
 header img{
@@ -111,6 +112,7 @@ input{
     margin-right: 5px;
     border: 1px solid #0058B4;
     color: #0058B4;
+    border-radius: 10px;
 }
 /* footer
 ---------------------------------------------------- */
@@ -118,4 +120,59 @@ footer{
     color: white;
     background-color: #181C22;
 }
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    height: 30vh;
+    width: 100%;
+}
+.websites{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 20px;
+    margin-top: 20px; */
+}
+.profile-link{
+    font-size: x-large;
+    color: white;
+    margin: 0 5px;
+    
+}
 
+.links{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.links a{
+    color: #A8ABB4;
+    text-decoration: none;
+}
+
+address{
+    font-style: normal;
+}
+
+address h4{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: center;
+    font-weight: 200;
+    color: #A8ABB4;
+}
+
+strong{
+    font-weight: 400;
+    color: white;
+}
