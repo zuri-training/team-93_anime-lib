@@ -62,12 +62,12 @@ figure{
   position: relative;
   width: 500%;
   display: flex;
-  animation: 20s slider infinite;
+  animation: 25s slider infinite;
 }
 #features img {
   background-image: url(../Image/Rectangle\ 80.svg);
   width: 20%;
-  border-radius: 20px;
+  border-radius: 30px;
   float: left;
 }
 
@@ -81,19 +81,24 @@ figure{
   25%{
     left: -100%;
   }
+  30%{
+    left: -100%;
+  }
   45%{
     left: -100%;
   }
+  
   50%{
     left: -200%;
   }
-  70%{
+  65%{
     left: -200%;
   }
-  75%{
+  68%{
     left: -300%;
   }
-  95%{
+ 
+  99%{
     left: -300%;
   }
   100%{
