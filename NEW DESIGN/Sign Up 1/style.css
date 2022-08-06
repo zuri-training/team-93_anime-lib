@@ -21,7 +21,7 @@ main {
 -----------------------*/
 #img {
   flex: 20%;
-  background-image: url(/Image/Blured\ background.svg);
+  background-image: url(../Image/Blured\ background.svg);
   margin-right: 40px;
 }
 #logo {

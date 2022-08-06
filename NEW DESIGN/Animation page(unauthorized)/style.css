@@ -14,6 +14,7 @@ body {
 main {
   margin: 0 30px;
 }
+
 /* Header
 ---------------------------------------------------- */
 header {
@@ -49,59 +50,79 @@ header img {
   margin: 0 30px;
 }
 
-#profile {
+#login-button {
   margin-right: 1%;
 }
-/* Features
----------------------------------------------------- */
-#features{
-  overflow: hidden; 
+
+.login {
+  color: black;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-figure{
+.signUp {
+  background: #63afff;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 15px 30px;
+  color: white;
+  border: 0;
+  font-weight: 600;
+}
+
+/* Features
+---------------------------------------------------- */
+#features {
+  overflow: hidden;
+}
+
+figure {
   position: relative;
   width: 500%;
   display: flex;
   animation: 25s slider infinite;
 }
+
 #features img {
   background-image: url(../Image/Rectangle\ 80.svg);
+  background-size: cover;
   width: 20%;
   border-radius: 30px;
   float: left;
 }
 
 @keyframes slider {
-  0%{
+  0% {
     left: 0;
   }
-  20%{
+  20% {
     left: 0;
   }
-  25%{
+  25% {
     left: -100%;
   }
-  30%{
+  30% {
     left: -100%;
   }
-  45%{
+  45% {
     left: -100%;
   }
-  
-  50%{
+
+  50% {
     left: -200%;
   }
-  65%{
+  65% {
     left: -200%;
   }
-  68%{
+  68% {
     left: -300%;
   }
- 
-  99%{
+
+  99% {
     left: -300%;
   }
-  100%{
+  100% {
     left: -400%;
   }
 }
@@ -113,17 +134,20 @@ figure{
   border: 0;
   width: 30%;
 }
+
 .container {
   display: block;
   color: #a8abb4;
 }
+
 .form {
   display: flex;
-  padding: 2px;
+  padding:  8px 16px;
   background-color: white;
   border: 0;
   border-radius: 20px;
 }
+
 input {
   flex: 1;
   padding: 2px 10px;
@@ -149,6 +173,7 @@ input {
   width: 70%;
   margin-top: 5%;
 }
+
 .action {
   display: inline-block;
   width: 30%;
@@ -160,12 +185,14 @@ input {
   border-radius: 10px;
   cursor: pointer;
 }
+
 /* footer
 ---------------------------------------------------- */
 footer {
   color: white;
   background-color: #181c22;
 }
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -174,6 +201,7 @@ footer {
   height: 30vh;
   width: 100%;
 }
+
 .websites {
   display: flex;
   flex-direction: column;
@@ -183,6 +211,7 @@ footer {
   /* margin-left: 20px;
     margin-top: 20px; */
 }
+
 .profile-link {
   font-size: x-large;
   color: white;
