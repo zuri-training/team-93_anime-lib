@@ -1,84 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap");
+
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
 
 body{
-    padding: 0;
-    font-family: sans-serif;
     background-image: url('Log in Page.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.wrapper{
-    width: 65rem;
-    padding: 20px 20px;
-    padding-bottom: 10rem;
-    margin-top: 8%;
-    background: white;
-    border-radius: 15px;
+main{
+    background-color: #EFF7FF;
+    padding: 5%;
+    border-radius: 10px;
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+}
+
+.fa-xmark{
+    font-size: xx-large; 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
+    top: 5%;
+    right: 5%;
+    color: black;  
 }
 
-.wrapper h4{
-    text-align:justify;
-    font-size: 30px;
+h1{
+    margin-bottom: 10px;
     font-weight: bolder;
-    margin-bottom: 30px;
-    padding: 13px 0;
+}
+p{
+    font-weight: 500;
+    width: 58%;
+}
+form input{
+    width: 89%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    align-self: center;
+    display: inline-block;
+    border: 1px solid #87CEEB;
+    font-size: large;
+    font-weight: bold;
 }
 
-.wrapper p{
-    text-align: center;
-    float: center;
-    font-size: 20px;
-    margin-bottom: 30px;
-    padding: 13px 0;
+input[type="button"]{
+    background-color: #4b95b3;
+    color: #fff;
+    font-weight: bolder;
 }
-.textbox{
-    width: 50rem;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 10px 10px;
-    margin: 8px 0;
-    border: 1px solid blue;
-    border-radius: 6px;
-}
-
-.textbox input{
-    border: none;
-    outline: none;
-    background: none;
-    color: white;
-    font-size: 18px;
-    width: 80px;
-    float: left;
-    margin: 0 10px;
-}
-
-.btn{
-    width: 50rem;
-    border: 1px solid;
-    border-radius: 5%;
-    background-color: rgb(14, 154, 209);
-    padding: 5px;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    margin: 12px 0;
-}
-
-.btn:hover{
-    background-color: red;
-}
-
-.fp{
-    color: white;
-}
-
