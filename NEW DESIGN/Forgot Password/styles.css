@@ -6,19 +6,28 @@
 }
 
 body{
-    background-image: url('Log in Page.svg');
+    background: rgba(75, 73, 73, 0.7) url('Log in Page.svg');
+    background-blend-mode: darken;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 100%;
+    padding-top: 10rem;
+    height: 120vh;
+    position: relative;
 }
 
 main{
-    background-color: #EFF7FF;
-    padding: 5%;
+    background-color: white;
+    position: absolute;
+    padding: 8%;
     border-radius: 10px;
-    margin-top: 20rem;
-    margin-bottom: 15rem;
+    width: 77%;
+
+}
+
+.wrapper{
+    padding: 0px 50px 0px 50px;
 }
 
 .fa-xmark{
@@ -28,19 +37,29 @@ main{
     right: 5%;
     color: black;  
 }
+.fa-xmark:hover{
+    color: grey;
+}
 
 h1{
     margin-bottom: 10px;
-    font-weight: bolder;
+    font-weight: 800;
+    font-size: 200%;
+    font-family: sans-serif;
 }
+
 p{
-    font-weight: 500;
-    width: 58%;
+    font-weight: 700;
+    font-size: 150%;
+    padding-bottom: 20px;
+
 }
+
+
 form input{
     width: 89%;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
     border-radius: 8px;
     align-self: center;
     display: inline-block;
@@ -50,7 +69,16 @@ form input{
 }
 
 input[type="button"]{
-    background-color: #4b95b3;
+    background-color: #3a8ab8;
     color: #fff;
     font-weight: bolder;
+}
+
+input[type="email"]{
+    color:rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+input[type="button"]:hover{
+    background-color: grey;
 }
