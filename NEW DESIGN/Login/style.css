@@ -1,6 +1,8 @@
 /*Global Selector 
 --------------------------- */
-*{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -13,7 +15,6 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 /* Image
@@ -21,7 +22,10 @@ main {
 #img {
   flex: 20%;
   background-image: url(../Image/Blured\ background\(Login\).svg);
-  margin-right: 40px;
+  margin-right: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 #logo {
   margin: 30px 0 20px 20px;

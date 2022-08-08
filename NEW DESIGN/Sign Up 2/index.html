@@ -21,7 +21,7 @@
             Begin your journey here with us.
            </h1>
            <p>
-            Discover the newest, top-notch animation library for newbies and full-stack developer
+            Discover the newest, top-notch animation library for newbies and full-stack developers
            </p>
            <img src="../Image/Right angle curved.svg" alt="jk" id="arrow">
         </section>
@@ -38,20 +38,21 @@
 
             <section id="account-type">
                 <p>Who is this account for?</p>
-                <div><a href="/Sign Up 1/index.html"><input type="radio" value="individual" id="individual" name="account"></a><label for="#individual">Individual</label></div>
-                <div><input type="radio" value="team" id="team" name="account" checked><label for="#team">Team</label></div>
+                <!-- please remember to update the location -->
+                <div><input type="radio" value="individual" id="individual" name="account" onclick="window.location=''"><label for="#individual">Individual</label></div>
+                <div><input type="radio" value="team" id="team" name="account" checked><label for="#team">Teams</label></div>
             </section>
 
             <section>
                 <form action="#">
                     <label for="#email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
                     <label for="#password">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" required >
                     <label for="#cname">Company Name</label>
-                    <input type="text" id="cname">
+                    <input type="text" id="cname" required>
                     <label for="#role">Role</label>
-                    <input type="text" id="role">
+                    <input type="text" id="role" required>
                     <input type="checkbox" name="terms" id="terms">I agree with Anim8's <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">E-Sign Consent</a>
                     <button value="user_details" id="btn" >Create account</button>
                 </form>
