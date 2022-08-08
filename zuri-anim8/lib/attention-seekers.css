@@ -37,13 +37,13 @@
   @-webkit-keyframes changeBgColor {
     /* feel free to change this color to what you like  */
     to {
-      background-color: red;
+      background-color: #0058B4;
     }
   }
   @keyframes changeBgColor {
     /* feel free to change this color to what you like  */
     to {
-      background-color: red;
+      background-color: #0058B4;
     }
   }
   ._tada {
