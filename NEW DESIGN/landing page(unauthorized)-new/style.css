@@ -78,7 +78,9 @@ border-radius: 10px;
 /* border: 1px solid #00325b; */
 margin-right: 5px;
 }
-
+button{
+  cursor: pointer;
+}
 main{
   padding: 0;
   width: 100%;
