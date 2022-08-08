@@ -46,7 +46,7 @@ main {
   font-size: 20px;
   line-height: 21px;
   color: #ababaf;
-  margin: 20px 0 30px 20px;
+  margin: 20px 0 50px 20px;
 }
 
 #arrow {
@@ -91,6 +91,10 @@ main {
   background-color: rgba(159, 202, 255, 0.2);
   border: 1px solid #0060a7;
   padding: 16px 120px 16px 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0060a7;
 }
 
 /* User details
@@ -121,4 +125,8 @@ button {
   background-color: #3498f4;
   border: none;
   border-radius: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.001em;
 }
