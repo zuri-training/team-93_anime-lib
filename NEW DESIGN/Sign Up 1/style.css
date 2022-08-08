@@ -59,6 +59,7 @@ main {
 #text {
   flex: 60%;
   height: 100%;
+  margin-top: -16px;
 }
 
 #sign h1 {
@@ -129,4 +130,5 @@ button {
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0.001em;
+  cursor: pointer;
 }

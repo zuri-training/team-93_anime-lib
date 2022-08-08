@@ -33,10 +33,9 @@
     margin-left: 1%;
   }
   .form {
-    padding-bottom: 20%;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 50%;
+    /* made the width of the form wider and spaced it from the image */
+    width: 70%;
+    margin-left: 4%;
   }
   
   /* font style for all fonts, h1 and h3 are for the image part of the screen */

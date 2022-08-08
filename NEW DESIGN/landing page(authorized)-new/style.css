@@ -93,6 +93,9 @@ main{
   height: 500px;
   width: 100%;
 }
+button{
+  cursor: pointer;
+}
 .heading .sub{
   padding: 100px;
   width: 800px;

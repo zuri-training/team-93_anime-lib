@@ -46,7 +46,7 @@ main {
   font-size: 20px;
   line-height: 21px;
   color: #ababaf;
-  margin: 20px 0 50px 20px;
+  margin: 20px 0 30px 20px;
 }
 
 #arrow {
@@ -99,6 +99,16 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+  padding: 16px 88px 16px 24px;
+  border-radius: 8px;
+  margin: 0 20px 10px 0;
+  width: 275px;
+}
+
+#account-type div:focus-within {
+  background-color: rgba(159, 202, 255, 0.2);
+  border: 1px solid #0060a7;
+  padding: 16px 120px 16px 24px;
 }
 
 /* User details
@@ -114,6 +124,7 @@ input[type="text"] {
   margin-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   font-family: "Rubik", sans-serif;
+
 }
 
 form a {
@@ -133,4 +144,5 @@ button {
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0.001em;
+
 }
