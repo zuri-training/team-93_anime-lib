@@ -81,7 +81,7 @@
     outline: none;
     cursor: pointer;
   }
-  button {
+  input[type="submit"] {
     color: white;
     border: none;
     background-color: #3498f4;
