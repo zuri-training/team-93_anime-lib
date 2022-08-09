@@ -173,7 +173,6 @@ main{
   height: 280px;
   box-shadow: 10px 9px 46px 8px rgba(0, 0, 0, 0.12);
   border-radius: 24px;
-  background-image: url(/Image/Sign\ up\ main\ record\ replace.jpg);
 }
 
 .ending{
@@ -343,4 +342,17 @@ margin-top: 10px;
 }
 .footer-paragraph {
 text-align: left;
+}
+/* to make the h3 look like what is on figma board */
+h3 {
+  color: #1b1b1d;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 57px;
+}
+.side-info p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #76777a;
 }
