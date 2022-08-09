@@ -54,11 +54,11 @@ header img {
 }
 /* Features
 ---------------------------------------------------- */
-#features{
-  overflow: hidden; 
+#features {
+  overflow: hidden;
 }
 
-figure{
+figure {
   position: relative;
   width: 500%;
   display: flex;
@@ -73,36 +73,36 @@ figure{
 }
 
 @keyframes slider {
-  0%{
+  0% {
     left: 0;
   }
-  20%{
+  20% {
     left: 0;
   }
-  25%{
+  25% {
     left: -100%;
   }
-  30%{
+  30% {
     left: -100%;
   }
-  45%{
+  45% {
     left: -100%;
   }
-  
-  50%{
+
+  50% {
     left: -200%;
   }
-  65%{
+  65% {
     left: -200%;
   }
-  68%{
+  68% {
     left: -300%;
   }
- 
-  99%{
+
+  99% {
     left: -300%;
   }
-  100%{
+  100% {
     left: -400%;
   }
 }
@@ -121,7 +121,7 @@ figure{
 }
 .form {
   display: flex;
-  padding:  8px 16px;
+  padding: 8px 16px;
   background-color: white;
   border: 0;
   border-radius: 20px;
@@ -231,3 +231,37 @@ strong {
 
 /*Animations
 ------------------------------------------------------ */
+
+/* Download full library
+------------------------------------------------------ */
+.download {
+  text-align: center;
+}
+.download button {
+  border-radius: 8px;
+  padding: 16px 24px;
+  background-color: #63afff;
+  border: none;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  width: 305px;
+  height: 60px;
+  margin-bottom: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* get part of library
+------------------------------------------- */
+.get-libary-part{
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #63afff;
+  font-size: 20px;
+  border: none;
+  font-weight: 600;
+}

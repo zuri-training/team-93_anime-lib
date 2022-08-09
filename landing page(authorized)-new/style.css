@@ -1,12 +1,11 @@
-
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   padding: 0;
   margin: 0;
 }
-body{
+body {
   padding: 0;
   margin: 0;
 }
@@ -24,8 +23,7 @@ header {
   margin-top: 0px;
 }
 
-
-#navbar ul li{
+#navbar ul li {
   display: inline-block;
   list-style: none;
   margin: 0 40px;
@@ -33,39 +31,39 @@ header {
 
 /* to put them at the center */
 #navbar ul {
-display: block;
-margin-left: 150px;
+  display: block;
+  margin-left: 150px;
 }
 
 #navbar ul li {
-display: inline-block;
-list-style: none;
-margin:  30px;
+  display: inline-block;
+  list-style: none;
+  margin: 30px;
 }
 
 .nav-link {
-color: black;
-text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-#profile{
+#profile {
   display: flex;
   width: auto;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
-#profile a{
+#profile a {
   color: black;
   text-decoration: none;
 }
 
-#profile a{
+#profile a {
   border-radius: 100px;
   padding: 12px 15px;
   border: none;
   color: white;
-  background-color: #00325B;
+  background-color: #00325b;
 }
 
 .nav-btn:hover {
@@ -73,13 +71,13 @@ text-decoration: none;
 }
 
 .nav-btn {
-padding: 15px 30px;
-border-radius: 10px;
-border: 1px solid #00325b;
-margin-right: 5px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #00325b;
+  margin-right: 5px;
 }
 
-main{
+main {
   padding: 0;
   width: 100%;
   display: flex;
@@ -87,39 +85,39 @@ main{
   align-items: center;
   justify-content: center;
 }
-.heading{
+.heading {
   background-color: white;
   background-image: url(/Image/Header\ picture.svg);
   height: 500px;
   width: 100%;
 }
-button{
+button {
   cursor: pointer;
 }
-.heading .sub{
+.heading .sub {
   padding: 100px;
   width: 800px;
 }
-.heading h2{
+.heading h2 {
   font-size: 48px;
   color: #011220;
 }
-.heading p{
-  font-family: 'Rubik';
+.heading p {
+  font-family: "Rubik";
   font-style: normal;
   font-size: 24px;
   line-height: 32px;
   color: #042947;
 }
-.heading button{
+.heading button {
   font-size: 16px;
   padding: 10px 50px;
-  background-color: #00325B;
+  background-color: #00325b;
   border: none;
   border-radius: 5px;
   color: #fff;
 }
-#WWO{
+#WWO {
   text-align: center;
   padding: 50px;
 }
@@ -134,7 +132,7 @@ button{
   box-sizing: border-box;
 }
 
-.info-op{
+.info-op {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +141,7 @@ button{
   padding: 20px;
 }
 
-.info-rop{
+.info-rop {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,11 +150,11 @@ button{
   gap: 50px;
   padding: 10px;
 }
-#curves{
+#curves {
   padding: 5px;
 }
 
-.holder{
+.holder {
   /* border: 1px solid; */
   width: 440px;
   height: 300px;
@@ -168,16 +166,15 @@ button{
   border-radius: 10px;
 }
 
-.holder div{
+.holder div {
   /* border: 1px solid; */
   width: 400px;
   height: 280px;
   box-shadow: 10px 9px 46px 8px rgba(0, 0, 0, 0.12);
   border-radius: 24px;
-  background-image: url(/Image/Sign\ up\ main\ record\ replace.jpg);
 }
 
-.ending{
+.ending {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,33 +183,33 @@ button{
   padding: 100px 0px;
   gap: 20px;
 }
-.ending-info{
+.ending-info {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 10px;
 }
-.ending-info h2{
+.ending-info h2 {
   color: #011220;
 }
-.ending-info button{
+.ending-info button {
   font-size: 16px;
   width: fit-content;
   padding: 10px 20px;
-  background-color: #63AFFF;
+  background-color: #63afff;
   border: none;
   border-radius: 5px;
   color: #fff;
 }
-.ending-links{
+.ending-links {
   height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.ending-links-con{
-  border: 1px dotted #63AFFF;
+.ending-links-con {
+  border: 1px dotted #63afff;
   width: 100%;
   padding: 10px 50px;
   border-radius: 0px 100px 100px 0px;
@@ -221,47 +218,48 @@ button{
   justify-content: left;
   gap: 10px;
 }
-.info-hold{
+.info-hold {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.info-hold a{
+.info-hold a {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #63AFFF;
+  color: #63afff;
   gap: 80px;
 }
-.info-hold a p{
+.info-hold a p {
   width: 220px;
 }
-.info-hold a img{
+.info-hold a img {
   height: 21px;
   width: 21px;
   justify-self: right;
 }
-footer{
-  background-color: #1B1B1D;
+footer {
+  background-color: #1b1b1d;
   color: white;
 }
-.social{
+.social {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center;
   gap: 10px;
 }
-.social img{
+.social img {
   background-color: #011220;
   color: white;
   height: 100px;
   width: 80px;
 }
-.social p{}
+.social p {
+}
 
-.footer-con{
+.footer-con {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -269,79 +267,94 @@ footer{
   padding: 15px 0;
 }
 
-.footer-con h4{
+.footer-con h4 {
   font-weight: 500;
   font-size: x-large;
   margin: 15px 0;
 }
-.footer-con div{}
+.footer-con div {
+}
 
-address a{
+address a {
   display: block;
   margin-bottom: 10px;
   transition: all 0 3s;
-  color: #E8E8E8;
+  color: #e8e8e8;
   text-decoration: none;
   font-weight: 400;
 }
-.profile-link{
+.profile-link {
   display: flex;
   gap: 20px;
   margin-top: 10px;
 }
 
-.footer-paragraph{
+.footer-paragraph {
   text-align: center;
   padding-bottom: 20px;
 }
 
 /*The light and strong represent the copyright content*/
-footer light{
-  color: #E8E8E8;
+footer light {
+  color: #e8e8e8;
 }
 
-footer strong{
+footer strong {
   font-weight: 500;
 }
 
 .footer-con {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-width: 100%;
-padding: 40px;
-box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
 }
-address{
-font-style: normal;
+address {
+  font-style: normal;
 }
 
-.free-space{
+.free-space {
   width: 100px;
 }
 
-.others{
+.others {
   display: flex;
   flex-direction: row;
   gap: 50px;
 }
 
 address a {
-text-decoration: none;
-display: block;
-margin-bottom: 10px;
-transition: all 0 3s;
-color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: all 0 3s;
+  color: white;
 }
 address a:hover {
-padding-left: 10px;
-color: blue;
+  padding-left: 10px;
+  color: blue;
 }
 .profile-link {
-display: flex;
-gap: 20px;
-margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
 }
 .footer-paragraph {
-text-align: left;
+  text-align: left;
+}
+
+/* to make the h3 look like what is on figma board */
+h3 {
+  color: #1b1b1d;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 57px;
+}
+.side-info p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #76777a;
 }

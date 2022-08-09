@@ -12,7 +12,7 @@ function change1(m){
     // add m to class list
     img1.classList.add(m);
     // make it infinite
-    img1.classList.add('_repeat-infinite');
+    // img1.classList.add('_repeat-infinite');
 }
 function change2(m){
     // remove the last class in img1
@@ -21,5 +21,5 @@ function change2(m){
     // add m to class list
     img2.classList.add(m);
     // make it infinite
-    img2.classList.add('_repeat-infinite');
+    // img2.classList.add('_repeat-infinite');
 }

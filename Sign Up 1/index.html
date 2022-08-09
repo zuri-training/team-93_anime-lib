@@ -49,21 +49,28 @@
         <section id="sign">
           <h1>Sign Up</h1>
           <p>
+
             Have an account? <a href="/Login/index.html">Log in</a> or Sign Up with
+
+             <!--he who has ear let him hear Oauth are not easy at all  -->
+            <!-- or Sign Up with 
+
             <a href="#"
               ><img src="/Image/icons8-google.svg" alt="google"
             /></a>
             <a href="#"
               ><img src="/Image/icons8-github.svg" alt="github"
             /></a>
-          </p>
+           </p> -->
         </section>
 
             <section id="account-type">
                 <p>Who is this account for?</p>
                 <div><input type="radio" value="individual" id="individual" name="account" checked><label for="#individual">Individual</label></div>
                 <!-- please change this link to the team account -->
-                <div><input type="radio" value="team" id="team" name="account" onclick="window.location='/NEW DESIGN/Sign Up 2/index.html'"><label for="#team">Team</label></div>
+                <!-- i deadlinked it cos we arent doing teams but if we are please undead link it and remove coming soon -->
+                <div><input type="radio" value="team" id="team" name="account" onclick="window.location='#'"><label for="#team">Team</label>
+                <small style="color: #ababaf;text-align: right;">coming soon...</small></div>
             </section><br>
 
         <section>
@@ -75,7 +82,8 @@
             <input type="checkbox" name="terms" id="terms" required />I agree
             with Anim8's <a href="#">Terms</a>,
             <a href="#">Privacy Policy</a> and <a href="#">E-Sign Consent</a>
-            <a href="/NEW DESIGN/Login/index.html"><button value="user_details" id="btn">Create account</button></a>
+            <!-- django takes care of signup redirect  -->
+            <button value="user_details" id="btn" type="submit">Create account</button>
           </form>
         </section>
       </section>
