@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+    box-sizing: border-box;
+  }
+  
+  main {
+    margin-top: 0.5%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+  }
+  
+  /* styling image half of the page */
+  .image {
+    max-width: 600px;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-image: url("background.svg");
+    height: 100vh;
+    /* max-height: 780px; */
+    padding-top: 2.5%;
+    padding-left: 3%;
+    background-position-x: center;
+    background-position-y: center;
+    width: 65%;
+    box-shadow: rgb(0 0 0 / 70%) 0px 5px 20px;
+    border-radius: 20px;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+  }
+  .form {
+    /* made the width of the form wider and spaced it from the image */
+    width: 70%;
+    margin-left: 4%;
+  }
+  
+  /* font style for all fonts, h1 and h3 are for the image part of the screen */
+  h1 {
+    font-weight: 600;
+    color: white;
+    font-size: 64px;
+    font-style: medium;
+    line-height: 100%;
+    width: 85%;
+    padding-top: 15%;
+  }
+  h3 {
+    font-weight: 500;
+    color: #e3e2e6;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 113%;
+    padding-top: 5%;
+    width: 85%;
+  }
+  h2 {
+    font-style: Medium;
+    font-size: 48px;
+    line-height: 100%;
+    padding-bottom: 5%;
+  }
+  p {
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 118%;
+    padding-bottom: 5%;
+    width: 75%;
+  }
+  
+  /* styling the form input cells and submit button */
+  input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    outline: none;
+    cursor: pointer;
+  }
+  button {
+    color: white;
+    border: none;
+    background-color: #3498f4;
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+  }
+  label, small {
+    display: block;
+  }
