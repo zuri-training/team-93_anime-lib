@@ -232,7 +232,7 @@ strong {
 /*Animations
 ------------------------------------------------------ */
 
-/* Download full libraru
+/* Download full library
 ------------------------------------------------------ */
 .download {
   text-align: center;
@@ -250,4 +250,18 @@ strong {
   font-size: 20px;
   line-height: 28px;
   color: #ffffff;
+  cursor: pointer;
+}
+/* get part of library
+------------------------------------------- */
+.get-libary-part{
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #63afff;
+  font-size: 20px;
+  border: none;
+  font-weight: 600;
 }
