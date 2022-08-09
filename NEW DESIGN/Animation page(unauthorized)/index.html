@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../Image/favicon-16x16.png">
     <link rel="manifest" href="../Image/site.webmanifest">
     <title>Animation</title>
+    <!-- animations -->
+    <script src="./scripts.js" defer></script>
+    <link rel="stylesheet" href="/zuri-anim8/lib/index.css">
 </head>
 <body>
     <header>
@@ -35,7 +38,10 @@
             <img src="../Image/Slide2.gif" alt="FEATURES">
             <img src="../Image/Slide 5.gif" alt="FEATURES">
             <img src="../Image/slide 4.gif" alt="FEATURES">
-            <img src="../Image/Component 1.gif" alt="FEATURES">
+            <!-- component 1 .svg is broken and not needed 
+                so to avoid stress in doing stylings for this again i did this 
+            -->
+            <img src="../Image/Component 1.svg" alt="FEATURES">
         </figure>
         </section>
         <section id="search">
@@ -47,135 +53,64 @@
             </div>
         </section>
         <section>
-            <h1>Zoom and Slide Transitions</h1>
+            <h1>Basic Animations</h1>
             <div class="anim8">
-                <img src="../Image/Speaker.svg" alt="ICON">
+                <img src="../Image/Speaker.svg" alt="ICON" id="img1">
                 <div class="text">
-                    <button class="action">
-                        Zoom In 
-                        <i class="fa-solid fa-clone"></i>  
+                    <button class="action btn1" onclick="change1('_moveUp')">
+                        _moveUp
                     </button>
-                    <button class="action">
-                        Zoom Out
-                        Left Line
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn1" onclick="change1('_moveDown')">
+                        _moveDown
                     </button>
-                    <button class="action">
-                        Slide Up
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn1" onclick="change1('_moveRight')" >
+                        _moveRight
                     </button>
-                    <button class="action">
-                        Slide Down
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn1" onclick="change1('_moveLeft')">
+                        _moveLeft
+                        
                     </button>
-                    <button class="action">
-                        Slide Out-Left 
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn1" onclick="change1('_bounce')">
+                        _bounce
+                        
                     </button>
-                    <button class="action">
-                        Slide In-Left
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn1" onclick="change1('_blink')">
+                        _blink
+                        
+                    </button>
+                    <button class="action btn1" onclick="change1('_fade')">
+                        _fade
+            
                     </button>
                 </div>
             </div>
         </section>
         <section>
-            <h1>Zoom and Slide Transitions</h1>
+            <h1>Attention seekers</h1>
             <div class="anim8">
-                <img src="../Image/Target.svg" alt="ICON">
+                <img src="../Image/Target.svg" alt="ICON" id="img2">
                 <div class="text">
-                    <button class="action">
-                        Fade In
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn2" onclick="change2('_popOut')">
+                        _popOut
+        
                     </button>
-                    <button class="action">
-                        Fade Out
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn2" onclick="change2('_changeBgColor')">
+                         _changeBgColor
+                
                     </button>
-                    <button class="action">
-                        Fade In-Border
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn2" onclick="change2('_tada')">
+                        _tada
                     </button>
-                    <button class="action">
-                        Fade In-Left
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn2" onclick="change2('_shakeSide')">
+                        _shakeSide
                     </button>
-                    <button class="action">
-                        Fade In-Right
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Fade In-Up
-                        <i class="fa-solid fa-clone"></i>
+                    <button class="action btn2" onclick="change2('_shakeUpDown')">
+                        _shakeUpDown
                     </button>
                 </div>
             </div>
         </section>
-        <section>
-            <h1>Zoom and Slide Transitions</h1>
-            <div class="anim8">
-                <img src="../Image/Thumb up.svg" alt="ICON">
-                <div class="text">
-                    <button class="action">
-                        Right Line
-                        <i class="fa-solid fa-clone"></i>  
-                    </button>
-                    <button class="action">
-                        Left Line
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Right Line
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Underline
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Overline
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Center Line
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h1>Zoom and Slide Transitions</h1>
-            <div class="anim8">
-                        <img src="../Image/Switch.svg" alt="ICON">
-                <div class="text">
-                    <button class="action">
-                        Icon Forward
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Icon Backward
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Icon Blink
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Icon Shake
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Icon Spin
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    <button class="action">
-                        Icon Down
-                        <i class="fa-solid fa-clone"></i>
-                    </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
     </main>
     <footer>
         <div class="footer">

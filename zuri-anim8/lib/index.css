@@ -13,7 +13,7 @@ liscence: ISC
 */
 
 @import "basic.css";
-@import "/utilities/speed.css";
+@import "utilities/speed.css";
 @import "utilities/delay.css";
-@import "/utilities/iteration-count.css";
+@import "utilities/iteration-count.css";
 @import "attention-seekers.css";
