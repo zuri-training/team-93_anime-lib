@@ -13,7 +13,7 @@
     <link rel="manifest" href="/Image/site.webmanifest">
     <title>Animation</title>
     <!-- animations -->
-    <script src="./scripts.js" defer></script>
+    <!-- <script src="./scripts.js" defer></script> -->
     <link rel="stylesheet" href="/node_modules/zuri-anim8/lib/index.css">
 </head>
 <body>
@@ -61,61 +61,61 @@
         <section>
             <h1>Basic Animations</h1>
             <div class="anim8">
-                <img src="/Image/Speaker.svg" alt="ICON" id="img1">
+                <img src="/Image/Speaker.svg" alt="ICON" class="mic" id="img1">
                 <div class="text">
-                    <button class="action btn1" onclick="change1('_moveUp')">
+                    <button class="action btn1" id="micBtn" value="1">
                         _moveUp
                     </button>
-                    <button class="action btn1" onclick="change1('_moveDown')">
+                    <button class="action btn1" id="micBtn" value="2">
                         _moveDown
                     </button>
-                    <button class="action btn1" onclick="change1('_moveRight')" >
+                    <button class="action btn1" id="micBtn" value="3" >
                         _moveRight
                     </button>
-                    <button class="action btn1" onclick="change1('_moveLeft')">
+                    <button class="action btn1" id="micBtn" value="4">
                         _moveLeft
                         
                     </button>
-                    <button class="action btn1" onclick="change1('_bounce')">
+                    <button class="action btn1" id="micBtn" value="5">
                         _bounce
                         
                     </button>
-                    <button class="action btn1" onclick="change1('_blink')">
+                    <button class="action btn1" id="micBtn" value="6">
                         _blink
                         
                     </button>
-                    <button class="action btn1" onclick="change1('_fade')">
+                    <button class="action btn1" id="micBtn" value="7">
                         _fade
             
                     </button>
                 </div>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <h1>Attention seekers</h1>
             <div class="anim8">
                 <img src="/Image/Target.svg" alt="ICON" id="img2">
                 <div class="text">
-                    <button class="action btn2" onclick="change2('_popOut')">
+                    <button id="arrowBtn" class="action btn2" value="1"">
                         _popOut
         
                     </button>
-                    <button class="action btn2" onclick="change2('_changeBgColor')">
+                    <button id="arrowBtn" class="action btn2" value="2"">
                          _changeBgColor
                 
                     </button>
-                    <button class="action btn2" onclick="change2('_tada')">
+                    <button id="arrowBtn" class="action btn2" value="3"">
                         _tada
                     </button>
-                    <button class="action btn2" onclick="change2('_shakeSide')">
+                    <button id="arrowBtn" class="action btn2" value="4"">
                         _shakeSide
                     </button>
-                    <button class="action btn2" onclick="change2('_shakeUpDown')">
+                    <button id="arrowBtn" class="action btn2" value="5"">
                         _shakeUpDown
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
         
     </main>
     <footer>
@@ -152,5 +152,7 @@
     </div>
         <p>&copy;2022 Anim8 Software. <strong>All Rights reserved.</strong></p>
     </footer>
+
+    <script src="animUnauthorized.js"></script>
 </body>
 </html>
