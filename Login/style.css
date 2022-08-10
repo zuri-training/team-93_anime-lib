@@ -113,29 +113,34 @@ input[type="email"],
 input[type="password"]
  {
   display: block;
-  width: 45%;
+  width: 582px;
   outline: 0;
-  border: 0.5px solid #ababaf;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px 16px 16px 24px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-family:  "Rubik", sans-serif;
 }
 
 #form a {
   color: black;
   font-weight: 300;
   position: relative;
-  left: 29%;
+  left: 47%;
 }
 
 #form button {
   display: block;
   margin-top: 20px;
-  padding: 10px;
+  padding: 16px 24px;
   color: white;
-  background-color: #007ad2;
-  border: 0.5px solid #ababaf;
-  border-radius: 5px;
-  width: 45%;
+  background-color: #3498f4;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.001em;
+  cursor: pointer;
+  width: 582px;
 }
