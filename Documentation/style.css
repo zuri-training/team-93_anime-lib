@@ -90,7 +90,12 @@ body {
   list-style: none;
   color: #004880;
 }
-
+/* hover effect */
+.left-div ul li a:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #76777a;
+  text-decoration-thickness: 3px;
+}
 main {
   margin-left: 200px;
   width: 60%;
