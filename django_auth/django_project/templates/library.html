@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Library{% endblock %}
+
+{% block content %}
+  {% comment %} Hi {{ user.username }}! {% endcomment %}
+  <title>Library</title>
+  <style>
+    *{
+        background: grey;
+    }
+    h2{
+        margin-top: 30%;
+        text-align: center;
+        font-size: 1.7em;
+    }
+    p{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .a{
+        margin-left: 40%;
+    }
+    .b{
+        margin-left: 5%;
+    }
+</style>
+<h2>Team93</h2>
+<p>Animation Librar</p>
+<p><a href="{% url 'logout' %}">Log Out</a></p>
+{% endblock %}
