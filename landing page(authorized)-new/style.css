@@ -5,10 +5,12 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   padding: 0;
   margin: 0;
 }
+
 header {
   padding: 0;
   display: flex;
@@ -53,6 +55,7 @@ header {
   justify-content: center;
   gap: 5px;
 }
+
 #profile a {
   color: black;
   text-decoration: none;
@@ -85,23 +88,28 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .heading {
   background-color: white;
   background-image: url(/Image/Header\ picture.svg);
   height: 500px;
   width: 100%;
 }
+
 button {
   cursor: pointer;
 }
+
 .heading .sub {
   padding: 100px;
   width: 800px;
 }
+
 .heading h2 {
   font-size: 48px;
   color: #011220;
 }
+
 .heading p {
   font-family: "Rubik";
   font-style: normal;
@@ -109,6 +117,7 @@ button {
   line-height: 32px;
   color: #042947;
 }
+
 .heading button {
   font-size: 16px;
   padding: 10px 50px;
@@ -117,6 +126,7 @@ button {
   border-radius: 5px;
   color: #fff;
 }
+
 #WWO {
   text-align: center;
   padding: 50px;
@@ -150,6 +160,7 @@ button {
   gap: 50px;
   padding: 10px;
 }
+
 #curves {
   padding: 5px;
 }
@@ -183,15 +194,18 @@ button {
   padding: 100px 0px;
   gap: 20px;
 }
+
 .ending-info {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 10px;
 }
+
 .ending-info h2 {
   color: #011220;
 }
+
 .ending-info button {
   font-size: 16px;
   width: fit-content;
@@ -201,6 +215,7 @@ button {
   border-radius: 5px;
   color: #fff;
 }
+
 .ending-links {
   height: 100%;
   width: 50%;
@@ -208,6 +223,7 @@ button {
   flex-direction: column;
   gap: 20px;
 }
+
 .ending-links-con {
   border: 1px dotted #63afff;
   width: 100%;
@@ -218,11 +234,13 @@ button {
   justify-content: left;
   gap: 10px;
 }
+
 .info-hold {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .info-hold a {
   display: flex;
   align-items: center;
@@ -231,18 +249,22 @@ button {
   color: #63afff;
   gap: 80px;
 }
+
 .info-hold a p {
   width: 220px;
 }
+
 .info-hold a img {
   height: 21px;
   width: 21px;
   justify-self: right;
 }
+
 footer {
   background-color: #1b1b1d;
   color: white;
 }
+
 .social {
   display: flex;
   flex-direction: column;
@@ -250,14 +272,15 @@ footer {
   justify-self: center;
   gap: 10px;
 }
+
 .social img {
   background-color: #011220;
   color: white;
   height: 100px;
   width: 80px;
 }
-.social p {
-}
+
+.social p {}
 
 .footer-con {
   display: flex;
@@ -272,8 +295,8 @@ footer {
   font-size: x-large;
   margin: 15px 0;
 }
-.footer-con div {
-}
+
+.footer-con div {}
 
 address a {
   display: block;
@@ -283,6 +306,7 @@ address a {
   text-decoration: none;
   font-weight: 400;
 }
+
 .profile-link {
   display: flex;
   gap: 20px;
@@ -311,6 +335,7 @@ footer strong {
   padding: 40px;
   box-sizing: border-box;
 }
+
 address {
   font-style: normal;
 }
@@ -332,15 +357,18 @@ address a {
   transition: all 0 3s;
   color: white;
 }
+
 address a:hover {
   padding-left: 10px;
   color: blue;
 }
+
 .profile-link {
   display: flex;
   gap: 20px;
   margin-top: 10px;
 }
+
 .footer-paragraph {
   text-align: left;
 }
@@ -352,6 +380,7 @@ h3 {
   font-size: 40px;
   line-height: 57px;
 }
+
 .side-info p {
   font-weight: 400;
   font-size: 20px;
