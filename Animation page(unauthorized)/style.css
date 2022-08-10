@@ -96,15 +96,19 @@ figure {
   0% {
     left: 0;
   }
+
   20% {
     left: 0;
   }
+
   25% {
     left: -100%;
   }
+
   30% {
     left: -100%;
   }
+
   45% {
     left: -100%;
   }
@@ -112,9 +116,11 @@ figure {
   50% {
     left: -200%;
   }
+
   65% {
     left: -200%;
   }
+
   68% {
     left: -300%;
   }
@@ -122,6 +128,7 @@ figure {
   99% {
     left: -300%;
   }
+
   100% {
     left: -400%;
   }
@@ -208,20 +215,22 @@ footer {
   width: 100%;
 }
 
+
 .websites {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  /* margin-left: 20px;
-    margin-top: 20px; */
+  margin-left: 40px;
+  margin-top: 60px;
 }
 
 .profile-link {
   font-size: x-large;
   color: white;
-  margin: 0 5px;
+  margin: 10px 20px;
+
 }
 
 .links {
@@ -242,7 +251,7 @@ address {
 }
 
 address h4 {
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
