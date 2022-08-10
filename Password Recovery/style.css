@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
     padding: 20px;
+    font-family:  "Rubik", sans-serif;
 }
 
 .fa-xmark{

@@ -14,6 +14,7 @@ body {
 main {
   margin: 0 30px;
 }
+
 /* Header
 ---------------------------------------------------- */
 header {
@@ -47,11 +48,13 @@ header img {
 #navbar li {
   display: inline-block;
   margin: 0 30px;
+  font-weight: 500;
 }
 
 #profile {
   margin-right: 1%;
 }
+
 /* Features
 ---------------------------------------------------- */
 #features {
@@ -64,6 +67,7 @@ figure {
   display: flex;
   animation: 25s slider infinite;
 }
+
 #features img {
   background-image: url(../Image/Rectangle\ 80.svg);
   background-size: cover;
@@ -76,15 +80,19 @@ figure {
   0% {
     left: 0;
   }
+
   20% {
     left: 0;
   }
+
   25% {
     left: -100%;
   }
+
   30% {
     left: -100%;
   }
+
   45% {
     left: -100%;
   }
@@ -92,9 +100,11 @@ figure {
   50% {
     left: -200%;
   }
+
   65% {
     left: -200%;
   }
+
   68% {
     left: -300%;
   }
@@ -102,6 +112,7 @@ figure {
   99% {
     left: -300%;
   }
+
   100% {
     left: -400%;
   }
@@ -115,10 +126,12 @@ figure {
   width: 30%;
   /* padding: 16px 24px; */
 }
+
 .container {
   display: block;
   color: #a8abb4;
 }
+
 .form {
   display: flex;
   padding: 8px 16px;
@@ -127,6 +140,7 @@ figure {
   border-radius: 20px;
   align-items: center;
 }
+
 input {
   flex: 1;
   padding: 2px 10px;
@@ -152,6 +166,7 @@ input {
   width: 70%;
   margin-top: 5%;
 }
+
 .action {
   display: inline-block;
   width: 269px;
@@ -167,12 +182,14 @@ input {
   font-weight: 500;
   font-size: 20px;
 }
+
 /* footer
 ---------------------------------------------------- */
 footer {
   color: white;
   background-color: #181c22;
 }
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +198,7 @@ footer {
   height: 30vh;
   width: 100%;
 }
+
 .websites {
   display: flex;
   flex-direction: column;
@@ -190,6 +208,7 @@ footer {
   /* margin-left: 20px;
     margin-top: 20px; */
 }
+
 .profile-link {
   font-size: x-large;
   color: white;
@@ -237,6 +256,7 @@ strong {
 .download {
   text-align: center;
 }
+
 .download button {
   border-radius: 8px;
   padding: 16px 24px;
@@ -252,9 +272,10 @@ strong {
   color: #ffffff;
   cursor: pointer;
 }
+
 /* get part of library
 ------------------------------------------- */
-.get-libary-part{
+.get-libary-part {
   margin-left: 15px;
   cursor: pointer;
   padding: 16px 24px;

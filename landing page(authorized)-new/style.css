@@ -29,6 +29,7 @@ header {
   display: inline-block;
   list-style: none;
   margin: 0 40px;
+  font-weight: 600;
 }
 
 /* to put them at the center */
