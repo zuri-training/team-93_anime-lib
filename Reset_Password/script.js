@@ -1,5 +1,6 @@
 const togglePassword = document.querySelector("#togglePassword");
-const password = document.querySelector("#password");
+const password = document.getElementById("password");
+const new_password = document.getElementById("new_password");
 
 togglePassword.addEventListener("click", function () {
   // toggle the type attribute
@@ -11,15 +12,28 @@ togglePassword.addEventListener("click", function () {
   this.classList.toggle("bi-eye");
 });
 
-// prevent form submit
+// prevent form from clearing
 const form = document.querySelector("form");
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 });
 
-function toggle(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active')
-    var popup = document.getElementById('popup');
-    popup.classList.toggle('active')
+// prevent inaccurate password fields
+function toggle() {
+  if (password.value === "" && new_password.value === "") {
+    window.alert("password fields are empty, use your brain")
+  }
+  else if(password.value.length < 6 && new_password.value.length < 6) {
+    window.alert("password should be at least 6 characters")
+  }
+  else if(password.value===new_password.value) {
+    var blur = document.getElementById("blur");
+    blur.classList.toggle("active");
+    var popup = document.getElementById("popup");
+    popup.classList.toggle("active");
+  }
+  else {
+    window.alert("passwords do not match!")
+  }
 }
+

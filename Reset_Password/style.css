@@ -24,7 +24,7 @@ main {
   width: 100%;
 }
 
-/* styling image half of the page */
+/* styling the image-half of the page */
 .image {
   max-width: 570px;
   background-repeat: no-repeat;
@@ -47,10 +47,10 @@ main {
   margin-right: auto;
 }
 
+/* styling the form-half of the page */
 .form {
   padding-bottom: 20%;
   padding-left: 5%;
-  /* padding-right: 5%; */
   width: 70%;
   margin: 30px;
   margin-top: 100px;
@@ -59,7 +59,7 @@ form {
   max-width: 600px;
 }
 
-/* font style for all fonts, h1 and h3 are for the image part of the screen */
+/* font style for all fonts in password reset, h1 and h3 are for the image part of the screen */
 h1 {
   font-weight: 500;
   color: white;
@@ -100,7 +100,7 @@ input {
   border: 2px solid #d9d9d9;
   outline: none;
   cursor: pointer;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 0;
   height: 100%;
   padding-left: 10px;
@@ -151,6 +151,7 @@ form i {
   user-select: none;
 }
 
+/* all styles for password reset successful pop up */
 #popup
 {
   position: fixed;
