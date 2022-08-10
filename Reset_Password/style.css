@@ -1,95 +1,193 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Rubik;
-    box-sizing: border-box;
-  }
-  
-  main {
-    margin-top: 0.5%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1000px;
-  }
-  
-  /* styling image half of the page */
-  .image {
-    max-width: 600px;
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-image: url("background.svg");
-    height: 100vh;
-    /* max-height: 780px; */
-    padding-top: 2.5%;
-    padding-left: 3%;
-    background-position-x: center;
-    background-position-y: center;
-    width: 65%;
-    box-shadow: rgb(0 0 0 / 70%) 0px 5px 20px;
-    border-radius: 20px;
-    margin-bottom: 2.5%;
-    margin-left: 1%;
-  }
-  .form {
-    /* made the width of the form wider and spaced it from the image */
-    width: 70%;
-    margin-left: 4%;
-  }
-  
-  /* font style for all fonts, h1 and h3 are for the image part of the screen */
-  h1 {
-    font-weight: 600;
-    color: white;
-    font-size: 64px;
-    font-style: medium;
-    line-height: 100%;
-    width: 85%;
-    padding-top: 15%;
-  }
-  h3 {
-    font-weight: 500;
-    color: #e3e2e6;
-    font-size: 24px;
-    font-style: normal;
-    line-height: 113%;
-    padding-top: 5%;
-    width: 85%;
-  }
-  h2 {
-    font-style: Medium;
-    font-size: 48px;
-    line-height: 100%;
-    padding-bottom: 5%;
-  }
-  p {
-    font-style: Regular;
-    font-size: 20px;
-    line-height: 118%;
-    padding-bottom: 5%;
-    width: 75%;
-  }
-  
-  /* styling the form input cells and submit button */
-  input {
-    width: 100%;
-    max-width: 600px;
-    padding: 12px 20px;
-    border-radius: 5px;
-    border: 2px solid lightgray;
-    outline: none;
-    cursor: pointer;
-  }
-  input[type="submit"] {
-    color: white;
-    border: none;
-    background-color: #3498f4;
-    text-align: center;
-    width: 100%;
-    padding: 12px 20px;
-    border-radius: 5px;
-  }
-  label, small {
-    display: block;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 0.5%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+}
+.maindiv {
+  margin-top: 0.5%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+}
+
+/* styling image half of the page */
+.image {
+  max-width: 570px;
+  background-repeat: no-repeat;
+  background-image: url("background.svg");
+  padding-top: 2.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-position-x: center;
+  background-position-y: center;
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 70%) 0px 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 2.5%;
+  margin-left: 1%;
+}
+.eye {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  padding-bottom: 20%;
+  padding-left: 5%;
+  /* padding-right: 5%; */
+  width: 70%;
+  margin: 30px;
+  margin-top: 100px;
+}
+form {
+  max-width: 600px;
+}
+
+/* font style for all fonts, h1 and h3 are for the image part of the screen */
+h1 {
+  font-weight: 500;
+  color: white;
+  font-size: 64px;
+  font-style: medium;
+  line-height: 100%;
+  width: 85%;
+  padding-top: 15%;
+}
+h3 {
+  font-weight: 500;
+  color: #e3e2e6;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 113%;
+  padding-top: 5%;
+  width: 85%;
+}
+h2 {
+  font-style: Medium;
+  font-size: 48px;
+  line-height: 100%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+p {
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 118%;
+  padding-bottom: 5%;
+  width: 75%;
+}
+
+/* styling the form input cells and submit button */
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #d9d9d9;
+  outline: none;
+  cursor: pointer;
+  font-size: 60px;
+  line-height: 0;
+  height: 100%;
+  padding-left: 10px;
+}
+button {
+  color: white;
+  border: none;
+  background-color: #3498f4;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: none;
+  cursor: pointer;
+}
+label {
+  display: block;
+  font-size: 20px;
+  color: #575757;
+}
+small {
+  display: block;
+  color: #575757;
+}
+
+/* password toggle eye button */
+.passwordfield {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  position: relative;
+}
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* blurring background on clicking reset password */
+.main#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup
+{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1116px;
+  height: 616px;
+  padding: 50px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+h4 {
+  font-size: 25px;
+}
+.inbox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.login {
+  text-decoration: none;
+  color: #3498F4;
+  background-color: white;
+  border: 3px  solid #3498F4;
+  border-radius: 4px;
+  padding: 15px 20px;
+}
