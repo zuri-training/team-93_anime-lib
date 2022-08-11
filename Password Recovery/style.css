@@ -1,27 +1,29 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     padding: 20px;
-    font-family:  "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
+
 }
 
-.fa-xmark{
-    font-size: xx-large; 
+.fa-xmark {
+    font-size: xx-large;
     position: absolute;
     top: 5%;
     right: 5%;
-    color: black;  
+    color: black;
 }
-.fa-xmark:hover{
+
+.fa-xmark:hover {
     color: grey;
 }
 
-.wrapper{
+.wrapper {
     background: rgba(75, 73, 73, 0.7) url('Log in Page.svg');
-    background-blend-mode: darken;
+    backdrop-filter: blur(4px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +32,8 @@ body{
     height: 80vh;
     position: absolute;
 }
-.container{
+
+.container {
     background-color: white;
     padding: 3rem;
     margin-bottom: 30px;
@@ -41,42 +44,47 @@ body{
     justify-content: center;
     position: relative;
 }
-.image{
+
+.image {
     margin-top: -70px;
 }
-button{
-  text-align: center;
-  padding: 10px 100px;
-  gap: 10px;
-  background: #042947;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: bolder;
-  font-size: 16px;
-  cursor: pointer;
+
+button {
+    text-align: center;
+    padding: 10px 100px;
+    gap: 10px;
+    background: #042947;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: grey;
 }
 
-.info{
+.info {
     border: 1ps solid;
     text-align: center;
 }
-.info h3{
+
+.info h3 {
     color: #042947;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
 }
-.info p{
+
+.info p {
     font-family: Rubik;
     font-size: 24px;
     font-weight: 400;
     line-height: 28.44px;
 }
-.info button{
+
+.info button {
     margin-bottom: 50px;
 }
