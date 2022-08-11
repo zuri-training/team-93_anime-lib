@@ -81,3 +81,70 @@ header {
     border: 1px solid #00325b;
     margin-right: 5px;
 }
+main{
+    height: 34.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.side-bar{
+    height: 100%;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0;
+    border-right: 2px solid #909093;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 40px;
+}
+.side-bar a{
+    color: #909093;
+    padding: 1px;
+    width: 90%;
+    border-radius: 0.5em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.side-bar a:hover{
+    background-color: #CFE8FF;
+}
+.onset a{
+    background-color: #CFE8FF;
+    color: #63AFFF;
+}
+.active-filters{
+    filter: invert(59%) sepia(93%) saturate(1491%) hue-rotate(187deg) brightness(103%) contrast(101%);
+}
+.image div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: blue;
+    color: aqua;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image div img{
+    position: absolute;
+    font-size: 80px;
+}
+.fa-solid{
+    color: black;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 105px;
+}
