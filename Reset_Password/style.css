@@ -100,7 +100,9 @@ input {
   border: 2px solid #d9d9d9;
   outline: none;
   cursor: pointer;
-  font-size: 40px;
+  /* too big */
+  /* font-size: 40px; */
+  font-size: 20px;
   line-height: 0;
   height: 100%;
   padding-left: 10px;
