@@ -21,10 +21,10 @@ form.addEventListener("submit", function (e) {
 // prevent inaccurate password fields
 function toggle() {
   if (password.value === "" && new_password.value === "") {
-    window.alert("password fields are empty, use your brain")
+    window.alert("Password fields are empty!")
   }
   else if(password.value.length < 6 && new_password.value.length < 6) {
-    window.alert("password should be at least 6 characters")
+    window.alert("Password should be at least 6 characters")
   }
   else if(password.value===new_password.value) {
     var blur = document.getElementById("blur");
@@ -33,7 +33,7 @@ function toggle() {
     popup.classList.toggle("active");
   }
   else {
-    window.alert("passwords do not match!")
+    window.alert("Passwords do not match!")
   }
 }
 
