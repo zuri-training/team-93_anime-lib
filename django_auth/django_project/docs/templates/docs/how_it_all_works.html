@@ -1,0 +1,52 @@
+{% extends 'index.html' %} 
+{% block content %} 
+<div class="main-body">
+    <div class="left-div">
+      <ul>
+          <li><a href="{% url 'docs:intro' %}">Introduction</a></li>
+          <li><a href="{% url 'docs:tut' %}">Tutorials</a></li>
+          <li><a href="{% url 'docs:guides' %}">How to Guide's</a></li>
+          <li><a href="{% url 'docs:ref' %}">Technical reference</a></li>
+          <li>How it all works</a></li>
+          <li><a href="{% url 'docs:practices' %}">Best practices</a></li>
+          <li><a href="{% url 'docs:rate' %}">Rate us</a></li>
+        </ul>
+    </div>
+    <!-- 
+        sorry had to use inline style
+        here to avoid creating a new
+        page and also probably 
+        because i'm lazy.
+     -->
+    <main style="width: 100%;padding-top: 50px;">
+        <h2>How it all works</h2>
+        <p>
+            We simply use the classes and add animations to these classes 
+            in the css code which makes up the library 
+            (simple CSS animations which are a lot easier than javascript
+            animations so it's easier for you to edit).
+            You could download the library to see the codes.
+        </p><br><br><br><br>
+         <!-- 
+        django guys why does something smell like pagination here
+       -->
+
+      <!-- 
+        and the link is like this so you can click anywhere on the div something of a UX law thingy
+       -->
+      <a href="{% url 'docs:practices' %}">
+        <div class="next-page" style="gap: 750px;">
+          <div class="title">
+            <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
+            <p style="font-size: 20px;color:#042947;font-weight: bolder;">Best practices</p>
+          </div>
+          <div class="arrow">
+            {% load static %}
+            <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+            <img src="{% static 'docs/image-forward-icon.svg' %}" alt="next" />
+          </div>
+        </div>
+      </a><br><br>
+    </main>
+  </div>
+{% endblock content %}

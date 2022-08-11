@@ -1,0 +1,121 @@
+{% extends 'index.html' %} 
+{% block content %}
+<div class="main-body">
+    <div class="left-div">
+      <ul>
+        <li><a href="{% url 'docs:intro' %}">Introduction</a></li>
+        <li><a href="{% url 'docs:tut' %}">Tutorials</a></li>
+        <li>
+          <a href="{% url 'docs:guides' %}">How to Guide's</a>
+        </li>
+        <li>
+          <a href="{% url 'docs:ref' %}"
+            >Technical reference</a
+          >
+        </li>
+        <li>
+          <a href="{% url 'docs:works' %}">How it all works</a>
+        </li>
+        <li>
+          <a href="{% url 'docs:practices' %}"> Best practices</a>
+        </li>
+        <li>Rate us</li>
+      </ul>
+    </div>
+    <!-- i was too tired so i used inline styling SORRY HIGHLY ESTEEMED DEVS -->
+    <main style="display: flex; width: 100%; padding-left: 0px">
+      <style>
+        h2 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.005em;
+          color: #1b1b1d;
+        }
+      </style>
+      <div
+        class="reviews"
+        style="width: 75%; margin-left: 100px; padding-right: 50px"
+      >
+        <!-- sorry YEWANDE i broke your heart NO STAR RATINGS 🙂 -->
+        <h1>Reviews</h1>
+        <br />
+        {% if not review %}
+        <p style="color: #3990ec;text-align:center;"><strong>Be the first to talk, it'll help make anim8 better</strong></p>
+        {% endif %}
+        {% for i in review %}
+        <hr />
+        <br />
+        <h2>
+          {{ i.name }}
+        </h2>
+        <small>
+          {{ i.role }}
+        </small>
+        <p>
+          {{ i.body }}
+        </p>
+        <br />
+        {% endfor %}
+        <p style="text-align: right; font-size: 20px; font-weight: bolder">
+          <span style="color: #0060a7; text-decoration-line: underline"
+            >Rate us</span
+          >👉🏿
+        </p>
+      </div>
+      <div
+        class="make-review"
+        style="
+          width: 25%;
+          padding: 20px;
+          border-left: 1px solid #afafaf;
+          padding-left: 40px;
+        "
+      >
+        <h2>Rate and Review</h2>
+        <div>
+          <!-- i still pitied yewande -->
+          <small
+            style="
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.005em;
+              color: #76777a;
+            "
+            >Ratings coming soon...</small
+          >
+        </div>
+        <small
+          style="
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.005em;
+            color: #76777a;
+          "
+          >Review</small
+        >
+        <form method="post" id="review-form">
+          {% csrf_token %}
+          <label for="name">name:</label>
+          <input type="text" name="name" id="name" required />
+          <hr />
+          <!-- i used the &nbsp; so they will start from the same vertical axis -->
+          <label for="role">role:&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" name="role" id="role" />
+          <hr />
+          <label for="comment">comment:</label><br />
+          <textarea
+            name="comment"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Type here"
+            required
+          ></textarea>
+          <button type="submit" id="review-publish">Publish</button>
+        </form>
+      </div>
+    </main>
+  </div>
+{% endblock content %}
