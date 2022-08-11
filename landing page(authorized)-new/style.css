@@ -281,7 +281,6 @@ footer {
   width: 80px;
 }
 
-.social p {}
 
 .footer-con {
   display: flex;
@@ -297,7 +296,6 @@ footer {
   margin: 15px 0;
 }
 
-.footer-con div {}
 
 address a {
   display: block;

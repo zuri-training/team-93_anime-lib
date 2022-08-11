@@ -19,7 +19,7 @@
     <main class="main" id="blur">
       <div class="maindiv">
         <div class="image">
-          <img class="logo" src="LOGO.svg" />
+          <a href="/landing page(unauthorized)-new/index.html"><img class="logo" src="LOGO.svg" /></a>
           <h1>Reset your password.</h1>
           <h3>
             Forgot your password? No worries, just type in a new one and click
@@ -44,7 +44,8 @@
             <label for="password">Confirm password </label>
             <div class="passwordfield">
               <input type="password" id="new_password" name="password" required />
-              <i class="bi bi-eye-slash" id="togglePassword"></i>
+              <!-- you cant have two same id's that was the bug i think -->
+              <i class="bi bi-eye-slash" id="togglePassword2"></i>
             </div>
             <small>Both passwords must match</small><br />
             <button type="submit" onclick="toggle()">Reset password</button>
@@ -56,7 +57,7 @@
       <img src="bluetick.svg" alt="blue tick">
       <h4>Password reset successful!</h4>
       <p class="inbox">Please check your inbox</p>
-      <a href="#" onclick=toggle() class="login">Log In</a>
+      <a href="#" onclick= "toggle()" class="login">Log In</a>
     </div>
   </body>
   <script type="text/javascript" src="script.js"></script>

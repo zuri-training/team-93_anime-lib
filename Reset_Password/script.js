@@ -1,12 +1,25 @@
 const togglePassword = document.querySelector("#togglePassword");
 const password = document.getElementById("password");
 const new_password = document.getElementById("new_password");
+const togglePassword2 = document.querySelector("#togglePassword2");
+
+
 
 togglePassword.addEventListener("click", function () {
   // toggle the type attribute
   const type =
     password.getAttribute("type") === "password" ? "text" : "password";
   password.setAttribute("type", type);
+
+  // toggle the icon
+  this.classList.toggle("bi-eye");
+});
+
+togglePassword2.addEventListener("click", function () {
+  // toggle the type attribute
+  const type =
+    new_password.getAttribute("type") === "password" ? "text" : "password";
+  new_password.setAttribute("type", type);
 
   // toggle the icon
   this.classList.toggle("bi-eye");
@@ -21,10 +34,10 @@ form.addEventListener("submit", function (e) {
 // prevent inaccurate password fields
 function toggle() {
   if (password.value === "" && new_password.value === "") {
-    window.alert("password fields are empty, use your brain")
+    window.alert("Password fields are empty!")
   }
   else if(password.value.length < 6 && new_password.value.length < 6) {
-    window.alert("password should be at least 6 characters")
+    window.alert("Password should be at least 6 characters")
   }
   else if(password.value===new_password.value) {
     var blur = document.getElementById("blur");
@@ -33,7 +46,7 @@ function toggle() {
     popup.classList.toggle("active");
   }
   else {
-    window.alert("passwords do not match!")
+    window.alert("Passwords do not match!")
   }
 }
 
