@@ -81,7 +81,8 @@ header {
     border: 1px solid #00325b;
     margin-right: 5px;
 }
-.image div{
+
+.image div {
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -92,11 +93,13 @@ header {
     align-items: center;
     justify-content: center;
 }
-.image div img{
+
+.image div img {
     position: absolute;
     font-size: 80px;
 }
-.fa-solid{
+
+.fa-solid {
     color: black;
     position: absolute;
     right: -1px;
@@ -105,12 +108,14 @@ header {
     background-color: white;
     border-radius: 105px;
 }
-main{
+
+main {
     height: 34.5rem;
     display: flex;
     flex-direction: row;
 }
-.side-bar{
+
+.side-bar {
     height: 100%;
     width: 20%;
     box-sizing: border-box;
@@ -120,13 +125,15 @@ main{
     display: flex;
     flex-direction: column;
 }
-.side-bar div{
+
+.side-bar div {
     display: flex;
     flex-direction: row;
     padding: 10px;
     margin-left: 40px;
 }
-.side-bar a{
+
+.side-bar a {
     color: #909093;
     padding: 1px;
     width: 90%;
@@ -138,17 +145,21 @@ main{
     align-items: center;
     justify-content: flex-start;
 }
-.side-bar a:hover{
+
+.side-bar a:hover {
     background-color: #CFE8FF;
 }
-.onset a{
+
+.onset a {
     background-color: #CFE8FF;
     color: #63AFFF;
 }
-.active-filters{
+
+.active-filters {
     filter: invert(59%) sepia(93%) saturate(1491%) hue-rotate(187deg) brightness(103%) contrast(101%);
 }
-.image div{
+
+.image div {
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -159,16 +170,54 @@ main{
     align-items: center;
     justify-content: center;
 }
-.image div img{
+
+.image div img {
     position: absolute;
     font-size: 80px;
 }
-.fa-solid{
+
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin-left: 50vh;
+    padding-top: 20vh;
+}
+
+.texts {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
     color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+    cursor: wait;
+    height: 45vh;
+    width: 50vh;
+    outline: 10px;
+    outline-style: inset;
+    outline-color: #63AFFF;
+    text-align: center;
+}
+
+.texts:hover {
+    transform: rotateY(180deg);
+}
+
+.text {
     position: absolute;
-    right: -1px;
-    bottom: -1px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 105px;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.text-front {
+    z-index: 1;
+}
+
+.text-back {
+    transform: rotateY(180deg);
 }
