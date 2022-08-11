@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: rgba(75, 73, 73, 0.7) url('Log in Page.svg');
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10rem;
+    height: 100vh;
+    position: relative;
+}
+
+main {
+    background-color: white;
+    position: absolute;
+    padding: 8%;
+    border-radius: 10px;
+    width: 77%;
+
+}
+
+.wrapper {
+    padding: 0px 50px 0px 50px;
+}
+
+.fa-xmark {
+    font-size: xx-large;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: black;
+}
+
+.fa-xmark:hover {
+    color: grey;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 200%;
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 700;
+    font-size: 150%;
+    padding-bottom: 20px;
+
+}
+
+
+form input {
+    width: 89%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    align-self: center;
+    display: inline-block;
+    border: 1px solid #87CEEB;
+    font-size: large;
+    font-weight: bold;
+}
+
+input[type="button"] {
+    background-color: #3a8ab8;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input[type="email"] {
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+input[type="button"]:hover {
+    background-color: grey;
+}
