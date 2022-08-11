@@ -34,23 +34,31 @@
       <div><a href="./index-saved.html"><img src="/Image/ic_bookmark_border_48px.svg" alt=""> <h4>Saved</h4></a></div>
       <div><a href="./index-download.html"><img src="/Image/ic_access_time_48px.svg" alt=""> <h4>Download history</h4></a></div>
     </div>
-    <h1>Account</h1><br>
-    <div class="image">
-      <div>
-	      <img src="" alt="Z">
-        <i class="fa-solid fa-camera">
-          <input type="file" id="file" name="image" hidden>
-        </i> 
-      </div>         
-    </div>
-    <div class="button">
-      <button type="submit">
-        Upload
-        <input type="file" name="" id="">
-      </button>
-      <form action="upload">
-          <input type="file" name="Upload" id="" type="button">
-      </form>
+    <div class="edit-section">
+      <h1>Account</h1><br>
+      <div class="image-section">
+        <div class="image">
+          <img src="" alt="Z">
+          <i class="fa-solid fa-camera">
+            <input type="file" id="file" name="image" hidden>
+          </i> 
+        </div><br>
+        <div class="image-upload">
+          <form action="upload">
+            <label class="custom-file-upload">
+              <input type="file"/>
+              Upload
+            </label>
+            <label class="custom-reset">
+              <input type="reset"/>
+              Remove
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="">
+        
+      </div>
     </div>
   </main>
 </head>
