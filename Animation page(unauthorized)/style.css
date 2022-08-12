@@ -198,6 +198,9 @@ input {
   font-weight: 500;
   font-size: 20px;
 }
+button:focus{
+  background-color: #a8abb4;
+}
 
 /* footer
 ---------------------------------------------------- */
