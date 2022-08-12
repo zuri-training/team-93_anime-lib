@@ -100,8 +100,6 @@ input {
   border: 2px solid #d9d9d9;
   outline: none;
   cursor: pointer;
-  /* too big */
-  /* font-size: 40px; */
   font-size: 20px;
   line-height: 0;
   height: 100%;
@@ -154,12 +152,11 @@ form i {
 }
 
 /* all styles for password reset successful pop up */
-#popup
-{
+#popup {
   position: fixed;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 1000px;
   height: 616px;
   padding: 50px;
@@ -188,9 +185,9 @@ h4 {
 }
 .login {
   text-decoration: none;
-  color: #3498F4;
+  color: #3498f4;
   background-color: white;
-  border: 3px  solid #3498F4;
+  border: 3px solid #3498f4;
   border-radius: 4px;
   padding: 15px 20px;
 }
@@ -209,7 +206,8 @@ h4 {
   h2 {
     text-align: center;
   }
-  .form p, h2 {
+  .form p,
+  h2 {
     width: 100%;
     text-align: center;
   }
@@ -218,10 +216,12 @@ h4 {
   }
 }
 @media screen and (max-width: 415px) {
-  h1, h3 {
+  h1,
+  h3 {
     width: 100%;
   }
-  .form, h2 {
+  .form,
+  h2 {
     width: 95%;
   }
 }

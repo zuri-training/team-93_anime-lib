@@ -1,25 +1,12 @@
 const togglePassword = document.querySelector("#togglePassword");
 const password = document.getElementById("password");
 const new_password = document.getElementById("new_password");
-const togglePassword2 = document.querySelector("#togglePassword2");
-
-
 
 togglePassword.addEventListener("click", function () {
   // toggle the type attribute
   const type =
     password.getAttribute("type") === "password" ? "text" : "password";
   password.setAttribute("type", type);
-
-  // toggle the icon
-  this.classList.toggle("bi-eye");
-});
-
-togglePassword2.addEventListener("click", function () {
-  // toggle the type attribute
-  const type =
-    new_password.getAttribute("type") === "password" ? "text" : "password";
-  new_password.setAttribute("type", type);
 
   // toggle the icon
   this.classList.toggle("bi-eye");
@@ -49,4 +36,3 @@ function toggle() {
     window.alert("Passwords do not match!")
   }
 }
-
