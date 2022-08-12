@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <main class="main" id="blur">
+      <div class="maindiv">
+        <div class="image">
+          <a href="/landing page(unauthorized)-new/index.html"
+            ><img class="logo" src="LOGO.svg"
+          /></a>
+          <h1>Reset your password.</h1>
+          <h3>
+            Forgot your password? No worries, just type in a new one and click
+            reset. As good as new!
+          </h3>
+          <img class="eye" src="eye.svg" />
+        </div>
+        <div class="form">
+          <h2>Create new password</h2>
+          <p>
+            Your new password must be unique and different from previous
+            passwords.
+          </p>
+          <form>
+            <label for="password">Password </label>
+            <div class="passwordfield">
+              <input type="password" id="password" name="password" required />
+              <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+
+            <small>Must be at least 6 characters</small><br />
+            <label for="password">Confirm password </label>
+            <div class="passwordfield">
+              <input
+                type="password"
+                id="new_password"
+                name="password"
+                required
+              />
+              <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+            <small>Both passwords must match</small><br />
+            <button type="submit" onclick="toggle()">Reset password</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div id="popup">
+      <img src="bluetick.svg" alt="blue tick" />
+      <h4>Password reset successful!</h4>
+      <p class="inbox">Please check your inbox</p>
+      <a href="#" onclick="toggle()" class="login">Log In</a>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
