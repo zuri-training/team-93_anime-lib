@@ -63,6 +63,14 @@
         text-decoration: none;
       }
       
+      #profile a {
+            border-radius: 100px;
+            padding: 12px 15px;
+            border: none;
+            color: white;
+            background-color: #00325B;
+        }
+      
       .nav-btn{
         padding: 10px 20px;
         border-radius: 5px;
@@ -408,30 +416,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png"/>
-    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/apple-touch-icon.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-32x32.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
+    />
+    {% load static %}
+    <link rel="manifest" href="{% static 'site.webmanifest' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
     <title>Anim8</title>
   </head>
   <body>
     <header>
-      <a href="{% url 'home' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
+      <a href="{% url 'home2' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
       <nav id="navbar">
         <ul>
-          <li><a href="/Documentation/introduction.html" class="nav-link">Documentation</a></li>
+          <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li>
           <li><a href="{% url 'main2' %}" class="nav-link">Animations</a></li>
           <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
         </ul>
       </nav>
-      {% comment %} <nav id="profile">
-        <!-- link to profile page you can manage and do any other thing to  your account ther so i dont see high importance for dialog -->
-        <a href="/profile page/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector%20profile.svg" width="50%" height="50%" alt=""></a>
-      </nav> {% endcomment %}
+      
+      <nav id="profile">
+        <a href="{% url 'account' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/Vector%20profile.svg" alt=""></a>
+      </nav> 
     </header>
     <main>
       <div class="heading">

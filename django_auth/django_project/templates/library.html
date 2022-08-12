@@ -31,7 +31,7 @@
       href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
     />
     {% load static %}
-    <link rel="manifest" href="[% static 'site.webmanifest' %}" />
+    <link rel="manifest" href="{% static 'site.webmanifest' %}" />
     <title>Animation</title>
     
     
@@ -50,7 +50,7 @@
             >
           </li>
           <li>
-            <a href="{% url'docs:intro' %}" class="nav-link"
+            <a href="{% url 'docs:intro' %}" class="nav-link"
               >Documentation</a
             >
           </li>
@@ -64,7 +64,6 @@
           </li>
         </ul>
       </nav>
-      <!-- go to your profile and do what you need to i dont see high importance for dialogs here -->
       <nav id="profile">
         <ul>
           <li>
@@ -73,7 +72,8 @@
             /></a>
             <ul>
               <li><a href="{% url 'account' %}">Profile</a></li>
-              <!-- <li><a href="{% url 'download' %}">Download</a></li> -->
+              <!-- on second thought just leave it here -->
+              <li><a href="{% url 'download' %}">Download</a></li>
               <li><a href="{% url 'logout' %}"  id="logout">log Out</a></li>
             </ul>
           </li>

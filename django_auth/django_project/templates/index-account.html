@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png"/>
-    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/apple-touch-icon.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-32x32.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
+    />
+    {% load static %}
+    <link rel="manifest" href="{% static 'site.webmanifest' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-a.css" />
@@ -117,11 +132,11 @@
             display: flex;
             flex-direction: row;
             padding: 10px;
-            margin-left: 40px;
+            margin-left: 20px;
         }
         .side-bar a{
             color: #909093;
-            padding: 1px;
+            padding: 16px;
             width: 90%;
             border-radius: 0.5em;
             text-decoration: none;
@@ -204,11 +219,11 @@
         }
     </style>
     <header>
-      <a href="/landing page(authorized)-new/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/LOGO%20(1).svg" alt="Anim8-logo" /></a>
+      <a href="{% url 'home2' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
       <nav id="navbar">
         <ul>
-          <li><a href="{% url'docs:intro' %}" class="nav-link">Documentation</a></li>
-          <li><a href="{% url 'library' %}">Animations</a></li>
+          <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li>
+          <li><a href="{% url 'library' %}"  class="nav-link">Animations</a></li>
           <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
         </ul>
       </nav>
@@ -220,6 +235,7 @@
     <div class="side-bar">
       <div><h1> </h1></div>
       <div class="onset"><a href="#"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/account_circle.svg" class="active-filters"> <h4>My Account</h4></a></div>
+      <!-- i think these are coming soon honestly i think we can remove them -->
       <div><a href="{% url 'saved' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/ic_bookmark_border_48px.svg" alt=""> <h4>Saved</h4></a></div>
       <div><a href="{% url 'download' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/ic_access_time_48px.svg" alt=""> <h4>Download history</h4></a></div>
     </div>

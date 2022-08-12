@@ -147,12 +147,12 @@
             display: flex;
             flex-direction: row;
             padding: 10px;
-            margin-left: 40px;
+            margin-left: 20px;
         }
         
         .side-bar a {
             color: #909093;
-            padding: 1px;
+            padding: 16px;
             width: 90%;
             border-radius: 0.5em;
             text-decoration: none;
@@ -240,7 +240,7 @@
         }
     </style>
     <header>
-      <a href="/landing page(authorized)-new/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
+      <a href="{% url 'home2' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
       <nav id="navbar">
         <ul>
           <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li>
@@ -249,7 +249,7 @@
         </ul>
       </nav>
       <nav id="profile">
-        <a href="/profile page/index-account.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/Vector%20profile.svg" alt=""></a>
+        <a href="{% url 'account' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/Vector%20profile.svg" alt=""></a>
       </nav>
     </header>
   <main>
