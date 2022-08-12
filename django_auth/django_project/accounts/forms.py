@@ -3,23 +3,23 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 
-
+# removed the styles you used here so we use the styles frontend gave which should match design more
 class UserRegistrationForm(UserCreationForm):
     username = forms.CharField(label="Email", max_length=100,
                                required=True,
-                               widget=forms.EmailInput(attrs={'placeholder': 'Oraka514@gmail.com', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
+                               widget=forms.EmailInput(attrs={'placeholder': 'Oraka514@gmail.com',
                                                              'class': 'form-control',
                                                              }))
     password1 = forms.CharField(label="Password", max_length=50,
                                 required=True,
-                                widget=forms.PasswordInput(attrs={'placeholder': 'Password', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
+                                widget=forms.PasswordInput(attrs={'placeholder': 'Password',
                                                                   'class': 'form-control',
                                                                   'data-toggle': 'password',
                                                                   'id': 'password',
                                                                   }))
     password2 = forms.CharField(label="Confirm", max_length=50,
                                 required=True,
-                                widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
+                                widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password',
                                                                   'class': 'form-control',
                                                                   'data-toggle': 'password',
                                                                   'id': 'password',
@@ -36,7 +36,7 @@ class LoginForm(AuthenticationForm):
     class Meta:
             model = User
             fields = ['email', 'password']
-
+            
     def clean(self, *args, **kwargs):
         email = self.cleaned_data.get('email')
         password = self.cleaned_data.get('password')

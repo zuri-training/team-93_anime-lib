@@ -26,18 +26,18 @@
           which page are we using as home 
           backend guys please note 
       -->
-      <a href="/landing-page(unauthorized)/index.html"
+      <a href="{% url 'home' %}"
         ><img src="{% static 'docs/logo.svg' %}" class="logo" alt="home"
       /></a>
       <div class="sections">
-        <a href="/animation (unauthorized)/index.html">Animations</a>
+        <a href="{% url 'main2' %}">Animations</a>
         <!-- done the two below -->
         <a href="{% url 'docs:intro' %}">Documentation</a>     
         <a href="https://github.com/zuri-training/team-93_anime-lib">Github</a>
       </div>
       <div class="login-get-started">
-        <a href="/Login/index.html">Login</a>
-        <a href="/Sign Up  1/index.html"
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'sign up' %}"
           ><button class="get-started-btn">Get started</button></a
         >
       </div>

@@ -30,13 +30,12 @@
       sizes="16x16"
       href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
     />
-    <link rel="manifest" href="/Image/site.webmanifest" />
+    {% load static %}
+    <link rel="manifest" href="[% static 'site.webmanifest' %}" />
     <title>Animation</title>
-    <!-- animations -->
-
-    <!-- please the script works dont change it  -->
-    <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="/node_modules/zuri-anim8/lib/index.css" />
+    
+    
+    <link rel="stylesheet" href="{% static 'accounts/node_modules/zuri-anim8/lib/index.css' %}" />
   </head>
   <body>
     <header>
@@ -51,7 +50,7 @@
             >
           </li>
           <li>
-            <a href="/Documentation/introduction.html" class="nav-link"
+            <a href="{% url 'docs:intro' %}" class="nav-link"
               >Documentation</a
             >
           </li>
@@ -74,8 +73,8 @@
             /></a>
             <ul>
               <li><a href="{% url 'account' %}">Profile</a></li>
-              <li><a href="{% url 'download' %}">Download</a></li>
-              <li><a href="{% url 'logout' %}">Sign Out</a></li>
+              <!-- <li><a href="{% url 'download' %}">Download</a></li> -->
+              <li><a href="{% url 'logout' %}"  id="logout">log Out</a></li>
             </ul>
           </li>
         </ul>
@@ -108,7 +107,7 @@
         <!-- hahahaha using a small hackery -->
         <div style="display: flex; align-items: center">
           <h1>Basic Animations</h1>
-          <a href="/node_modules/zuri-anim8/lib/basic.css"
+          <a href="{% static 'accounts/node_modules/zuri-anim8/lib/basic.css' %}" download
             ><button class="get-libary-part">Get it</button></a
           >
         </div>
@@ -142,7 +141,7 @@
       <section>
         <div style="display: flex; align-items: center">
           <h1>Attention seekers</h1>
-          <a href="/node_modules/zuri-anim8/lib/attention-seekers.css" download
+          <a href="{% static 'accounts/node_modules/zuri-anim8/lib/attention-seekers.css' %}" download
             ><button class="get-libary-part">Get it</button></a
           >
         </div>
@@ -169,7 +168,7 @@
       </section>
       <div class="download">
         <!-- one can only use download attribute to download zip folders or files -->
-        <a href="https://github.com/zuri-training/team-93_anime-lib/blob/main/downloadable-lib.zip?raw=true" download
+        <a href="{% static 'accounts/downloadable-lib.zip' %}" download
           ><button>DOWNLOAD FULL LIBRARY</button></a
         >
       </div>
@@ -343,7 +342,17 @@
         }
         
         #profile ul li ul li a:hover{
-        background-color: #042947;
+        color: #63afff;
+        text-decoration: underline #63afff 2px;
+        }
+
+        /* for the logout link */
+        #profile ul li ul li #logout{
+          color: rgb(175, 2, 2);
+        }
+        #profile ul li ul li #logout:hover{
+          color: red;
+          text-decoration: underline red 2px;
         }
         /* Features
         ---------------------------------------------------- */
@@ -472,7 +481,10 @@
         font-weight: 500;
         font-size: 20px;
         }
-
+        .action:focus{
+          color: #fbfbfb;
+          background-color: #0058b4;
+        }
         /* footer
         ---------------------------------------------------- */
         footer {

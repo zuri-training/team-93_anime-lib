@@ -77,21 +77,27 @@
       
       .nav-btn {
       padding: 15px 30px;
-      border-radius: 10px;
       /* border: 1px solid #00325b; */
       margin-right: 5px;
+      background: #63afff;
+      box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      border: none;
       }
       
       .nav-btn:hover {
         font-size: x-small;
       }
       
-      .nav-btn {
+      /* we already have this  and the one before it is more pixel perfect */
+      /* .nav-btn {
         padding: 15px 30px;
         border-radius: 10px;
         border: 1px solid #00325b;
         margin-right: 5px;
-      }
+      } */
       
       main {
         padding: 0;
@@ -423,7 +429,7 @@
       <a href="{% url 'home' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
       <nav id="navbar">
         <ul>
-          <li><a href="/Documentation/introduction.html" class="nav-link">Documentation</a></li>
+          <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li>
           <li><a href="{% url 'main2' %}" class="nav-link">Animations</a></li>
           <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
         </ul>

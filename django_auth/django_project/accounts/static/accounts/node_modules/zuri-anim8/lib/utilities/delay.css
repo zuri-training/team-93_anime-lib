@@ -1,0 +1,17 @@
+._delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  ._delay-3s {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  ._delay-4s {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  ._delay-5s {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  

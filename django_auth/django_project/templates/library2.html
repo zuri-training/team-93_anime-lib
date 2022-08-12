@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/Image/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Image/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Image/favicon-16x16.png">
-    <link rel="manifest" href="/Image/site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/apple-touch-icon.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-32x32.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
+    />
+    {% load static %}
+    <link rel="manifest" href="[% static 'site.webmanifest' %}" />
     <title>Animation</title>
-    <!-- animations -->
-
-    <!-- the sript works please dont change it  -->
-    <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="/node_modules/zuri-anim8/lib/index.css">
-</head>
+    
+    
+    <link rel="stylesheet" href="{% static 'accounts/node_modules/zuri-anim8/lib/index.css' %}" />
+  </head>
 <body>
     <header>
-        <a href="/landing page(unauthorized)-new/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/913168811496eeb03d3ec9a399e605833beb2cf9/Images/Logo.svg" alt="LOGO"></a>
+        <a href="{% url 'home' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
         <nav id="navbar">
             <ul>
                 <li><a href="{% url 'main2'%}" class="nav-link">Animations</a></li>
-                <li><a href="/Documentation/introduction.html" class="nav-link">Documentation</a></li> <!-- documentaion link-->
+                <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li> <!-- documentaion link-->
                 <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
             </ul>
           </nav>
@@ -360,6 +379,10 @@
         background-color: #fbfbfb;
         font-weight: 500;
         font-size: 20px;
+        }
+        .action:focus{
+          color: #fbfbfb;
+          background-color: #0058b4;
         }
 
         /* footer
