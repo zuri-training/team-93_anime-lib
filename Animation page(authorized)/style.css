@@ -27,7 +27,7 @@ header {
   position: sticky;
   top: 0;
   margin-bottom: 30px;
-  width: 100%;
+  
   z-index: 1;
 }
 
@@ -55,6 +55,41 @@ header img {
   margin-right: 1%;
 }
 
+#profile li{
+  list-style: none;
+}
+
+#profile ul li ul{
+  background-color: white;
+  border-radius: 0 0 5px 5px ;
+  position: absolute;
+  top: 70px;
+  right: 5px;
+  width: max-content;
+  display: none;
+}
+
+#profile ul li:hover ul{
+  display: block;
+}
+
+#profile ul li ul li{
+  padding: 10px 40px;
+  list-style: none;
+}
+
+#profile ul li ul li a{
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  border: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+ 
+#profile ul li ul li a:hover{
+  background-color: #042947;
+}
 /* Features
 ---------------------------------------------------- */
 #features {
