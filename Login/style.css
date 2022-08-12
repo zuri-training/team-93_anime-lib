@@ -23,7 +23,7 @@ main {
   flex: 20%;
   background-image: url(../Image/Blured\ background\(Login\).svg);
   margin-right: 50px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
 }
@@ -143,4 +143,11 @@ input[type="password"]
   letter-spacing: 0.001em;
   cursor: pointer;
   width: 582px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
 }
