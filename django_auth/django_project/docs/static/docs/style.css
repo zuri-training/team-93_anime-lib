@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  /*
+   there is a rule somewhere that switches of indentation for nested lists
+    so i'm going to bring it back here 
+  */
+  ul,
+  ol,
+  dl {
+    padding: 0px 25px;
+  }
+  
+  body {
+    font-family: "Rubik", sans-serif;
+    line-height: 2;
+    background-color: #fff;
+    position: relative;
+  }
+  .main-body {
+    display: flex;
+    margin-top: 105px;
+  }
+  #top-nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    padding: 15px 50px;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  }
+  #top-nav div {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  #top-nav div a {
+    color: #000;
+    font-weight: bolder;
+  }
+  .sections {
+    margin-left: 200px;
+  }
+  .sections a {
+    margin-right: 100px;
+  }
+  .login-get-started {
+    margin-left: 230px;
+  }
+  .login-get-started a {
+    margin-right: 5px;
+  }
+  .get-started-btn {
+    padding: 16px 24px;
+    background-color: #63afff;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 8px;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  }
+  /*
+   my padding bottom is like this because 
+   if you notice across all doc pages the
+   left div total height is the same but then 
+   it looks shorter in longer pages and full page 
+   height in shorter pages.
+   */
+  
+  .left-div {
+    border: 0.5px solid #76777a;
+    padding: 20px;
+    height: 500px;
+    font-weight: bolder;
+    border-top: none;
+    line-height: 3;
+    position: fixed;
+  }
+  .logo {
+    width: 40px;
+  }
+  
+  .left-div ul {
+    list-style: none;
+    color: #004880;
+  }
+  /* hover effect */
+  .left-div ul li a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #76777a;
+    text-decoration-thickness: 3px;
+  }
+  main {
+    margin-left: 200px;
+    width: 60%;
+    padding-left: 90px;
+    padding-right: 90px;
+    /* to make it be almost on the same start line as the logo */
+    padding-top: 5px;
+  }
+  
+  .right-div {
+    width: 40%;
+    margin-left: 50px;
+  }
+  
+  .page-content {
+    margin-top: 150px;
+    position: fixed;
+  }
+  
+  #content-small {
+    border-left: 2px solid #76777a;
+  }
+  
+  #content-small-first-ul {
+    list-style: none;
+  }
+  #content-small-first-ul ul {
+    list-style: disc;
+    /* so even the discs have the same color as links */
+    color: #76777a;
+  }
+  a {
+    color: #76777a;
+    text-decoration: none;
+  }
+  .next-page {
+    display: flex;
+    background-color: #f5faff;
+    padding: 24px;
+    align-items: center;
+    /* to space out the arrow and the text -generally */
+    gap: 632px;
+    border-radius: 24px;
+    box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  }
+  
+  
+  
+  /* to style code snippets */
+  .code-snippet {
+    background-color: #dff0ff;
+    padding: 5px;
+  }
+  brown {
+    color: #bf9b1b;
+  }
+  green {
+    color: #59d320;
+  }
+  /* end */
+  
+  /* for tables */
+  .utils {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .utils td {
+    color: #51abfd;
+    border: 1px solid #76777a;
+  }
+  .utils th {
+    text-align: left;
+    border: 1px solid #76777a;
+    color: #76777a;
+  }
+  
+  /* 
+  rate-us.html styling 
+  sorry guys i used a lot
+  of inline styling there 
+  but this is for the FORM
+   */
+  #review-form {
+    border: 2px solid #c3c6cf;
+    border-radius: 16px;
+    padding: 16px;
+    width: 299px;
+    height: 329px;
+  }
+  #review-form:focus-within{
+      border: 2px solid #D347F5;
+      box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2);
+  }
+  #review-form input,
+  textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: "Rubik", sans-serif;
+    /* had to be like this cos of padding and the fact that labels are on the same line */
+    width: 70%;
+  }
+  #review-form label {
+    color: #ababaf;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+  #review-form textarea {
+    resize: none;
+    /* dont worry no one will see it but the placeholder has to be on the same line as in the designs */
+    padding: 0px;
+    width: 100%;
+    height: 60%;
+  }
+  #review-form textarea::placeholder {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #8d9199;
+  }
+  
+  #review-publish {
+    background-color: #63afff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    letter-spacing: 0.001em;
+    margin-left: 230px;
+    /* so its more or less in the form but inviscibly */
+    margin-top: 50px;
+  }
+  
+  /* TEXT AREA SCROLL STYLING */
+  /* for Chrome, Edge, Safari and Opera */
+  #review-form textarea::-webkit-scrollbar {
+      width: 10px;
+    }
+    /* Track */
+    #review-form textarea::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+     
+    /* Handle */
+    #review-form textarea::-webkit-scrollbar-thumb {
+      background: #D347F5; 
+    }
+    
+    /* END OF SCROLL STYLING */
+  

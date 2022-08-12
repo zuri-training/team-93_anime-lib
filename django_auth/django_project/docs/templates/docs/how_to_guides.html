@@ -1,0 +1,107 @@
+{% extends 'index.html' %} 
+{% block content %} 
+<div class="main-body">
+    <div class="left-div">
+      <ul>
+        <li><a href="{% url 'docs:intro' %}">Introduction</a></li>
+        <li><a href="{% url 'docs:tut' %}">Tutorials</a></li>
+        <li>How to Guide's</li>
+        <li>
+          <a href="{% url 'docs:ref' %}"
+            >Technical reference</a
+          >
+        </li>
+        <li>
+          <a href="{% url 'docs:works' %}">How it all works</a>
+        </li>
+        </li>
+        <li>
+          <a href="{% url 'docs:practices' %}">Best practices</a>
+        </li>
+        <li><a href="{% url 'docs:rate' %}">Rate us</a></li>
+      </ul>
+    </div>
+    <main>
+      <h1>How to Guide's</h1>
+      <h2>CHANGING DEFAULTS</h2>
+      <p>You could simply go to the library and change stuff for example;</p>
+      <p>This is how it looks in the library…</p>
+      <br />
+      <div class="code-snippet">
+        ._repeat-2{ animation-iteration-count: 2; }
+      </div>
+      <br />
+      <p>
+        But then i could go and make it this and anywhere i put my _repeat-2
+        it will repeat 3000 times (actually for this example one could have
+        just used _repeat-infinite in the class list don't you think)
+      </p>
+      <br />
+      <div class="code-snippet">
+        ._repeat-2{ animation-iteration-count: 3000; }
+      </div>
+      <br />
+      <p>
+        Apart from changing the utility functions you can play around with the
+        actual animations… BUT What if I make a mistake and break the library?
+        You can always come back and re-download. We encourage you to keep
+        breaking it, we even added notes, and learning, at least you could
+        tell us what you’ve done and help others grow - like the true
+        developers we know you are.
+      </p>
+      <br /><br /><br />
+      <!-- 
+        django guys why does something smell like pagination here
+       -->
+
+      <!-- 
+        the link is like this so you can click anywhere on the div something of a UX law thingy
+        and if you notice this div has a different gap so as to leave space for content
+       -->
+      <a href="{% url 'docs:ref' %}">
+        <div class="next-page" style="gap: 290px">
+          <div class="title">
+            <p style="font-size: 16px; color: #73777f; margin-bottom: -10px">
+              Next
+            </p>
+            <p style="font-size: 20px; color: #042947; font-weight: bolder">
+              Technical reference
+            </p>
+          </div>
+          <div class="arrow">
+            {% load static %}
+            <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+            <img src="{% static 'docs/image-forward-icon.svg' %}" alt="next" />
+          </div>
+        </div>
+      </a>
+      <br /><br /><br />
+    </main>
+    <div class="right-div">
+      <div class="page-content">
+        <h3>CONTENTS</h3>
+        <!-- the style was to make it look like its at 
+       the center while still almost the same height 
+       as the other content-small divs in other pages
+   -->
+        <div
+          id="content-small"
+          style="padding-bottom: 60px; padding-top: 60px"
+        >
+          <small>
+            <ul id="content-small-first-ul">
+              <!-- i used scroll to top in js cause my hands were tied i.e nothing above it same as
+                 the place next leads to  and i left the #.. there so that it looks normal
+                even though some users may not notice -->
+              <li>
+                <a href="#changing-defaults" onclick="window.scroll(0,0)"
+                  >Changing defaults</a
+                >
+              </li>
+            </ul>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,252 @@
+{% extends 'index.html' %}
+{% block content %} 
+<div class="main-body">
+    <div class="left-div">
+      <ul>
+        <li><a href="{% url 'docs:intro' %}">Introduction</a></li>
+        <li>Tutorials</li>
+        <li><a href="{% url 'docs:guides' %}">How to Guide's</a></li>
+        <li><a href="{% url 'docs:ref' %}">Technical reference</a></li>
+        <li>
+          <a href="{% url 'docs:works' %}">How it all works</a>
+        </li>
+        <li>
+          <a href="{% url 'docs:practices' %}">Best practices</a>
+        </li>
+        <li><a href="{% url 'docs:rate' %}">Rate us</a></li>
+      </ul>
+  </div>
+  <main>
+    <!-- 
+          forgive my excessive use of br tag
+          i did it because i want to re use
+          the styling across the documentation
+          and the margins for each p tag might be variable 
+          and finally to save space that will have been wasted if 
+          i use classes or tags and didnt use them
+          accross all documentation pages.
+
+          THANK YOU
+       -->
+    <h1>Tutorials</h1>
+    <p id="installation-and-getting-started">
+      Anim8 is an open-source library filled with premade cross-browser CSS
+      animations ready to take your project to the next level. Anim8 allows
+      users to import or download web animations for faster development in
+      normal language.
+    </p><br>
+    <h2>
+      INSTALLATION AND GETTING STARTED
+    </h2>
+    <p>
+      To access the library, please sign in but if this is your first time
+      using the library or don’t have an account then go ahead and create a
+      new account by signing up To install, go to our website and click on
+      download and then put it in your project folder. OR you can
+      (preferrably) npm install it:
+    </p>
+    <div class="code-snippet">npm install <green> zuri-anim8 </green></div>
+    <p>Then how do you link it?</p>
+    <br>
+    <h3>IN THE HTML</h3>
+    <!-- put in a class and div to give it that nice blue bg color-->
+    <p>
+      if you downloaded the full file (include "zuri-anim8/" before "lib/" if
+      its a node package you installed).
+    </p>
+    <div class="code-snippet">
+      &lt;link <green>rel=</green><brown> "stylesheet"</brown>
+      <green>href=</green><brown> "&lt;pathToWhereYouStoredIt&gt; /lib/index.css"
+      </brown>/&gt;
+    </div>
+    <br>
+    <h3>OR IN THE CSS</h3>
+    <p>
+      <strong>PLEASE NOTE</strong> Dont forget to put your "zuri-anim8/"
+      before "lib/" if its the package you downloaded
+    </p>
+    <br>
+    <p id="usage" >using a string:</p>
+    <div class="code-snippet">@ <brown> import <brown> <green> "lib/index.css" </green>;</div>
+    <br>
+    <p>or a URL:</p>
+    <div class="code-snippet">@<brown>import url</brown><green>("lib/index.css")</green>;</div>
+    <br><br>
+    <h3 id="in-class-lists">USAGE</h3>
+    <br>
+    <p>There are two basic ways to use Anim8 and these are;</p>
+    <br>
+    <p id="with-js">…BY ADDING CLASSES TO THE HTML TAGS</p>
+    <div class="code-snippet">class = <green> "_moveUp" </green></div>
+    <p>For a list of more classes do check our technical reference.</p>
+    <br>
+    <p>…ADDING CLASSES WITH JAVASCRIPT</p>
+    <div class="code-snippet">
+      &lt;whatYouWantToAnim8&gt;.classList.<brown>add</brown><green>("_moveUp")</green>;
+    </div>
+    <br><br>
+    <p>
+      There’s also another way of utilizing your animations;
+    </p>
+    <p>…USING KEYFRAMES</p> 
+    <p>
+      A keyframes animation is the default animation type and it can be used
+      to define the behaviour of the animation from the start to the end
+      using:
+    </p>
+    <div class="code-snippet">
+      <!-- please dont mind my hack its just so that it can look like
+         real codes and i didnt want to use the pre tag -->
+      <dt>@keyframes <brown>&lt;classYouWantToChange&gt;</brown>{</dt>
+      <dl>0%{ }</dl>
+      <dl><green>...anything in between...</green></dl>
+      <dl>100%{ }</dl>
+      }
+    </div>
+    <br><br>
+    <p id="utility-functions">
+      This provides a flexible way to use Anim8.css with your current projects
+      without having to refactor your HTML code. So at each point, you can
+      determine what you want to happen to the animation.
+    </p>
+    <br><br>
+    <h2>YOU WANT MORE YOU HAVE MORE</h2>
+    <p>
+      You can also change some of the settings that come with the specific
+      animations by using the utility functions and luckily anim8 comes with
+      three;
+    </p>
+    <br><br>
+    <h3>SPEED</h3>
+    <p>
+      To change the speed of animation you can add any of this to the class
+      list, don't forget to put your space in between!
+    </p>
+    <table class="utils">
+      <th>Classes</th>
+      <th>How fast they go</th>
+      <tr>
+        <td>_slow</td>
+        <td>2seconds</td>
+      </tr>
+      <tr>
+        <td>_slower</td>
+        <td>4seconds</td>
+      </tr>
+      <tr>
+        <td>_fast</td>
+        <td>800milliseconds</td>
+      </tr>
+      <tr>
+        <td>_faster</td>
+        <td>400milliseconds</td>
+      </tr>
+    </table>
+    <br><br>
+    <h3>DELAY</h3>
+    <p>
+      What if you wanted to make the animation wait a bit before it starts -
+      anim8 comes with some interesting stuff.
+    </p>
+    <table class="utils">
+      <th>Classes</th>
+      <th>Delay time</th>
+      <tr>
+        <td>_delay-2s</td>
+        <td>2seconds</td>
+      </tr>
+      <tr>
+        <td>_delay-3s</td>
+        <td>3seconds</td>
+      </tr>
+      <tr>
+        <td>_delay-4s</td>
+        <td>4seconds</td>
+      </tr>
+      <tr>
+        <td>_delay-5s</td>
+        <td>5seconds</td>
+      </tr>
+    </table>
+    <br><br>
+    <h3>REPEAT</h3>
+    <p>
+      Or if you're feeling ‘geeky’ you can call it the iteration count. Now,
+      what does anim8 come with?
+    </p>
+    <table class="utils">
+      <th>Classes</th>
+      <th>Number of repititons</th>
+      <tr>
+        <td>_repeat-1</td>
+        <td>Once</td>
+      </tr>
+      <tr>
+        <td>_repeat-2</td>
+        <td>Twice</td>
+      </tr>
+      <tr>
+        <td>_repeat-3</td>
+        <td>Thrice</td>
+      </tr>
+      <tr>
+        <td>_repeat-infinite</td>
+        <td>Infinite times</td>
+      </tr>
+    </table>
+    <br><br>
+    Now thats that but then, we know there can be no standards for these
+    utility functions, we know your creativity is boundless, so anim8 can do
+    more, bounce to the <a href="{% url 'docs:guides' %}" style="color: #000;font-weight:bolder;">How to guide's</a> for more.
+    <br><br><br><br>
+     <!-- 
+        django guys why does something smell like pagination here
+       -->
+
+      <!-- 
+        the link is like this so you can click anywhere on the div something of a UX law thingy
+        and if you notice this div has a different gap so as to leave space for content
+       -->
+       <a href="{% url 'docs:guides' %}">
+        <div class="next-page" style="gap: 350px;">
+          <div class="title">
+            <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
+            <p style="font-size: 20px;color:#042947;font-weight: bolder;">How to guides</p>
+          </div>
+          <div class="arrow">
+            {% load static %}
+            <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+            <img src="{% static 'docs/image-forward-icon.svg' %}" alt="next" />
+          </div>
+        </div>
+      </a>
+      <br><br><br>
+  </main>
+  <div class="right-div">
+    <div class="page-content">
+      <h3>CONTENTS</h3>
+      <div id="content-small">
+        <small>
+          <ul id="content-small-first-ul">
+            <li>
+              <a href="#installation-and-getting-started"
+                >Installation and getting started</a
+              >
+            </li>
+            <li>
+              <a href="#usage"> Usage</a>
+              <ul>
+                <li>
+                  <a href="#in-class-lists"> In class lists</a>
+                </li>
+                <li><a href="#with-js"> With Js adding to classList</a></li>
+                <li><a href="#utility-functions">Utility functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </small>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock content %}

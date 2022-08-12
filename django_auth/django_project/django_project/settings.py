@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'crispy_forms',
     "accounts",
+    'docs.apps.DocsConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,18 +121,21 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = '/css/'
 LOGIN_REDIRECT_URL = "library"
 LOGOUT_REDIRECT_URL = "home"
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+
+# it includes not just css but a lot other and again cause of my app
+# you still have staticfiles dir for yours to work but then i suggest using my method its neater
+STATIC_URL = 'static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'css'),
 )
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'cssfiles')
+# same reason statics are a lot more than css
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

@@ -1,0 +1,114 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="main-body">
+    <div class="left-div">
+      <ul>
+        <li><a href="{% url 'docs:intro' %}">Introduction</a></li>
+        <li><a href="{% url 'docs:tut' %}">Tutorials</a></li>
+        <li>
+          <a href="{% url 'docs:guides' %}">How to Guide's</a>
+        </li>
+        <li>Technical reference</li>
+        <li>
+          <a href="{% url 'docs:works' %}">How it all works</a>
+        </li>
+        <li>
+          <a href="{% url 'docs:practices' %}">Best practices</a>
+        </li>
+        <li><a href="{% url 'docs:rate' %}">Rate us</a></li>
+      </ul>
+  </div>
+  <main>
+    <h1>Technical Reference</h1>
+    <h3 id="our-complete-list-of-animations">OUR COMPLETE LIST OF ANIMATION CLASSES</h3>
+    <p>You’d know what they do from their names, neat right?</p>
+    <p>
+      Actually we have <strong>two</strong> types of animations (
+      corresponding with the different folders you'd see them in upon
+      installation ) and they are;
+    </p>
+    <br />
+    <h4>Basic animations</h4>
+    <table class="utils">
+      <tr>
+        <td>_moveUp</td>
+      </tr>
+      <tr>
+        <td>_moveDown</td>
+      </tr>
+      <tr>
+        <td>_moveRight</td>
+      </tr>
+      <tr>
+        <td>_moveLeft</td>
+      </tr>
+      <tr>
+        <td>_blink</td>
+      </tr>
+      <tr>
+        <td>_fade</td>
+      </tr>
+      <tr>
+        <td>_bounce</td>
+      </tr>
+    </table>
+    <br />
+    <h4>Attention seekers</h4>
+    <table class="utils">
+      <tr>
+        <td>_popOut</td>
+      </tr>
+      <tr>
+        <td>_tada</td>
+      </tr>
+      <tr>
+        <td>_changeBgColor</td>
+      </tr>
+      <tr>
+        <td>_shakeSide</td>
+      </tr>
+      <tr>
+        <td>_shakeUpDown</td>
+      </tr>
+    </table><br><br><br>
+     <!-- 
+        django guys why does something smell like pagination here
+       -->
+
+      <!-- 
+        the link is like this so you can click anywhere on the div something of a UX law thingy
+        and if you notice this div has a different gap so as to leave space for content
+       -->
+       <a href="{% url 'docs:works' %}">
+        <div class="next-page" style="gap: 320px;">
+          <div class="title">
+            <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
+            <p style="font-size: 20px;color:#042947;font-weight: bolder;">How it all works</p>
+          </div>
+          <div class="arrow">
+            {% load static %}
+            <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+            <img src="{% static 'docs/image-forward-icon.svg' %}" alt="next" />
+          </div>
+        </div>
+      </a>
+      <br><br><br>
+  </main>
+  <div class="right-div">
+    <div class="page-content">
+      <h3>CONTENTS</h3>
+      <!-- the style was to make it look like its at 
+       the center while still almost the same height 
+       as the other content-small divs in other pages
+   -->
+      <div id="content-small" style="padding-bottom: 60px; padding-top: 60px">
+        <small>
+          <ul id="content-small-first-ul">
+            <li><a href="#our-complete-list-of-animations"  onclick="window.scroll(0,0)">Our complete list of animations</a></li>
+          </ul>
+        </small>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock content %}

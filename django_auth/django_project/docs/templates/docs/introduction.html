@@ -1,0 +1,150 @@
+{% extends 'index.html' %} 
+{% block content %} 
+<div class="main-body">
+    <div class="left-div">
+      <ul>
+        <li>Introduction</li>
+        <li><a href="{% url 'docs:tut' %}">Tutorials</a></li>
+        <li><a href="{% url 'docs:guides' %}">How to Guide's</a></li>
+        <li><a href="{% url 'docs:ref' %}">Technical reference</a></li>
+        <li><a href="{% url 'docs:works' %}">How it all works</a></li>
+        <li><a href="{% url 'docs:practices' %}">Best practices</a></li>
+        <li><a href="{% url 'docs:rate' %}">Rate us</a></li>
+      </ul>
+  </div>
+  <main>
+      <!-- 
+          forgive my excessive use of br tag
+          i did it because i want to re use
+          the styling across the documentation
+          and the margins for each p tag might be variable 
+          and finally to save space that will have been wasted if 
+          i use classes or tags and didnt use them
+          accross all documentation pages.
+
+          THANK YOU
+       -->
+
+       <!--
+         i didnt put the id's at where it would have been because of the fact that the
+         navbar is fixed and when i use the links to navigate it works like the navbar 
+         is not on the same page but ontop the page and i dont want to use javascript
+        i heard something like it putting more pressure on browsers and negatively impacting 
+      loading time
+      but from the id's name you will know what i want to lead to
+      -->
+    <h1>Introduction</h1>
+    <p id="why-anim8">
+      Anim8 is an open-source library filled with premade cross-browser CSS
+      animations ready to take your project to the next level. Anim8 allows
+      users to import or download web animations for faster development in
+      normal language.
+    </p>
+    <br>
+    <h3>WHY "Anim8"?</h3>
+    <p>
+      With anim8 you simply have the best at your fingertips with just a few
+      words added to your class list - perfect for beginners, and those who
+      simply want to do simple animations at break record timings. To name a
+      few more:
+      <ul>
+          <li>
+          Anim8 can be used as a cross-browser animation library in your online
+          projects. Excellent for leading hints, home pages, sliders, and
+          emphasis. They are compact files that function on desktops and can be
+          resized without losing quality.
+          </li>
+          <li>
+          One of the many methods to utilize Anim8 is to copy and paste the
+          effect into your own CSS or to reference the stylesheet. Then, simply
+          add the effect's class name to the element you want it to be applied
+          to.
+          </li>
+          <li>It has a very modest file size.</li>
+          <li>
+          Use your favourite tools without jumping through endless hoops to
+          ensure compatibility. Anim8 "just works". We worry about compatibility
+          so that you don’t need to. Another headache is solved.
+          </li>
+          <li>
+          Exposes animation elements and parameters to use as targeting elements
+          to add interactivity and manipulate at run-time.
+          </li>
+          <br>
+          <p id="before-you-continue">Read on to find out more.</p>
+          <br><br>
+      </ul>
+      </p>
+    <h3 id="how-this-documentation-is-arranged">Hold up! BEFORE YOU CONTINUE</h3>
+    <p>Stuff you need to know</p><br>
+    <h3>HOW THIS DOCUMENTATION IS ARRANGED</h3>
+    <!-- 
+      guys i noticed stuff i dont need those codes for < >
+      in a p tag i just put it like that.
+     -->
+    <p>
+      If you are new to this and want to get up and running in say 10min or so
+      check the <a href="{% url 'docs:tut' %}">Tutorials</a>. 
+      If you are interested in finding more information,
+      especially about the animations we provide, our technical reference
+      serves your purpose. If you feel the defaults aren’t your style and you
+      want to change them do check the how-to guides. Lastly, if you’re
+      curious and want to know how it all works the nuts and bolts and
+      everything in between do check <a href="{% url 'docs:works' %}">How it all works</a>.
+      <strong id="the-anim8-case">! Important</strong> - In all
+      code snippets shown anything you see in between <...> is variable, just
+      so you know. And now another important thing…
+    </p><br>
+    <h3>THE ANIM8 CASE</h3>
+    <p>
+      Since our purpose is to better the developer's life we have considered a case,
+       how do we know which class belongs to which library
+      (eg. bootstrap) assuming you want to use some other library so we use a special case 
+      " _className".
+    </p><br><br>
+    <p>
+      Now to the meat...
+    </p><br><br><br>
+    <!-- 
+        django guys why does something smell like pagination here
+       -->
+
+      <!-- 
+        the link is like this so you can click anywhere on the div something of a UX law thingy
+        and if you notice this div has a different gap so as to leave space for content
+       -->
+       <a href="{% url 'docs:tut' %}">
+        <div class="next-page" style="gap:380px;">
+          <div class="title">
+            <p style="font-size: 16px;color: #73777F;margin-bottom: -10px;">Next</p>
+            <p style="font-size: 20px;color:#042947;font-weight: bolder;">Tutorials</p>
+          </div>
+          <div class="arrow">
+            {% load static %}
+            <!-- i couldnt find the icon or probably did look hard enough but this works fine -->
+            <img src="{% static 'docs/image-forward-icon.svg' %}" alt="next" />
+          </div>
+        </div>
+      </a>
+      <br><br><br>
+  </main>
+  <div class="right-div">
+    <div class="page-content">
+      <h3>CONTENTS</h3>
+      <div id="content-small">
+          <small>
+              <ul id="content-small-first-ul">
+                  <li><a href="#why-anim8">Why Anim8</a></li>
+                  <li><a href="#before-you-continue">Before you continue</a> 
+                      <ul>
+                          <li><a href="#how-this-documentation-is-arranged"> How this documentation is arranged</a></li>
+                          <li><a href="#the-anim8-case"> Anim8 Case</a></li>
+                      </ul>
+                  </li>
+              </ul> 
+          </small>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock content %}

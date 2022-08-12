@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <!-- 
+      if you  have link divided among many lines django doesnt seem to read them
+     -->
+    {% load static %}
+    <link rel="stylesheet" href={% static 'docs/style.css' %}/>
+    <link rel="apple-touch-icon" sizes="180x180" href={% static 'docs/apple-touch-icon.png' %}/>
+    <link rel="icon" type="image/png" sizes="32x32" href={% static 'docs/favicon-32x32.png' %}/>
+    <link rel="icon" type="image/png" sizes="16x16" href={% static 'docs/favicon-16x16.png' %}/>
+    <link rel="manifest" href={% static 'docs/site.webmanifest' %} />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="top-nav">
+      <!-- 
+          guys thus is why i  think we should have one landing page,
+          which page are we using as home 
+          backend guys please note 
+      -->
+      <a href="/landing-page(unauthorized)/index.html"
+        ><img src="{% static 'docs/logo.svg' %}" class="logo" alt="home"
+      /></a>
+      <div class="sections">
+        <a href="/animation (unauthorized)/index.html">Animations</a>
+        <!-- done the two below -->
+        <a href="{% url 'docs:intro' %}">Documentation</a>     
+        <a href="https://github.com/zuri-training/team-93_anime-lib">Github</a>
+      </div>
+      <div class="login-get-started">
+        <a href="/Login/index.html">Login</a>
+        <a href="/Sign Up  1/index.html"
+          ><button class="get-started-btn">Get started</button></a
+        >
+      </div>
+    </nav>
+    {% block content %} 
+    
+    {% endblock content %} 
+  </body>
+</html>
