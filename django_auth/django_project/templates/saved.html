@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png"/>
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-s.css" />
+    <title>Anim8</title>
+  </head>
+  <body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            padding: 0;
+            display: flex;
+            width: 100%;
+            height: 20%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.12);
+            /* had to bring this here so it overrides margin */
+            margin-top: 0px;
+        }
+        
+        
+        #navbar ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 40px;
+        }
+        
+        /* to put them at the center */
+        #navbar ul {
+            display: block;
+            margin-left: 150px;
+        }
+        
+        #navbar ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 30px;
+            font-weight: 600;
+        }
+        
+        .nav-link {
+            color: black;
+            text-decoration: none;
+        }
+        
+        #profile {
+            display: flex;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        #profile a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        #profile a {
+            border-radius: 100px;
+            padding: 12px 15px;
+            border: none;
+            color: white;
+            background-color: #00325B;
+        }
+        
+        .nav-btn:hover {
+            font-size: x-small;
+        }
+        
+        .nav-btn {
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: 1px solid #00325b;
+            margin-right: 5px;
+        }
+        
+        .image div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: blue;
+            color: aqua;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image div img {
+            position: absolute;
+            font-size: 80px;
+        }
+        
+        .fa-solid {
+            color: black;
+            position: absolute;
+            right: -1px;
+            bottom: -1px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 105px;
+        }
+        
+        main {
+            height: 34.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .side-bar {
+            height: 100%;
+            width: 20%;
+            box-sizing: border-box;
+            padding: 0;
+            border-right: 2px solid #909093;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .side-bar div {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin-left: 40px;
+        }
+        
+        .side-bar a {
+            color: #909093;
+            padding: 1px;
+            width: 90%;
+            border-radius: 0.5em;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .side-bar a:hover {
+            background-color: #CFE8FF;
+        }
+        
+        .onset a {
+            background-color: #CFE8FF;
+            color: #63AFFF;
+        }
+        
+        .active-filters {
+            filter: invert(59%) sepia(93%) saturate(1491%) hue-rotate(187deg) brightness(103%) contrast(101%);
+        }
+        
+        .image div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: blue;
+            color: aqua;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image div img {
+            position: absolute;
+            font-size: 80px;
+        }
+        
+        
+        .message {
+            display: flex;
+            justify-content: center;
+            margin-left: 50vh;
+            padding-top: 20vh;
+        }
+        
+        .texts {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+            color: black;
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: 500;
+            cursor: wait;
+            height: 45vh;
+            width: 50vh;
+            outline: 10px;
+            outline-style: inset;
+            outline-color: #63AFFF;
+            text-align: center;
+        }
+        
+        .texts:hover {
+            transform: rotateY(180deg);
+        }
+        
+        .text {
+            position: absolute;
+            top: 15%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        
+        .text-front {
+            z-index: 1;
+        }
+        
+        .text-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+    <header>
+      <a href="/landing page(authorized)-new/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="/Documentation/introduction.html" class="nav-link">Documentation</a></li>
+          <li><a href="{% url 'library' %}" class="nav-link">Animations</a></li>
+          <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
+        </ul>
+      </nav>
+      <nav id="profile">
+        <a href="/profile page/index-account.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/Vector%20profile.svg" alt=""></a>
+      </nav>
+    </header>
+  <main>
+    <div class="side-bar">
+      <div><h1> </h1></div>
+      <div><a href="{% url 'account' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/account_circle.svg" alt=""> <h4>My Account</h4></a></div>
+      <div class="onset"><a href="{% url 'saved' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/ic_bookmark_border_48px.svg" class="active-filters"> <h4>Saved</h4></a></div>
+      <div><a href="{% url 'download' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/e385d78d9442eb0dfe4c714931e9ac3f3cc047f8/Image/ic_access_time_48px.svg" alt=""> <h4>Download history</h4></a></div>
+    </div>
+    <div class="message">
+      <div class="texts">
+        <div class="text text-front">
+          coming soon
+        </div>
+        <div class="text text-back">
+          features to be unlocked
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
