@@ -1,32 +1,581 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/apple-touch-icon.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-32x32.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
+    />
+    <link rel="manifest" href="/Image/site.webmanifest" />
+    <title>Animation</title>
+    <!-- animations -->
 
-{% block title %}Library{% endblock %}
+    <!-- please the script works dont change it  -->
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="/node_modules/zuri-anim8/lib/index.css" />
+  </head>
+  <body>
+    <header>
+      <a href="{% url 'home' %}"
+        ><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/fe1d6ba0fc1152d1f5a9695c0085f1ad668d18a8/Image/Logo%20(3).svg" alt="LOGO"
+      /></a>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="{% url 'library' %}" class="nav-link"
+              >Animations</a
+            >
+          </li>
+          <li>
+            <a href="/Documentation/introduction.html" class="nav-link"
+              >Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/zuri-training/team-93_anime-lib"
+              class="nav-link"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- go to your profile and do what you need to i dont see high importance for dialogs here -->
+      <nav id="profile">
+        <ul>
+          <li>
+            <a href="{% url 'account' %}"
+              ><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/fe1d6ba0fc1152d1f5a9695c0085f1ad668d18a8/Image/logged-in-user.svg" alt="profile"
+            /></a>
+            <ul>
+              <li><a href="{% url 'account' %}">Profile</a></li>
+              <li><a href="{% url 'download' %}">Download</a></li>
+              <li><a href="{% url 'logout' %}">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="features">
+        <figure>
+          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Component%201.svg" alt="FEATURES" />
+          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Slide2.gif?raw=true" alt="FEATURES" />
+          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Slide%205.gif?raw=true" alt="FEATURES" />
+          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/slide%204.gif?raw=true" alt="FEATURES" />
+          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Component%201.svg" alt="FEATURES" />
+        </figure>
+      </section>
+      <section id="search">
+        <!-- i think this would have been best if
+                 our libary was as big as designers might 
+                 have thought--when it gets that big uncomment this below
+             -->
 
-{% block content %}
-  {% comment %} Hi {{ user.username }}! {% endcomment %}
-  <title>Library</title>
-  <style>
-    *{
-        background: grey;
-    }
-    h2{
-        margin-top: 30%;
+        <!-- <div class="container">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for transition, animation">
+                </div>
+            </div> -->
+      </section>
+      <section>
+        <!-- hahahaha using a small hackery -->
+        <div style="display: flex; align-items: center">
+          <h1>Basic Animations</h1>
+          <a href="/node_modules/zuri-anim8/lib/basic.css"
+            ><button class="get-libary-part">Get it</button></a
+          >
+        </div>
+        <div class="anim8">
+          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/181a62cba7f7d6ff22d2f4d2e2d0d46e508af684/Image/Speaker.svg" alt="ICON" id="img1" />
+          <div class="text">
+            <button class="action btn1" onclick="change1('_moveUp')">
+              _moveUp
+            </button>
+            <button class="action btn1" onclick="change1('_moveDown')">
+              _moveDown
+            </button>
+            <button class="action btn1" onclick="change1('_moveRight')">
+              _moveRight
+            </button>
+            <button class="action btn1" onclick="change1('_moveLeft')">
+              _moveLeft
+            </button>
+            <button class="action btn1" onclick="change1('_bounce')">
+              _bounce
+            </button>
+            <button class="action btn1" onclick="change1('_blink')">
+              _blink
+            </button>
+            <button class="action btn1" onclick="change1('_fade')">
+              _fade
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div style="display: flex; align-items: center">
+          <h1>Attention seekers</h1>
+          <a href="/node_modules/zuri-anim8/lib/attention-seekers.css" download
+            ><button class="get-libary-part">Get it</button></a
+          >
+        </div>
+        <div class="anim8">
+          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Target.svg" alt="ICON" id="img2" />
+          <div class="text">
+            <button class="action btn2" onclick="change2('_popOut')">
+              _popOut
+            </button>
+            <button class="action btn2" onclick="change2('_changeBgColor')">
+              _changeBgColor
+            </button>
+            <button class="action btn2" onclick="change2('_tada')">
+              _tada
+            </button>
+            <button class="action btn2" onclick="change2('_shakeSide')">
+              _shakeSide
+            </button>
+            <button class="action btn2" onclick="change2('_shakeUpDown')">
+              _shakeUpDown
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="download">
+        <!-- one can only use download attribute to download zip folders or files -->
+        <a href="https://github.com/zuri-training/team-93_anime-lib/blob/main/downloadable-lib.zip?raw=true" download
+          ><button>DOWNLOAD FULL LIBRARY</button></a
+        >
+      </div>
+    </main>
+    <!-- <footer>
+        <div class="footer">
+        <address class="websites">
+            <img src="/Image/LOGO (2).svg" alt="" width="72px" height="72px" class="footer-image">
+            <div class="profile">
+              <a href="#" class="profile-link"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="profile-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="profile-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </address>
+        <div class="links">
+            <address>
+                <h4>Resources</h4>
+                <a href="#">All Releases</a>
+                <br><br>
+                <a href="#">New Features</a>
+            </address>
+            <address>
+                <h4>Support</h4>
+                <a href="#">About Us</a>
+                <br><br>
+                <a href="#">Contact Us</a>
+            </address>
+            <address>
+                <h4>Terms and Policies</h4>
+                <a href="#">Terms and Conditions</a>
+                <br><br>
+                <a href="#">Community guidelines</a>
+            </address>
+        </address>
+        </div>
+    </div>
+        <p>&copy;2022 Anim8 Software. <strong>All Rights reserved.</strong></p>
+    </footer> -->
+    <script>
+        // getting stuff
+
+        const img1 = document.getElementById("img1");
+        const img2 = document.getElementById("img2");
+
+        // for the basic animations
+
+        function change1(m){
+            // remove the last class in img1
+            // remove all classes
+            img1.classList = "";
+            // add m to class list
+            img1.classList.add(m);
+        }
+        function change2(m){
+            // remove the last class in img1
+            // remove all classes
+            img2.classList = "";
+            // add m to class list
+            img2.classList.add(m);
+        }
+
+
+        // did this here cos of webkit version and making the html messy THANKS 4 UNDEERSTANDING
+        // remove class again so you can click same animation btn twice and it works 
+        // STANDARD
+        img1.addEventListener('animationend', () => {
+            img1.classList = "";
+        })
+        // CHROME, SAFARI, AND OPERA -i dont know why  they hve special one's but they are the guys that use webkit
+        img1.addEventListener('webkitAnimationEnd', () => {
+            img1.classList = "";
+        })
+
+        // STANDARD
+        img2.addEventListener('animationend', () => {
+            img2.classList = "";
+        })
+        // CHROME, SAFARI, AND OPERA -i dont know why  they hve special one's but they are the guys that use webkit
+        img2.addEventListener('webkitAnimationEnd', () => {
+            img2.classList = "";
+        })
+    </script>
+    <style>
+        /* Global Selectors
+        ---------------------------------------------------- */
+        * {
+        box-sizing: border-box;
+        font-family: "Rubik", sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+        body {
+        background: #fbfbfb;
+        }
+
+        main {
+        margin: 0 30px;
+        }
+
+        /* Header
+        ---------------------------------------------------- */
+        header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ffffff;
+        box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        margin-bottom: 30px;
+        
+        z-index: 1;
+        }
+
+        header img {
+        margin-left: 1%;
+        }
+
+        #navbar {
+        /* margin-right: 40%; */
+        width: 60%;
+        }
+
+        .nav-link {
+        text-decoration: none;
+        color: black;
+        }
+
+        #navbar li {
+        display: inline-block;
+        margin: 0 30px;
+        font-weight: 500;
+        }
+
+        #profile {
+        margin-right: 1%;
+        }
+
+        #profile li{
+        list-style: none;
+        }
+
+        #profile ul li ul{
+        background-color: white;
+        border-radius: 0 0 5px 5px ;
+        position: absolute;
+        top: 70px;
+        right: 5px;
+        width: max-content;
+        display: none;
+        }
+
+        #profile ul li:hover ul{
+        display: block;
+        }
+
+        #profile ul li ul li{
+        padding: 10px 40px;
+        list-style: none;
+        }
+
+        #profile ul li ul li a{
+        background-color: white;
+        color: black;
+        border-radius: 0;
+        border: 0;
+        padding: 10px 20px;
+        text-decoration: none;
+        }
+        
+        #profile ul li ul li a:hover{
+        background-color: #042947;
+        }
+        /* Features
+        ---------------------------------------------------- */
+        #features {
+        overflow: hidden;
+        }
+
+        figure {
+        position: relative;
+        width: 500%;
+        display: flex;
+        animation: 25s slider infinite;
+        }
+
+        #features img {
+        background-image: url("https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/eb359c2218c636132987aa8ff87bc913b6e12be4/Image/Rectangle%2080.svg");
+        background-size: cover;
+        width: 20%;
+        border-radius: 30px;
+        float: left;
+        }
+
+        @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        30% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        65% {
+            left: -200%;
+        }
+
+        68% {
+            left: -300%;
+        }
+
+        99% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+        }
+
+        /* Search Form
+        ---------------------------------------------------- */
+        #search {
+        margin: 60px 0;
+        border: 0;
+        width: 30%;
+        /* padding: 16px 24px; */
+        }
+
+        .container {
+        display: block;
+        color: #a8abb4;
+        }
+
+        .form {
+        display: flex;
+        padding: 8px 16px;
+        background-color: white;
+        border: 0;
+        border-radius: 20px;
+        align-items: center;
+        }
+
+        input {
+        flex: 1;
+        padding: 2px 10px;
+        outline: 0;
+        border: 0;
+        }
+
+        /* Animations
+        ---------------------------------------------------- */
+        .anim8 {
+        display: flex;
+        margin-bottom: 150px;
+        }
+
+        .anim8 img {
+        width: 20%;
+        align-self: center;
+        justify-self: center;
+        margin-right: 10%;
+        }
+
+        .text {
+        width: 70%;
+        margin-top: 5%;
+        }
+
+        .action {
+        display: inline-block;
+        width: 269px;
+        height: 104px;
+        padding: 32px 48px;
+        margin-bottom: 20px;
+        margin-right: 5px;
+        border: 1px solid #0058b4;
+        color: #0058b4;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #fbfbfb;
+        font-weight: 500;
+        font-size: 20px;
+        }
+
+        /* footer
+        ---------------------------------------------------- */
+        footer {
+        color: white;
+        background-color: #181c22;
+        }
+
+        .footer {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        justify-content: space-between;
+        height: 30vh;
+        width: 100%;
+        }
+
+        .websites {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 20px;
+            margin-top: 20px; */
+        }
+
+        .profile-link {
+        font-size: x-large;
+        color: white;
+        margin: 0 5px;
+        }
+
+        .links {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+        }
+
+        .links a {
+        color: #a8abb4;
+        text-decoration: none;
+        }
+
+        address {
+        font-style: normal;
+        }
+
+        address h4 {
+        font-weight: 400;
+        margin-bottom: 20px;
+        }
+
+        p {
         text-align: center;
-        font-size: 1.7em;
-    }
-    p{
+        font-weight: 200;
+        color: #a8abb4;
+        }
+
+        strong {
+        font-weight: 400;
+        color: white;
+        }
+
+        /*Animations
+        ------------------------------------------------------ */
+
+        /* Download full library
+        ------------------------------------------------------ */
+        .download {
         text-align: center;
-        font-size: 1.3em;
-    }
-    .a{
-        margin-left: 40%;
-    }
-    .b{
-        margin-left: 5%;
-    }
-</style>
-<h2>Team93</h2>
-<p>Animation Librar</p>
-<p><a href="{% url 'logout' %}">Log Out</a></p>
-{% endblock %}
+        }
+
+        .download button {
+        border-radius: 8px;
+        padding: 16px 24px;
+        background-color: #63afff;
+        border: none;
+        box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+        width: 305px;
+        height: 60px;
+        margin-bottom: 100px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: #ffffff;
+        cursor: pointer;
+        }
+
+        /* get part of library
+        ------------------------------------------- */
+        .get-libary-part {
+        margin-left: 15px;
+        cursor: pointer;
+        padding: 16px 24px;
+        border-radius: 8px;
+        color: #ffffff;
+        background-color: #63afff;
+        font-size: 20px;
+        border: none;
+        font-weight: 600;
+        }
+    </style>
+  </body>
+</html>
