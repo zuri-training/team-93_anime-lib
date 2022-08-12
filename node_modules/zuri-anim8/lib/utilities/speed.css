@@ -1,0 +1,16 @@
+._slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  ._slower {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+  }
+  ._fast {
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+  }
+  ._faster {
+    -webkit-animation-duration: 400ms;
+    animation-duration: 400ms;
+  }
