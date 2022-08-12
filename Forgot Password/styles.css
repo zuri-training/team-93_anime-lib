@@ -83,3 +83,9 @@ input[type="email"] {
 input[type="button"]:hover {
     background-color: grey;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0;
+    }
+}
