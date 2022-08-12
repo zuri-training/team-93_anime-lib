@@ -14,8 +14,36 @@ def homepage(request):
 def library(request):
     return render(request, 'library.html')
 
-def about(request,id):
-    return render(request, 'about.html',{'id':id})
+def main2(request):
+    return render(request, 'library2.html')
+
+def account(request):
+    return render(request, 'index-account.html')
+
+def download(request):
+    return render(request, 'download.html')
+
+def saved(request):
+    return render(request, 'saved.html')
+
+def home2(request):
+    return render(request, 'home2.html')
+
+def password_reset(request):
+    return render(request, 'reset_password.html')
+
+def password_form(request):
+    return render(request, 'reset_password_form.html')
+
+def password_done(request):
+    return render(request, 'reset_password_done.html')
+
+def password_complete(request):
+    return render(request, 'reset_password_complete.html')
+
+def password_confirm(request):
+    return render(request, 'reset_password_confirm.html')
+
 
 class SignUpView(View):
     form_class = UserRegistrationForm
