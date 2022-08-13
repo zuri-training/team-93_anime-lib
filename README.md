@@ -39,7 +39,7 @@ THE OUTLINE
 
 # INTRODUCTION
 
-<strong>Technical details below<strong/>
+**Technical details below**
 	
 ## WHY  “Anim8”
 With anim8 you simply have the best at your fingertips with just a few words added to your class list - perfect for beginners, and those who simply want to do simple animations at break record timings. To name a few more:
@@ -213,22 +213,22 @@ You can always come back and re-download. We encourage you to keep breaking it, 
 You’d know what they do from their names, neat right.
 
 ### BASIC ANIMATIONS
--_moveDown
--_moveRight
--_moveLeft
--_blink
--_fade
--_bounce
--_moveUp
--_moveDown
+- _moveDown
+- _moveRight
+- _moveLeft
+- _blink
+- _fade
+- _bounce
+- _moveUp
+- _moveDown
 
 
 ### ATTENTION SEEKERS
--_popOut
--_tada
--_changeBgColor
--_shakeSide
--_shakeUpDown
+- _popOut
+- _tada
+- _changeBgColor
+- _shakeSide
+- _shakeUpDown
 
 hope to add more soon
 
@@ -260,16 +260,16 @@ Check out for the full Documentation in https://docs.google.com/document/d/12qVa
 - Frontend: HTML/CSS , javascript
 - Backend: Django(python)
 ## Architecture
-We use a  <strong>microservice<strong/> architecture.
+We use a  **microservice** architecture.
 ## To run our project
 
-<strong>step 1:<strong/> Clone the repo and change directory with
+**step 1:** Clone the repo and change directory with
 ```
 $ git clone https://github.com/zuri-training/team-93_anime-lib.git
 $ cd django_auth
 ```
 
-<strong>step 2:<strong/> create a virtual enironment and activate it (we used  venv here but you can use anything)
+**step 2:** create a virtual enironment and activate it (we used  venv here but you can use anything)
 
 ```
 $ py -m  venv .env
@@ -278,19 +278,19 @@ $ .env\scripts\activate
 
 If you are using the powershell you can add .ps1 to the activate when you are trying to activate it else use .bat for the command line
 
-<strong>step 3:<strong/> Install the dependencies
+**step 3:** Install the dependencies
 ```
 $ pip install -r requirements.txt
 ```
 
-<strong>step 4:<strong/> Make migrations and migrate and ...
+**step 4:** Make migrations and migrate and ...
 ```
 $ py manage.py makemigrations
 $ py manage.py migrate
 $ cd django_project
 ```
 
-<strong>step 5:<strong/> Runserver 
+**step 5:** Runserver 
 ```
 $ py manage.py runserver 
 ```
