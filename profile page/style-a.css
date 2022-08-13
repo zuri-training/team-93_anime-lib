@@ -81,12 +81,14 @@ header {
     border: 1px solid #00325b;
     margin-right: 5px;
 }
-main{
+
+main {
     height: 34.5rem;
     display: flex;
     flex-direction: row;
 }
-.side-bar{
+
+.side-bar {
     height: 100%;
     width: 20%;
     box-sizing: border-box;
@@ -96,13 +98,15 @@ main{
     display: flex;
     flex-direction: column;
 }
-.side-bar div{
+
+.side-bar div {
     display: flex;
     flex-direction: row;
     padding: 10px;
     margin-left: 40px;
 }
-.side-bar a{
+
+.side-bar a {
     color: #909093;
     padding: 1px;
     width: 90%;
@@ -114,26 +118,32 @@ main{
     align-items: center;
     justify-content: flex-start;
 }
-.side-bar a:hover{
+
+.side-bar a:hover {
     background-color: #CFE8FF;
 }
-.onset a{
+
+.onset a {
     background-color: #CFE8FF;
     color: #63AFFF;
 }
-.active-filters{
+
+.active-filters {
     filter: invert(59%) sepia(93%) saturate(1491%) hue-rotate(187deg) brightness(103%) contrast(101%);
 }
-.edit-section{
+
+.edit-section {
     padding: 40px 70px;
 }
-.image-section{
+
+.image-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 50px;
 }
-.image{
+
+.image {
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -144,11 +154,13 @@ main{
     align-items: center;
     justify-content: center;
 }
-.image img{
+
+.image img {
     position: absolute;
     font-size: 80px;
 }
-.fa-solid{
+
+.fa-solid {
     color: black;
     position: absolute;
     right: -1px;
@@ -157,20 +169,28 @@ main{
     background-color: white;
     border-radius: 105px;
 }
-.image-upload form{
+
+.image-upload form {
+    color: #ABABAF;
+    font-weight: 600;
     display: flex;
     flex-direction: row;
+    padding: 8px;
     gap: 20px;
 }
-.image-upload label:hover{
+
+.image-upload label:hover {
     color: #63AFFF;
 }
+
 input[type="file"] {
     display: none;
 }
+
 input[type="reset"] {
     display: none;
 }
+
 .custom-file-upload {
     border: 1px solid #ccc;
     display: inline-block;
@@ -178,10 +198,17 @@ input[type="reset"] {
     cursor: pointer;
     border-radius: 10px;
 }
+
 .custom-reset {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+#pfp {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
 }
