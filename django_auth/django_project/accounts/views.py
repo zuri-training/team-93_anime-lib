@@ -6,26 +6,31 @@ from django.contrib.auth import login, authenticate
 
 from .forms import UserRegistrationForm
 from .forms import LoginForm
+from django.contrib.auth.decorators import login_required
 
 def homepage(request):
     return render(request, 'home.html')
 
-
+@login_required(login_url='login')
 def library(request):
     return render(request, 'library.html')
 
 def main2(request):
     return render(request, 'library2.html')
 
+@login_required(login_url='login')
 def account(request):
     return render(request, 'index-account.html')
 
+@login_required(login_url='login')
 def download(request):
     return render(request, 'download.html')
 
+@login_required(login_url='login')
 def saved(request):
     return render(request, 'saved.html')
 
+@login_required(login_url='login')
 def home2(request):
     return render(request, 'home2.html')
 
