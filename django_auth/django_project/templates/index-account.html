@@ -136,7 +136,7 @@
         }
         .side-bar a{
             color: #909093;
-            padding: 16px;
+            padding: 10px;
             width: 90%;
             border-radius: 0.5em;
             text-decoration: none;
@@ -190,9 +190,12 @@
             border-radius: 105px;
         }
         .image-upload form{
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
+          color: #ABABAF;
+          font-weight: 600;
+          display: flex;
+          flex-direction: row;
+          padding: 8px;
+          gap: 20px;
         }
         .image-upload label:hover{
             color: #63AFFF;
@@ -243,7 +246,8 @@
       <h1>Account</h1><br>
       <div class="image-section">
         <div class="image">
-          <img src="" alt="Z">
+          <!-- so the broken image doesnt show anymore -->
+          <img src="{% static 'accounts/default-profile-image.svg' %}" alt="">
           <i class="fa-solid fa-camera">
             <input type="file" id="file" name="image" hidden>
           </i> 
