@@ -150,7 +150,15 @@ form button {
   cursor: pointer;
   width: 582px;
 }
-
+.error-div{
+  text-align: center;
+  color: red;
+  padding: 16px 24px;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 582px;
+  margin-bottom: 20px;
+}
 
 @media only screen and (max-width: 500px) {
   main {
@@ -185,6 +193,9 @@ form button {
       </div> -->
       <form action="" method="post">
         {% csrf_token %}
+        {% if form.errors %} 
+        <div class="error-div">Invalid username and/or password, please check your details.</div>
+        {% endif %}
     {% for field in form %}
     {% if field.label == 'Username' %}
     <label>Email</label>

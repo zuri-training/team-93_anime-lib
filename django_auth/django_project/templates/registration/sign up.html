@@ -125,14 +125,19 @@
       width: 275px;
     }
 
-    #account-type div:focus-within {
+    #account-type div:focus-within{
       background-color: rgba(159, 202, 255, 0.2);
       border: 1px solid #0060a7;
       padding: 16px 120px 16px 24px;
       font-weight: 400;
-      font-size: 20px;
+      /* font-size: 20px; */
       line-height: 28px;
       color: #0060a7;
+    }
+    #account-type #teamdiv:focus-within{
+      font-size: 16px;
+      /* reducing the padding cos the text is longer */
+      padding: 16px 0px 16px 24px;
     }
 
     /* User details
@@ -206,7 +211,7 @@
                 <div><input type="radio" value="individual" id="individual" name="account" checked><label for="#individual">Individual</label></div>
                 <!-- please change this link to the team account -->
                 <!-- i deadlinked it cos we arent doing teams but if we are please undead link it and remove coming soon -->
-                <div><input type="radio" value="team" id="team" name="account" onclick="window.location='#'"><label for="#team">Team</label>
+                <div id="teamdiv"><input type="radio" value="team" id="team" name="account" onclick="window.location='#'"><label for="#team">Team</label>
                 <small style="color: #ababaf;text-align: right;">coming soon...</small></div>
             </section><br>
 
