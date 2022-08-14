@@ -31,549 +31,549 @@
   </head>
   <body>
      <style>
-    * {
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-        font-family: "Rubik", sans-serif;
-        padding: 0;
-        margin: 0;
-      }
-      
-      body {
-        padding: 0;
-        margin: 0;
-      }
-      
-      header {
-        padding: 0;
-        display: flex;
-        width: 100%;
-        height: 20%;
-        justify-content: space-around;
-        align-items: center;
-        margin: 10px 0;
-        box-sizing: border-box;
-        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.12);
-        /* had to bring this here so it overrides margin */
-        margin-top: 0px;
-      }
-      
-      #navbar ul li {
-        display: inline-block;
-        list-style: none;
-        margin: 0 40px;
-        font-weight: 600;
-      }
-      
-      /* to put them at the center */
-      #navbar ul {
-        display: block;
-        margin-left: 150px;
-      }
-      
-      #navbar ul li {
-        display: inline-block;
-        list-style: none;
-        margin: 30px;
-      }
-      
-      .nav-link {
-        color: black;
-        text-decoration: none;
-      }
-      
-      #profile {
-        display: flex;
-        width: auto;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-      }
-      
-      #profile a {
-        color: black;
-        text-decoration: none;
-      }
-      
-      .nav-btn{
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
-        color: white;
-        background-color: #63AFFF;
-      }
-      
-      .nav-btn:hover {
-        font-size: x-small;
-      }
-      
-      .nav-btn {
-      padding: 15px 30px;
-      /* border: 1px solid #00325b; */
-      margin-right: 5px;
-      background: #63afff;
-      box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-      border-radius: 8px;
-      color: white;
-      font-weight: 600;
-      border: none;
-      }
-      
-      .nav-btn:hover {
-        font-size: x-small;
-      }
-      
-      /* we already have this  and the one before it is more pixel perfect */
-      /* .nav-btn {
-        padding: 15px 30px;
-        border-radius: 10px;
-        border: 1px solid #00325b;
-        margin-right: 5px;
-      } */
-      
-      main {
-        padding: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .heading {
-        background-color: white;
-        background-image: url("https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Header%20picture.svg");
-        height: 500px;
-        width: 100%;
-      }
-      
-      button {
-        cursor: pointer;
-      }
-      
-      .heading .sub {
-        padding: 100px;
-        width: 800px;
-      }
-      
-      .heading h2 {
-        font-size: 48px;
-        color: #011220;
-      }
-      
-      .heading p {
-        font-family: "Rubik";
-        font-style: normal;
-        font-size: 24px;
-        line-height: 32px;
-        color: #042947;
-      }
-      
-      .heading button {
-        font-size: 16px;
-        padding: 10px 50px;
-        background-color: #00325b;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-      }
-      
-      #WWO {
-        text-align: center;
-        padding: 50px;
-      }
-      
-      .container {
-        width: 80%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-      }
-      
-      .info-op {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 50px;
-        padding: 20px;
-      }
-      
-      .info-rop {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row-reverse;
-        width: 100%;
-        gap: 50px;
-        padding: 10px;
-      }
-      
-      #curves {
-        padding: 5px;
-      }
-      
-      .holder {
-        /* border: 1px solid; */
-        width: 440px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        background-image: url("https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/holder-div-background.svg");
-        border-radius: 10px;
-      }
-      
-      .holder div {
-        /* border: 1px solid; */
-        width: 400px;
-        height: 280px;
-        box-shadow: 10px 9px 46px 8px rgba(0, 0, 0, 0.12);
-        border-radius: 24px;
-      }
-      
-      .ending {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 100px 0px;
-        gap: 20px;
-      }
-      
-      .ending-info {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        gap: 10px;
-      }
-      
-      .ending-info h2 {
-        color: #011220;
-      }
-      
-      .ending-info button {
-        font-size: 16px;
-        width: fit-content;
-        padding: 10px 20px;
-        background-color: #63afff;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-      }
-      
-      .ending-links {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      
-      .ending-links-con {
-        border: 1px dotted #63afff;
-        width: 100%;
-        padding: 10px 50px;
-        border-radius: 0px 100px 100px 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        gap: 10px;
-      }
-      
-      .info-hold {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .info-hold a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        color: #63afff;
-        gap: 80px;
-      }
-      
-      .info-hold a p {
-        width: 220px;
-      }
-      
-      .info-hold a img {
-        height: 21px;
-        width: 21px;
-        justify-self: right;
-      }
-      
-      footer {
-        background-color: #1b1b1d;
-        color: white;
-      }
-      
-      .social {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-self: center;
-        gap: 10px;
-      }
-      
-      .social img {
-        background-color: #011220;
-        color: white;
-        height: 100px;
-        width: 80px;
-      }
-      
-      .social p {}
-      
-      .footer-con {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        padding: 15px 0;
-      }
-      
-      .footer-con h4 {
-        font-weight: 500;
-        font-size: x-large;
-        margin: 15px 0;
-      }
-      
-      .footer-con div {}
-      
-      address a {
-        display: block;
-        margin-bottom: 10px;
-        transition: all 0 3s;
-        color: #e8e8e8;
-        text-decoration: none;
-        font-weight: 400;
-      }
-      
-      .profile-link {
-        display: flex;
-        gap: 20px;
-        margin-top: 10px;
-      }
-      
-      .footer-paragraph {
-        text-align: center;
-        padding-bottom: 20px;
-      }
-      
-      /*The light and strong represent the copyright content*/
-      footer light {
-        color: #e8e8e8;
-      }
-      
-      footer strong {
-        font-weight: 500;
-      }
-      
-      .footer-con {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-        padding: 40px;
-        box-sizing: border-box;
-      }
-      
-      address {
-        font-style: normal;
-      }
-      
-      .free-space {
-        width: 100px;
-      }
-      
-      .others {
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-      }
-      
-      address a {
-        text-decoration: none;
-        display: block;
-        margin-bottom: 10px;
-        transition: all 0 3s;
-        color: white;
-      }
-      
-      address a:hover {
-        padding-left: 10px;
-        color: blue;
-      }
-      
-      .profile-link {
-        display: flex;
-        gap: 20px;
-        margin-top: 10px;
-      }
-      
-      .footer-paragraph {
-        text-align: left;
-      }
-      
-      /* to make the h3 look like what is on figma board */
-      h3 {
-        color: #1b1b1d;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 57px;
-      }
-      
-      .side-info p {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 36px;
-        color: #76777a;
-      }
-</style>
-    <header>
-      <a href="{% url 'home' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
-      <nav id="navbar">
-        <ul>
-          <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li>
-          <li><a href="{% url 'main2' %}" class="nav-link">Animations</a></li>
-          <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
-        </ul>
-      </nav>
-      {% comment %} <nav id="profile">
-        <!-- link to profile page you can manage and do any other thing to  your account ther so i dont see high importance for dialog -->
-        <a href="/profile page/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector%20profile.svg" width="50%" height="50%" alt=""></a>
-      </nav> {% endcomment %}
-      <nav id="profile">
-        <h4><a href="{% url 'login' %}">Login</a></h4>
-        <a href="{% url 'sign up' %}"><button class="nav-btn">GET STARTED</button></a>
-      </nav>
-    </header>
-    <main>
-      <div class="heading">
-        <div class="sub">
-          <h2>One animation library, Fewer headaches.</h2><br>
-          <p>Get Access to more When you Register</p><br>
-          <a href="{% url 'sign up' %}"><button>GET STARTED</button></a>
-        </div>
-      </div>
-      <div id="WWO">
-        <h3>WHAT WE OFFER</h3>
-      </div><br>
-      <div class="container">
-        <div class="info-op">
-          <div class="holder">
-            <div style="
-  background-image: url(https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Sign%20up%20main%20record%20replace.jpg?raw=true);
-            ">
-              
-            </div>
-          </div>
-          <div class="side-info">
-            <h3>Account options</h3>
-            <p>Create an account based on your needs, individual or team (10 people).</p>
-          </div>
-        </div>
-        <div id="curves">
-          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/curves/Vector%204.svg" alt="">
-        </div>
-        <div class="info-rop">
-          <div class="holder">
-            <div style="
-            background-image: url(https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/access-lib.svg);
-                      ">
-              
-            </div>
-          </div>
-          <div class="side-info">
-            <h3>Access library your way</h3>
-            <p>Our library allows you choose how to get code, by import, embed or package manager installations.</p>
-          </div>
-        </div>
-        <div id="curves">
-          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/curves/Vector%206.png?raw=true" alt="">
-        </div>
-        <div class="info-op">
-          <div class="holder">
-            <div style="
-            background-image: url(https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/searching-landing.svg);
-            background-repeat: no-repeat;">
-              
-            </div>
-          </div>
-          <div class="side-info">
-            <h3>Interactive interface</h3>
-            <p>Anime8 is a fully-responsive library, we’ve included an extensive list of animation techniques to suit your design ideas.</p>
-          </div>
-        </div>
-        <div id="curves">
-          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/curves/Vector%205.png?raw=true" alt="">
-        </div>
-        <div class="info-rop">
-          <div class="holder">
-            <div style="
-            background-image: url(https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/save-data.svg);
-            background-repeat: no-repeat;">
-              
-            </div>
-          </div>
-          <div class="side-info">
-            <h3>Save data</h3>
-            <p>You see an animation you like? Bookmark it and it automatically shows in your personal library so you never lose it.</p>
-          </div>
-        </div><br>
-        <div class="ending">
-          <div class="ending-info">
-            <h2>Ready?</h2><br>
-            <p>We've designed Anim8 to make it easy to design animations whether you're an expert in code or a developer who's new to animation.</p><br>
-            <a href="{% url 'sign up' %}"><button>Get Started-It's Free</button></a>
-          </div>
-          <div class="ending-links">
-            <div class="ending-links-con">
-              <div>
-                <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/File.svg" alt="">
-              </div>
-              <div class="info-hold">
-                <a href="{% url 'docs:intro' %}">
-                  <p>Documentation</p><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector.svg" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="ending-links-con">
-              <div>
-                <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Ios%20Files%20logo.svg" alt="">
-              </div>
-              <div class="info-hold">
-                <a href="{% url 'main2' %}">
-                  <p>Our Library</p><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector.svg" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="ending-links-con">
-              <div>
-                <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Github%20Logo.svg" alt="">
-              </div>
-              <div class="info-hold">
-                <a href="https://github.com/Ifechukwumunac/zuri-anim8" target="_blank">
-                  <p>Our GitHub</p><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
+        * {
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+            font-family: "Rubik", sans-serif;
+            padding: 0;
+            margin: 0;
+          }
 
-    </main>
+          body {
+            padding: 0;
+            margin: 0;
+          }
+
+          header {
+            padding: 0;
+            display: flex;
+            width: 100%;
+            height: 20%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.12);
+            /* had to bring this here so it overrides margin */
+            margin-top: 0px;
+          }
+
+          #navbar ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 40px;
+            font-weight: 600;
+          }
+
+          /* to put them at the center */
+          #navbar ul {
+            display: block;
+            margin-left: 150px;
+          }
+
+          #navbar ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 30px;
+          }
+
+          .nav-link {
+            color: black;
+            text-decoration: none;
+          }
+
+          #profile {
+            display: flex;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+          }
+
+          #profile a {
+            color: black;
+            text-decoration: none;
+          }
+
+          .nav-btn{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: #63AFFF;
+          }
+
+          .nav-btn:hover {
+            font-size: x-small;
+          }
+
+          .nav-btn {
+            padding: 15px 30px;
+            /* border: 1px solid #00325b; */
+            margin-right: 5px;
+            background: #63afff;
+            box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            border: none;
+          }
+
+          .nav-btn:hover {
+            font-size: x-small;
+          }
+
+          /* we already have this  and the one before it is more pixel perfect */
+          /* .nav-btn {
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: 1px solid #00325b;
+            margin-right: 5px;
+          } */
+
+          main {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .heading {
+            background-color: white;
+            background-image: url("https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Header%20picture.svg");
+            height: 500px;
+            width: 100%;
+          }
+
+          button {
+            cursor: pointer;
+          }
+
+          .heading .sub {
+            padding: 100px;
+            width: 800px;
+          }
+
+          .heading h2 {
+            font-size: 48px;
+            color: #011220;
+          }
+
+          .heading p {
+            font-family: "Rubik";
+            font-style: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #042947;
+          }
+
+          .heading button {
+            font-size: 16px;
+            padding: 10px 50px;
+            background-color: #00325b;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+          }
+
+          #WWO {
+            text-align: center;
+            padding: 50px;
+          }
+
+          .container {
+            width: 80%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+          }
+
+          .info-op {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 50px;
+            padding: 20px;
+          }
+
+          .info-rop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            width: 100%;
+            gap: 50px;
+            padding: 10px;
+          }
+
+          #curves {
+            padding: 5px;
+          }
+
+          .holder {
+            /* border: 1px solid; */
+            width: 440px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-image: url("https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/holder-div-background.svg");
+            border-radius: 10px;
+          }
+
+          .holder div {
+            /* border: 1px solid; */
+            width: 400px;
+            height: 280px;
+            box-shadow: 10px 9px 46px 8px rgba(0, 0, 0, 0.12);
+            border-radius: 24px;
+          }
+
+          .ending {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 100px 0px;
+            gap: 20px;
+          }
+
+          .ending-info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+          }
+
+          .ending-info h2 {
+            color: #011220;
+          }
+
+          .ending-info button {
+            font-size: 16px;
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: #63afff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+          }
+
+          .ending-links {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .ending-links-con {
+            border: 1px dotted #63afff;
+            width: 100%;
+            padding: 10px 50px;
+            border-radius: 0px 100px 100px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            gap: 10px;
+          }
+
+          .info-hold {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .info-hold a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #63afff;
+            gap: 80px;
+          }
+
+          .info-hold a p {
+            width: 220px;
+          }
+
+          .info-hold a img {
+            height: 21px;
+            width: 21px;
+            justify-self: right;
+          }
+
+          footer {
+            background-color: #1b1b1d;
+            color: white;
+          }
+
+          .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            gap: 10px;
+          }
+
+          .social img {
+            background-color: #011220;
+            color: white;
+            height: 100px;
+            width: 80px;
+          }
+
+          .social p {}
+
+          .footer-con {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            padding: 15px 0;
+          }
+
+          .footer-con h4 {
+            font-weight: 500;
+            font-size: x-large;
+            margin: 15px 0;
+          }
+
+          .footer-con div {}
+
+          address a {
+            display: block;
+            margin-bottom: 10px;
+            transition: all 0 3s;
+            color: #e8e8e8;
+            text-decoration: none;
+            font-weight: 400;
+          }
+
+          .profile-link {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+          }
+
+          .footer-paragraph {
+            text-align: center;
+            padding-bottom: 20px;
+          }
+
+          /*The light and strong represent the copyright content*/
+          footer light {
+            color: #e8e8e8;
+          }
+
+          footer strong {
+            font-weight: 500;
+          }
+
+          .footer-con {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+          }
+
+          address {
+            font-style: normal;
+          }
+
+          .free-space {
+            width: 100px;
+          }
+
+          .others {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+          }
+
+          address a {
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            transition: all 0 3s;
+            color: white;
+          }
+
+          address a:hover {
+            padding-left: 10px;
+            color: blue;
+          }
+
+          .profile-link {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+          }
+
+          .footer-paragraph {
+            text-align: left;
+          }
+
+          /* to make the h3 look like what is on figma board */
+          h3 {
+            color: #1b1b1d;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 57px;
+          }
+
+          .side-info p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            color: #76777a;
+          }
+      </style>
+      <header>
+        <a href="{% url 'home' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
+        <nav id="navbar">
+          <ul>
+            <li><a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a></li>
+            <li><a href="{% url 'main2' %}" class="nav-link">Animations</a></li>
+            <li><a href="https://github.com/zuri-training/team-93_anime-lib" class="nav-link">Github</a></li>
+          </ul>
+        </nav>
+        {% comment %} <nav id="profile">
+          <!-- link to profile page you can manage and do any other thing to  your account ther so i dont see high importance for dialog -->
+          <a href="/profile page/index.html"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector%20profile.svg" width="50%" height="50%" alt=""></a>
+        </nav> {% endcomment %}
+        <nav id="profile">
+          <h4><a href="{% url 'login' %}">Login</a></h4>
+          <a href="{% url 'sign up' %}"><button class="nav-btn">GET STARTED</button></a>
+        </nav>
+      </header>
+      <main>
+        <div class="heading">
+          <div class="sub">
+            <h2>One animation library, Fewer headaches.</h2><br>
+            <p>Get Access to more When you Register</p><br>
+            <a href="{% url 'sign up' %}"><button>GET STARTED</button></a>
+          </div>
+        </div>
+        <div id="WWO">
+          <h3>WHAT WE OFFER</h3>
+        </div><br>
+        <div class="container">
+          <div class="info-op">
+            <div class="holder">
+              <div style="
+    background-image: url(https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Sign%20up%20main%20record%20replace.jpg?raw=true);
+              ">
+
+              </div>
+            </div>
+            <div class="side-info">
+              <h3>Account options</h3>
+              <p>Create an account based on your needs, individual or team (10 people).</p>
+            </div>
+          </div>
+          <div id="curves">
+            <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/curves/Vector%204.svg" alt="">
+          </div>
+          <div class="info-rop">
+            <div class="holder">
+              <div style="
+              background-image: url(https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/access-lib.svg);
+                        ">
+
+              </div>
+            </div>
+            <div class="side-info">
+              <h3>Access library your way</h3>
+              <p>Our library allows you choose how to get code, by import, embed or package manager installations.</p>
+            </div>
+          </div>
+          <div id="curves">
+            <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/curves/Vector%206.png?raw=true" alt="">
+          </div>
+          <div class="info-op">
+            <div class="holder">
+              <div style="
+              background-image: url(https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/searching-landing.svg);
+              background-repeat: no-repeat;">
+
+              </div>
+            </div>
+            <div class="side-info">
+              <h3>Interactive interface</h3>
+              <p>Anime8 is a fully-responsive library, we’ve included an extensive list of animation techniques to suit your design ideas.</p>
+            </div>
+          </div>
+          <div id="curves">
+            <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/curves/Vector%205.png?raw=true" alt="">
+          </div>
+          <div class="info-rop">
+            <div class="holder">
+              <div style="
+              background-image: url(https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/save-data.svg);
+              background-repeat: no-repeat;">
+
+              </div>
+            </div>
+            <div class="side-info">
+              <h3>Save data</h3>
+              <p>You see an animation you like? Bookmark it and it automatically shows in your personal library so you never lose it.</p>
+            </div>
+          </div><br>
+          <div class="ending">
+            <div class="ending-info">
+              <h2>Ready?</h2><br>
+              <p>We've designed Anim8 to make it easy to design animations whether you're an expert in code or a developer who's new to animation.</p><br>
+              <a href="{% url 'sign up' %}"><button>Get Started-It's Free</button></a>
+            </div>
+            <div class="ending-links">
+              <div class="ending-links-con">
+                <div>
+                  <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/File.svg" alt="">
+                </div>
+                <div class="info-hold">
+                  <a href="{% url 'docs:intro' %}">
+                    <p>Documentation</p><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="ending-links-con">
+                <div>
+                  <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Ios%20Files%20logo.svg" alt="">
+                </div>
+                <div class="info-hold">
+                  <a href="{% url 'main2' %}">
+                    <p>Our Library</p><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="ending-links-con">
+                <div>
+                  <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Github%20Logo.svg" alt="">
+                </div>
+                <div class="info-hold">
+                  <a href="https://github.com/Ifechukwumunac/zuri-anim8" target="_blank">
+                    <p>Our GitHub</p><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/Vector.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
     <!-- <footer>
       <section class="footer-con">
         <address class="social">
