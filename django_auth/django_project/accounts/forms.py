@@ -13,16 +13,16 @@ class UserRegistrationForm(UserCreationForm):
     password1 = forms.CharField(label="Password", max_length=50,
                                 required=True,
                                 widget=forms.PasswordInput(attrs={'placeholder': 'Password',
-                                                                  'class': 'form-control',
+                                                                  'class': 'form-control password',
                                                                   'data-toggle': 'password',
-                                                                  'id': 'password',
+                                                                  'id': 'password1',
                                                                   }))
     password2 = forms.CharField(label="Confirm", max_length=50,
                                 required=True,
                                 widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password',
-                                                                  'class': 'form-control',
+                                                                  'class': 'form-control password',
                                                                   'data-toggle': 'password',
-                                                                  'id': 'password',
+                                                                  'id': 'password2',
                                                                   }))
 
     class Meta:

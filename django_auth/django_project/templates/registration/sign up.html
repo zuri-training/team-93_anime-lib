@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="apple-touch-icon"
@@ -154,7 +158,20 @@
       margin-bottom: 10px;
       font-family:  "Rubik", sans-serif;
     }
-
+    #toggle{
+      cursor: pointer;
+      position: absolute;
+      right: 370px;
+      top: 59%;
+      transform: translateY(-50%);
+    }
+    #toggle2{
+      cursor: pointer;
+      position: absolute;
+      right: 370px;
+      top: 72%;
+      transform: translateY(-50%);
+    }
     form a {
       color: #007ad2;
       font-weight: 300;
@@ -218,6 +235,13 @@
         <section>
           <form method="post" action="#" autocomplete="off">
             {% csrf_token %}
+            {% for field in form %}
+            {% if field.label == 'Password' %}
+            <i class="bi bi-eye-slash" id="toggle"></i>
+            {% elif  field.label == 'Confirm' %}
+            <i class="bi bi-eye-slash" id="toggle2"></i>
+            {% endif %}
+            {% endfor %}
             {{form.as_p }}
             <br />
             <input type="checkbox" name="terms" id="terms" required />I agree
@@ -229,5 +253,31 @@
         </section>
       </section>
     </main>
+    <script >
+      const togglePassword = document.querySelector("#toggle");
+      const togglePassword2 = document.querySelector("#toggle2");
+      const password = document.querySelector('#password1');
+      const password2 = document.querySelector('#password2');
+    
+      togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+    
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+      });
+      // CONFIRM PASSWORD 
+      togglePassword2.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+          password2.getAttribute("type") === "password" ? "text" : "password";
+        password2.setAttribute("type", type);
+    
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+      });
+    </script>
   </body>
 </html>
