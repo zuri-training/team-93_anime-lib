@@ -1,4 +1,36 @@
-<style>
+{% comment %} <a href="{% url 'login' %}" class="b">Log In</a> {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/apple-touch-icon.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-32x32.png?raw=true"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
+    />
+    {% load static %}
+    <link rel="manifest" href="{% static 'site.webmanifest' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Anim8</title>
+  </head>
+  <body>
+     <style>
     * {
         box-sizing: border-box;
         font-family: "Montserrat", sans-serif;
@@ -407,38 +439,6 @@
         color: #76777a;
       }
 </style>
-{% comment %} <a href="{% url 'login' %}" class="b">Log In</a> {% endcomment %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/apple-touch-icon.png?raw=true"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-32x32.png?raw=true"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/favicon-16x16.png?raw=true"
-    />
-    {% load static %}
-    <link rel="manifest" href="{% static 'site.webmanifest' %}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Anim8</title>
-  </head>
-  <body>
     <header>
       <a href="{% url 'home' %}"><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/a770d6579605a8629eabe641f460f9b768ae0b8e/Image/LOGO%201.svg" alt="Anim8-logo" /></a>
       <nav id="navbar">
