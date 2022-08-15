@@ -33,26 +33,26 @@
     {% load static %}
     <link rel="manifest" href="{% static 'site.webmanifest' %}" />
     <title>Animation</title>
-    
-    
-    <link rel="stylesheet" href="{% static 'accounts/node_modules/zuri-anim8/lib/index.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="{% static 'accounts/node_modules/zuri-anim8/lib/index.css' %}"
+    />
   </head>
   <body>
     <header>
       <a href="{% url 'home' %}"
-        ><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/fe1d6ba0fc1152d1f5a9695c0085f1ad668d18a8/Image/Logo%20(3).svg" alt="LOGO"
+        ><img
+          src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/fe1d6ba0fc1152d1f5a9695c0085f1ad668d18a8/Image/Logo%20(3).svg"
+          alt="LOGO"
       /></a>
       <nav id="navbar">
         <ul>
           <li>
-            <a href="{% url 'library' %}" class="nav-link"
-              >Animations</a
-            >
+            <a href="{% url 'library' %}" class="nav-link">Animations</a>
           </li>
           <li>
-            <a href="{% url 'docs:intro' %}" class="nav-link"
-              >Documentation</a
-            >
+            <a href="{% url 'docs:intro' %}" class="nav-link">Documentation</a>
           </li>
           <li>
             <a
@@ -68,13 +68,29 @@
         <ul>
           <li>
             <a href="{% url 'account' %}"
-              ><img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/fe1d6ba0fc1152d1f5a9695c0085f1ad668d18a8/Image/logged-in-user.svg" alt="profile"
+              ><img
+                src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/fe1d6ba0fc1152d1f5a9695c0085f1ad668d18a8/Image/logged-in-user.svg"
+                alt="profile"
             /></a>
             <ul>
-              <li><a href="{% url 'account' %}">Profile</a></li>
+              <div id="profile-image">
+                <img
+                  src="{% static 'accounts/default-profile-image.svg' %}"
+                  alt=""
+                  width="80px"
+                />
+                <h3>welcome</h3>
+                <span class="profile-info">{{ user.username }}</span>
+              </div>
+              <li><a href="{% url 'account' %}"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Profile</a></li>
               <!-- on second thought just leave it here -->
-              <li><a href="{% url 'download' %}">Download</a></li>
-              <li><a href="{% url 'logout' %}"  id="logout">log Out</a></li>
+              <li><a href="{% url 'download' %}"><i class="fa-solid fa-cloud-arrow-down"></i>&nbsp;&nbsp;Download</a></li>
+              <li><a href="{% url 'logout' %}" id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;&nbsp;log Out</a></li>
+              <br /><br />
+              <hr style=" color: #76777A;"/>
+              <small class="minor">Privacy policy</small
+              ><small class="minor">.</small
+              ><small class="minor">Terms of service</small><br><br>
             </ul>
           </li>
         </ul>
@@ -83,11 +99,26 @@
     <main>
       <section id="features">
         <figure>
-          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Component%201.svg" alt="FEATURES" />
-          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Slide2.gif?raw=true" alt="FEATURES" />
-          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Slide%205.gif?raw=true" alt="FEATURES" />
-          <img src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/slide%204.gif?raw=true" alt="FEATURES" />
-          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Component%201.svg" alt="FEATURES" />
+          <img
+            src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Component%201.svg"
+            alt="FEATURES"
+          />
+          <img
+            src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Slide2.gif?raw=true"
+            alt="FEATURES"
+          />
+          <img
+            src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/Slide%205.gif?raw=true"
+            alt="FEATURES"
+          />
+          <img
+            src="https://github.com/zuri-training/team-93_anime-lib/blob/main/Image/slide%204.gif?raw=true"
+            alt="FEATURES"
+          />
+          <img
+            src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Component%201.svg"
+            alt="FEATURES"
+          />
         </figure>
       </section>
       <section id="search">
@@ -107,12 +138,18 @@
         <!-- hahahaha using a small hackery -->
         <div style="display: flex; align-items: center">
           <h1>Basic Animations</h1>
-          <a href="{% static 'accounts/node_modules/zuri-anim8/lib/basic.css' %}" download
+          <a
+            href="{% static 'accounts/node_modules/zuri-anim8/lib/basic.css' %}"
+            download
             ><button class="get-libary-part">Get it</button></a
           >
         </div>
         <div class="anim8">
-          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/181a62cba7f7d6ff22d2f4d2e2d0d46e508af684/Image/Speaker.svg" alt="ICON" id="img1" />
+          <img
+            src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/181a62cba7f7d6ff22d2f4d2e2d0d46e508af684/Image/Speaker.svg"
+            alt="ICON"
+            id="img1"
+          />
           <div class="text">
             <button class="action btn1" onclick="change1('_moveUp')">
               _moveUp
@@ -141,12 +178,18 @@
       <section>
         <div style="display: flex; align-items: center">
           <h1>Attention seekers</h1>
-          <a href="{% static 'accounts/node_modules/zuri-anim8/lib/attention-seekers.css' %}" download
+          <a
+            href="{% static 'accounts/node_modules/zuri-anim8/lib/attention-seekers.css' %}"
+            download
             ><button class="get-libary-part">Get it</button></a
           >
         </div>
         <div class="anim8">
-          <img src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Target.svg" alt="ICON" id="img2" />
+          <img
+            src="https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/288ecd826243697a9bf8a53142bc279f4ed6553c/Image/Target.svg"
+            alt="ICON"
+            id="img2"
+          />
           <div class="text">
             <button class="action btn2" onclick="change2('_popOut')">
               _popOut
@@ -208,70 +251,69 @@
         <p>&copy;2022 Anim8 Software. <strong>All Rights reserved.</strong></p>
     </footer> -->
     <script>
-        // getting stuff
+      // getting stuff
 
-        const img1 = document.getElementById("img1");
-        const img2 = document.getElementById("img2");
+      const img1 = document.getElementById("img1");
+      const img2 = document.getElementById("img2");
 
-        // for the basic animations
+      // for the basic animations
 
-        function change1(m){
-            // remove the last class in img1
-            // remove all classes
-            img1.classList = "";
-            // add m to class list
-            img1.classList.add(m);
-        }
-        function change2(m){
-            // remove the last class in img1
-            // remove all classes
-            img2.classList = "";
-            // add m to class list
-            img2.classList.add(m);
-        }
+      function change1(m) {
+        // remove the last class in img1
+        // remove all classes
+        img1.classList = "";
+        // add m to class list
+        img1.classList.add(m);
+      }
+      function change2(m) {
+        // remove the last class in img1
+        // remove all classes
+        img2.classList = "";
+        // add m to class list
+        img2.classList.add(m);
+      }
 
+      // did this here cos of webkit version and making the html messy THANKS 4 UNDEERSTANDING
+      // remove class again so you can click same animation btn twice and it works
+      // STANDARD
+      img1.addEventListener("animationend", () => {
+        img1.classList = "";
+      });
+      // CHROME, SAFARI, AND OPERA -i dont know why  they hve special one's but they are the guys that use webkit
+      img1.addEventListener("webkitAnimationEnd", () => {
+        img1.classList = "";
+      });
 
-        // did this here cos of webkit version and making the html messy THANKS 4 UNDEERSTANDING
-        // remove class again so you can click same animation btn twice and it works 
-        // STANDARD
-        img1.addEventListener('animationend', () => {
-            img1.classList = "";
-        })
-        // CHROME, SAFARI, AND OPERA -i dont know why  they hve special one's but they are the guys that use webkit
-        img1.addEventListener('webkitAnimationEnd', () => {
-            img1.classList = "";
-        })
-
-        // STANDARD
-        img2.addEventListener('animationend', () => {
-            img2.classList = "";
-        })
-        // CHROME, SAFARI, AND OPERA -i dont know why  they hve special one's but they are the guys that use webkit
-        img2.addEventListener('webkitAnimationEnd', () => {
-            img2.classList = "";
-        })
+      // STANDARD
+      img2.addEventListener("animationend", () => {
+        img2.classList = "";
+      });
+      // CHROME, SAFARI, AND OPERA -i dont know why  they hve special one's but they are the guys that use webkit
+      img2.addEventListener("webkitAnimationEnd", () => {
+        img2.classList = "";
+      });
     </script>
     <style>
-        /* Global Selectors
+      /* Global Selectors
         ---------------------------------------------------- */
-        * {
+      * {
         box-sizing: border-box;
         font-family: "Rubik", sans-serif;
         margin: 0;
         padding: 0;
-        }
+      }
 
-        body {
+      body {
         background: #fbfbfb;
-        }
+      }
 
-        main {
+      main {
         margin: 0 30px;
-        }
+      }
 
-        /* Header
+      /* Header
         ---------------------------------------------------- */
-        header {
+      header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -281,192 +323,222 @@
         position: sticky;
         top: 0;
         margin-bottom: 30px;
-        
+
         z-index: 1;
-        }
+      }
 
-        header img {
+      header img {
         margin-left: 1%;
-        }
+      }
 
-        #navbar {
+      #navbar {
         /* margin-right: 40%; */
         width: 60%;
-        }
+      }
 
-        .nav-link {
+      .nav-link {
         text-decoration: none;
         color: black;
-        }
+      }
 
-        #navbar li {
+      #navbar li {
         display: inline-block;
         margin: 0 30px;
         font-weight: 500;
-        }
+      }
 
-        #profile {
+      #profile {
         margin-right: 1%;
-        }
+      }
 
-        #profile li{
+      #profile li {
         list-style: none;
-        }
+      }
 
-        #profile ul li ul{
+      #profile ul li ul {
         background-color: white;
-        border-radius: 0 0 5px 5px ;
+        border-radius: 24px;
         position: absolute;
         top: 70px;
         right: 5px;
         width: max-content;
         display: none;
-        }
+      }
 
-        #profile ul li:hover ul{
+      #profile ul li:hover ul {
         display: block;
-        }
+      }
 
-        #profile ul li ul li{
+      #profile ul li ul li {
         padding: 10px 40px;
         list-style: none;
-        }
+      }
 
-        #profile ul li ul li a{
+      #profile ul li ul li a {
         background-color: white;
-        color: black;
+        color: #76777a;
         border-radius: 0;
         border: 0;
         padding: 10px 20px;
         text-decoration: none;
-        }
-        
-        #profile ul li ul li a:hover{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+      }
+
+      #profile ul li ul li a:hover {
         color: #63afff;
-        text-decoration: underline #63afff 2px;
-        }
+        /* text-decoration: underline #63afff 2px; */
+      }
 
-        /* for the logout link */
-        #profile ul li ul li #logout{
-          color: rgb(175, 2, 2);
-        }
-        #profile ul li ul li #logout:hover{
-          color: red;
-          text-decoration: underline red 2px;
-        }
-        /* Features
+      /* for the logout link */
+      #profile ul li ul li #logout {
+        color: #930006;
+      }
+      #profile ul li ul li #logout:hover {
+        color: red;
+        /* text-decoration: underline red 2px; */
+      }
+      #profile-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-info {
+        color: #46474a;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .tiny-line{
+
+      }
+      .minor {
+        margin: 20px;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.004em;
+        color: #76777a;
+      }
+      /* Features
         ---------------------------------------------------- */
-        #features {
+      #features {
         overflow: hidden;
-        }
+      }
 
-        figure {
+      figure {
         position: relative;
         width: 500%;
         display: flex;
         animation: 25s slider infinite;
-        }
+      }
 
-        #features img {
+      #features img {
         background-image: url("https://raw.githubusercontent.com/zuri-training/team-93_anime-lib/eb359c2218c636132987aa8ff87bc913b6e12be4/Image/Rectangle%2080.svg");
         background-size: cover;
         width: 20%;
         border-radius: 30px;
         float: left;
-        }
+      }
 
-        @keyframes slider {
+      @keyframes slider {
         0% {
-            left: 0;
+          left: 0;
         }
 
         20% {
-            left: 0;
+          left: 0;
         }
 
         25% {
-            left: -100%;
+          left: -100%;
         }
 
         30% {
-            left: -100%;
+          left: -100%;
         }
 
         45% {
-            left: -100%;
+          left: -100%;
         }
 
         50% {
-            left: -200%;
+          left: -200%;
         }
 
         65% {
-            left: -200%;
+          left: -200%;
         }
 
         68% {
-            left: -300%;
+          left: -300%;
         }
 
         99% {
-            left: -300%;
+          left: -300%;
         }
 
         100% {
-            left: -400%;
+          left: -400%;
         }
-        }
+      }
 
-        /* Search Form
+      /* Search Form
         ---------------------------------------------------- */
-        #search {
+      #search {
         margin: 60px 0;
         border: 0;
         width: 30%;
         /* padding: 16px 24px; */
-        }
+      }
 
-        .container {
+      .container {
         display: block;
         color: #a8abb4;
-        }
+      }
 
-        .form {
+      .form {
         display: flex;
         padding: 8px 16px;
         background-color: white;
         border: 0;
         border-radius: 20px;
         align-items: center;
-        }
+      }
 
-        input {
+      input {
         flex: 1;
         padding: 2px 10px;
         outline: 0;
         border: 0;
-        }
+      }
 
-        /* Animations
+      /* Animations
         ---------------------------------------------------- */
-        .anim8 {
+      .anim8 {
         display: flex;
         margin-bottom: 150px;
-        }
+      }
 
-        .anim8 img {
+      .anim8 img {
         width: 20%;
         align-self: center;
         justify-self: center;
         margin-right: 10%;
-        }
+      }
 
-        .text {
+      .text {
         width: 70%;
         margin-top: 5%;
-        }
+      }
 
-        .action {
+      .action {
         display: inline-block;
         width: 269px;
         height: 104px;
@@ -480,28 +552,28 @@
         background-color: #fbfbfb;
         font-weight: 500;
         font-size: 20px;
-        }
-        .action:focus{
-          color: #fbfbfb;
-          background-color: #0058b4;
-        }
-        /* footer
+      }
+      .action:focus {
+        color: #fbfbfb;
+        background-color: #0058b4;
+      }
+      /* footer
         ---------------------------------------------------- */
-        footer {
+      footer {
         color: white;
         background-color: #181c22;
-        }
+      }
 
-        .footer {
+      .footer {
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
         justify-content: space-between;
         height: 30vh;
         width: 100%;
-        }
+      }
 
-        .websites {
+      .websites {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -509,57 +581,57 @@
         justify-content: center;
         /* margin-left: 20px;
             margin-top: 20px; */
-        }
+      }
 
-        .profile-link {
+      .profile-link {
         font-size: x-large;
         color: white;
         margin: 0 5px;
-        }
+      }
 
-        .links {
+      .links {
         display: flex;
         gap: 50px;
         align-items: center;
         justify-content: center;
         margin-right: 5%;
-        }
+      }
 
-        .links a {
+      .links a {
         color: #a8abb4;
         text-decoration: none;
-        }
+      }
 
-        address {
+      address {
         font-style: normal;
-        }
+      }
 
-        address h4 {
+      address h4 {
         font-weight: 400;
         margin-bottom: 20px;
-        }
+      }
 
-        p {
+      p {
         text-align: center;
         font-weight: 200;
         color: #a8abb4;
-        }
+      }
 
-        strong {
+      strong {
         font-weight: 400;
         color: white;
-        }
+      }
 
-        /*Animations
+      /*Animations
         ------------------------------------------------------ */
 
-        /* Download full library
+      /* Download full library
         ------------------------------------------------------ */
-        .download {
+      .download {
         text-align: center;
-        }
+      }
 
-        .download button {
+      .download button {
         border-radius: 8px;
         padding: 16px 24px;
         background-color: #63afff;
@@ -573,11 +645,11 @@
         line-height: 28px;
         color: #ffffff;
         cursor: pointer;
-        }
+      }
 
-        /* get part of library
+      /* get part of library
         ------------------------------------------- */
-        .get-libary-part {
+      .get-libary-part {
         margin-left: 15px;
         cursor: pointer;
         padding: 16px 24px;
@@ -587,7 +659,7 @@
         font-size: 20px;
         border: none;
         font-weight: 600;
-        }
+      }
     </style>
   </body>
 </html>
